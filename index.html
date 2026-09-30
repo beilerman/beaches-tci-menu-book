@@ -6,6 +6,20 @@
 <title>Beaches TCI Menu Book</title>
 <meta name="description" content="Unofficial family guide to the posted menus, hours, bars and drinks at Beaches Turks &amp; Caicos. Compiled September 28, 2026.">
 <meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#F2F6F4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#08161A" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Menu Book">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Beaches TCI Menu Book">
+<meta property="og:description" content="Every posted menu at Beaches Turks &amp; Caicos, searchable, with hours, house rules, bars and drinks.">
+<meta property="og:url" content="https://beaches-tci-menu-book.vercel.app/">
+<meta property="og:image" content="https://beaches-tci-menu-book.vercel.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@400;500&family=Young+Serif&display=swap">
@@ -89,6 +103,30 @@ h1{margin:0;font:400 clamp(32px,6.4vw,48px)/1.05 var(--font-display);letter-spac
 .rule h3{margin:0 0 4px;font:700 15px/1.35 var(--font-body)}
 .rule p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.5}
 
+#rules-d>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding-block:2px}
+#rules-d>summary::-webkit-details-marker{display:none}
+.r-sum{flex:1;min-width:0}
+.r-sum .h2{margin:0}
+.r-hint{display:block;margin-top:2px;font-size:14px;color:var(--muted)}
+#rules-d[open] .r-hint{display:none}
+#rules-d[open]>summary{margin-bottom:10px}
+details[open]>summary>.chev{transform:rotate(-135deg)}
+.jump.soon::before,.status.open.soon::before{background:var(--warn-fg)}
+.status.open.soon{color:var(--warn-fg)}
+.jump-more{background:transparent;color:var(--accent);font-weight:700}
+.jump-more::before{display:none}
+@media (max-width:639px){.jumps .jump:not(.jump-more):nth-child(n+7){display:none}}
+@media (min-width:640px){.jump-more.cap{display:none}}
+.copy{border:0;background:none;padding:0;color:var(--accent);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.r-places{margin:14px 0 4px;padding:0;list-style:none;display:grid;gap:8px}
+.r-place{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;padding:10px 12px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.r-place button{border:0;background:none;padding:0;cursor:pointer;color:var(--accent);font:400 18px/1.25 var(--font-display);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.r-place span{font-size:13.5px;color:var(--muted)}
+.r-more{margin:8px 0 0}
+.kbd{font:500 11px/1 var(--font-mono);padding:3px 5px;border:1px solid var(--line);border-radius:4px;color:var(--muted)}
+@media (max-width:719px){.kbd{display:none}}
+.search:focus-within .kbd{display:none}
+
 /* sticky bar */
 .bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line);margin-top:22px}
 .bar-inner{display:grid;gap:8px;padding-block:10px;grid-template-columns:minmax(0,1fr)}
@@ -116,6 +154,7 @@ h1{margin:0;font:400 clamp(32px,6.4vw,48px)/1.05 var(--font-display);letter-spac
 .legend i{display:inline-block;width:14px;height:8px;border-radius:3px;margin-right:5px}
 .legend .note{flex-basis:100%;font-family:var(--font-body);font-size:13px}
 .legend svg{vertical-align:-2px}
+.legend[hidden]{display:none}
 
 /* list */
 .list-tools{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:18px;font:500 12.5px var(--font-mono);color:var(--muted)}
@@ -223,6 +262,15 @@ mark{background:var(--mark);color:inherit;border-radius:2px;padding:0 1px}
 .foot p{max-width:70ch}
 .foot ul{margin:0 0 14px;padding-left:18px}
 .foot li{margin:3px 0}
+@media print{
+  body{background:#fff;color:#000;font-size:12px}
+  .bar,.filters,.clock,.v-links,.tabs,.ph,.list-tools,.chev,.strip,.ticks,.also{display:none!important}
+  .panel[hidden]{display:block!important}
+  .venue{break-inside:avoid-page}
+  .venue>summary{padding-block:8px 4px}
+  .d-desc,.v-meta,.v-hours,.muted{color:#333}
+  a{color:#000;text-decoration:none}
+}
 </style>
 </head>
 <body>
@@ -241,7 +289,8 @@ mark{background:var(--mark);color:inherit;border-radius:2px;padding:0 1px}
 </header>
 
 <section class="wrap rules" aria-labelledby="rules-h">
-  <h2 class="h2" id="rules-h">Before you book a table</h2>
+  <details id="rules-d" open>
+  <summary><span class="r-sum"><h2 class="h2" id="rules-h">Before you book a table</h2><span class="r-hint">Reservations, dress code, ages, allergies, extra costs</span></span><span class="chev" aria-hidden="true"></span></summary>
   <div class="rule-grid">
     <div class="rule"><h3>Book Kimonos and Butch’s</h3><p>They are the only two the resort marks reservation-required, both at dinner. Book in the Beaches app or at the Culinary Concierge desk; Kimonos fills fast. Some guides add Le Petit Chateau and Sapodilla’s, so check the app on day one.</p></div>
     <div class="rule"><h3>Pack one dinner outfit</h3><p>Evening attire at Sky, Sapodilla’s, Le Petit Chateau, and Butch’s at dinner. A travel-agent guide puts that at long pants and a collared shirt for men, no beachwear.</p></div>
@@ -250,6 +299,7 @@ mark{background:var(--mark);color:inherit;border-radius:2px;padding:0 1px}
     <div class="rule"><h3>A few things cost extra</h3><p>Food and standard drinks are included. Butch’s and Pinta print prices on premium wine, and guides report paid wine lists at Sky, Sapodilla’s and Le Petit Chateau.</p></div>
     <div class="rule"><h3>Menus drift</h3><p>The posted PDFs range from 2020 to 2026, and each menu here shows its date. At check-in you get a sheet with hours and a QR code for each restaurant’s current menu.</p></div>
   </div>
+  </details>
 </section>
 
 <div class="bar" id="bar">
@@ -257,7 +307,8 @@ mark{background:var(--mark);color:inherit;border-radius:2px;padding:0 1px}
     <div class="search">
       <svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m13 13 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
       <label class="sr" for="q">Search dishes and drinks</label>
-      <input id="q" type="search" placeholder="Search: conch, lobster, vegan, gf, kids, martini" autocomplete="off" enterkeyhint="search">
+      <input id="q" type="search" placeholder="Search dishes, drinks or places: conch, vegan, sushi" autocomplete="off" enterkeyhint="search">
+      <span class="kbd" id="kbd" aria-hidden="true">/</span>
       <button type="button" class="clear" id="qclear" hidden>Clear</button>
     </div>
     <div class="chips" role="group" aria-label="Meal" id="meal-chips">
@@ -1308,12 +1359,16 @@ function entry(v, m, mi, s, it){
   let words = tags.split(' ').filter(Boolean).map(t => TAGWORDS[t] || '').join(' ');
   if (s.kids) words += ' kids kid children';
   if (NUT.test(name + ' ' + desc)) words += ' nuts nut';
-  return {v, m, mi, s, it, hay: norm([name, desc, s.t, words].join(' '))};
+  const own = norm([name, desc, words].join(' '));
+  return {v, m, mi, s, it, own, hay: own + ' ' + norm(s.t)};
 }
 const IDX = [];
 VENUES.forEach(v => (v.menus || []).forEach((m, mi) => (m.sections || []).forEach(s => s.items.forEach(it => IDX.push(entry(v, m, mi, s, it))))));
 DRINKS.forEach((s, si) => s.items.forEach(it => IDX.push(entry(DRINK_VENUE, {label:s.t, meal:'drinks'}, si, s, it))));
 VILLAGES.forEach(vg => (BARS[vg.id] || []).forEach(b => IDX.push(entry(DRINK_VENUE, {label:'Bars · ' + vg.short, meal:'drinks', bar:true}, 100 + VILLAGES.indexOf(vg), {t:vg.name + ' bar'}, [b[0], b[1]]))));
+
+const KINDWORDS = {buffet:'buffet', truck:'food truck', drinks:'drinks bar', cafe:'cafe coffee', treat:'treats dessert', quick:'quick service walk-up', restaurant:'restaurant'};
+VENUES.forEach(v => { v.hay = norm([v.name, v.cuisine, KINDWORDS[v.kind] || ''].join(' ')); });
 
 /* ---------- time ---------- */
 function now(){
@@ -1334,7 +1389,10 @@ function openAt(w, t){ return w.e <= 1440 ? (t >= w.s && t < w.e) : (t >= w.s ||
 function statusOf(v, t){
   const known = v.win.filter(w => !w.u);
   const cur = known.find(w => openAt(w, t));
-  if (cur) return {k:'open', txt:'Open until ' + fmt(cur.e)};
+  if (cur) {
+    const left = cur.e - (t < cur.s ? t + 1440 : t);
+    return left <= 30 ? {k:'open', soon:true, txt:'Closing soon, ' + fmt(cur.e)} : {k:'open', txt:'Open until ' + fmt(cur.e)};
+  }
   if (v.unposted.includes('dinner') && t >= 1020 && t < 1290) return {k:'na', txt:'Dinner hours not posted'};
   if (!v.win.length) return {k:'na', txt:'Hours not posted'};
   if (!known.length) { const u = v.win[0]; return {k:'na', txt: t >= u.s ? 'Close time unclear' : 'Opens ' + fmt(u.s)}; }
@@ -1459,12 +1517,12 @@ function venueHTML(v, t){
   const ms = v.menus || [];
   const ai = (v.id in activeTab) ? activeTab[v.id] : defaultTab(v);
   const single = ms.length < 2;
-  const tabs = single ? '' : '<div class="tabs" role="tablist" aria-label="' + esc(v.name) + ' menus">' + ms.map((m, i) => '<button type="button" class="tab" role="tab" id="' + v.id + '-t' + i + '" aria-controls="' + v.id + '-p' + i + '" aria-selected="' + (i === ai) + '" data-v="' + v.id + '" data-i="' + i + '">' + esc(m.label) + '</button>').join('') + '</div>';
+  const tabs = single ? '' : '<div class="tabs" role="tablist" aria-label="' + esc(v.name) + ' menus">' + ms.map((m, i) => '<button type="button" class="tab" role="tab" id="' + v.id + '-t' + i + '" aria-controls="' + v.id + '-p' + i + '" aria-selected="' + (i === ai) + '" tabindex="' + (i === ai ? 0 : -1) + '" data-v="' + v.id + '" data-i="' + i + '">' + esc(m.label) + '</button>').join('') + '</div>';
   const panels = ms.map((m, i) => panelHTML(v, m, i, i === ai, single)).join('');
   const notes = (v.notes || []).length ? '<ul class="v-notes">' + v.notes.map(n => '<li>' + esc(n) + '</li>').join('') + '</ul>' : '';
-  const links = '<p class="v-links"><a href="' + gimg('Beaches Turks and Caicos ' + v.name) + '" target="_blank" rel="noopener">Photos of ' + esc(v.name) + ' ↗</a><a href="' + OFFICIAL + '" target="_blank" rel="noopener">Resort dining page ↗</a></p>';
+  const links = '<p class="v-links"><a href="' + gimg('Beaches Turks and Caicos ' + v.name) + '" target="_blank" rel="noopener">Photos of ' + esc(v.name) + ' ↗</a><a href="' + OFFICIAL + '" target="_blank" rel="noopener">Resort dining page ↗</a><button type="button" class="copy" data-copy="' + v.id + '">Copy link to ' + esc(v.name) + '</button></p>';
   return '<details class="venue" id="' + v.id + '"' + (openSet.has(v.id) ? ' open' : '') + '>' +
-    '<summary><span class="v-top"><span class="v-name">' + esc(v.name) + '</span><span class="status ' + st.k + '">' + esc(st.txt) + '</span><span class="chev" aria-hidden="true"></span></span>' +
+    '<summary><span class="v-top"><span class="v-name">' + esc(v.name) + '</span><span class="status ' + st.k + (st.soon ? ' soon' : '') + '">' + esc(st.txt) + '</span><span class="chev" aria-hidden="true"></span></span>' +
     '<span class="v-meta">' + esc(v.cuisine) + '</span><span class="badges">' + badgesHTML(v) + '</span>' +
     stripHTML(v, t) + '<span class="v-hours">' + esc(hoursText(v)) + '</span></summary>' +
     '<div class="v-body">' + links + tabs + panels + notes + '</div></details>';
@@ -1486,24 +1544,37 @@ function listHTML(t){
 }
 function resultsHTML(t){
   const terms = norm(state.q).split(/\s+/).filter(Boolean);
-  const hits = IDX.filter(r => (r.v.drinks ? (state.meal === 'all' || state.meal === 'drinks') : (state.meal !== 'drinks' && venueOK(r.v, t) && menuOK(r.m))) && terms.every(x => r.hay.includes(x)));
-  if (!hits.length) {
-    return '<div class="empty"><p>Nothing matches “' + esc(state.q.trim()) + '”' + (filtersActive() ? ' with these filters' : '') + '.</p><p>Try one ingredient (conch, snapper, lobster) or a tag (vegan, gf, kids, nuts).</p>' + (filtersActive() ? '<button type="button" class="linkbtn" id="reset">Reset filters</button>' : '') + '</div>';
+  const has = h => terms.every(x => h.includes(x));
+  const places = state.meal === 'drinks' ? [] : VENUES.filter(v => venueOK(v, t) && has(v.hay));
+  const hits = IDX.filter(r => (r.v.drinks ? (state.meal === 'all' || state.meal === 'drinks') : (state.meal !== 'drinks' && venueOK(r.v, t) && menuOK(r.m))) && has(r.hay));
+  if (!hits.length && !places.length) {
+    return '<div class="empty"><p>Nothing matches “' + esc(state.q.trim()) + '”' + (filtersActive() ? ' with these filters' : '') + '.</p><p>Try one ingredient (conch, snapper, lobster), a tag (vegan, gf, kids, nuts) or a place (Kimonos, sushi, buffet).</p>' + (filtersActive() ? '<button type="button" class="linkbtn" id="reset">Reset filters</button>' : '') + '</div>';
   }
   const groups = new Map();
   hits.forEach(r => {
     if (!groups.has(r.v.id)) groups.set(r.v.id, {v:r.v, menus:new Map()});
     const g = groups.get(r.v.id), k = r.mi + '|' + r.m.label;
-    if (!g.menus.has(k)) g.menus.set(k, {m:r.m, items:[]});
-    g.menus.get(k).items.push(r);
+    if (!g.menus.has(k)) g.menus.set(k, {m:r.m, mi:r.mi, items:[], secs:new Map()});
+    const mm = g.menus.get(k);
+    if (has(r.own)) mm.items.push(r);
+    else { if (!mm.secs.has(r.s.t)) mm.secs.set(r.s.t, 0); mm.secs.set(r.s.t, mm.secs.get(r.s.t) + 1); }
   });
-  let h = '<p class="r-count">' + hits.length + (hits.length === 1 ? ' match' : ' matches') + ' at ' + groups.size + (groups.size === 1 ? ' place' : ' places') + '</p>';
+  const pl = n => n === 1 ? '' : 's';
+  let h = '<p class="r-count">' + (places.length ? places.length + ' matching place' + pl(places.length) + (hits.length ? ' · ' : '') : '') + (hits.length ? hits.length + ' dish' + (hits.length === 1 ? '' : 'es') + ' and drinks at ' + groups.size + ' place' + pl(groups.size) : '') + '</p>';
+  if (places.length) {
+    h += '<ul class="r-places">' + places.map(v => { const st = statusOf(v, t); return '<li class="r-place"><button type="button" data-open="' + v.id + '">' + hl(v.name, terms) + '</button><span>' + hl(v.cuisine, terms) + ' · ' + esc(villageName(v.village)) + ' · ' + esc(st.txt) + '</span></li>'; }).join('') + '</ul>';
+  }
   groups.forEach(g => {
     const head = g.v.drinks ? '<button type="button" data-drinks="1">Bars &amp; drinks</button><span>Bars and drink lists</span>' : '<button type="button" data-open="' + g.v.id + '">' + esc(g.v.name) + '</button><span>' + esc(villageName(g.v.village)) + '</span>';
     h += '<article class="r-venue"><div class="r-head">' + head + '</div>';
     g.menus.forEach(mm => {
       const lab = mm.m.label + (mm.m.date && mm.m.date !== 'undated' ? ' · ' + mm.m.date : '');
-      h += '<p class="r-menu">' + esc(lab) + '</p><ul class="dishes">' + mm.items.map(r => dishHTML(r.v, r.it, r.s, terms)).join('') + '</ul>';
+      h += '<p class="r-menu">' + esc(lab) + '</p>';
+      if (mm.items.length) h += '<ul class="dishes">' + mm.items.map(r => dishHTML(r.v, r.it, r.s, terms)).join('') + '</ul>';
+      mm.secs.forEach((n, sec) => {
+        const btn = g.v.drinks ? 'data-drinks="1"' : 'data-open="' + g.v.id + '" data-tab="' + mm.mi + '"';
+        h += '<p class="r-more"><button type="button" class="linkbtn" ' + btn + '>' + (mm.items.length ? 'Plus ' : '') + n + ' dish' + (n === 1 ? '' : 'es') + ' in the “' + hl(sec, terms) + '” section</button></p>';
+      });
     });
     h += '</article>';
   });
@@ -1527,7 +1598,9 @@ function renderClock(n){
   $('#clock-time').textContent = n.label;
   $('#clock-src').textContent = n.tz ? 'Resort time, Providenciales' : 'Your device time';
   const open = VENUES.filter(v => statusOf(v, n.mins).k === 'open');
-  $('#open-now').innerHTML = open.length ? open.map(v => '<button type="button" class="jump" data-open="' + v.id + '">' + esc(v.name) + '</button>').join('') : '<span class="muted">Nothing with posted hours is open right now.</span>';
+  const CAP = 6;
+  $('#open-now').innerHTML = open.length ? open.map(v => '<button type="button" class="jump' + (statusOf(v, n.mins).soon ? ' soon' : '') + '" data-open="' + v.id + '"' + (statusOf(v, n.mins).soon ? ' title="Closing within 30 minutes"' : '') + '>' + esc(v.name) + '</button>').join('') +
+    (open.length > CAP ? '<button type="button" class="jump jump-more cap" data-meal="now" data-scroll="1">+' + (open.length - CAP) + ' more</button>' : '') : '<span class="muted">Nothing with posted hours is open right now.</span>';
 }
 function render(){
   const n = now();
@@ -1539,11 +1612,12 @@ function render(){
   else h = listHTML(n.mins);
   $('#list').innerHTML = h;
   $('#filters').hidden = state.meal === 'drinks';
+  $('.legend').hidden = searching;
   const live = $('#live');
   if (live) live.textContent = searching ? ($('.r-count') ? $('.r-count').textContent : 'No matches') : (state.meal === 'drinks' ? 'Showing bars and drinks' : (($('.list-tools span') || {}).textContent || ''));
 }
 function syncChips(){
-  $$('[data-meal]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.meal === state.meal)));
+  $$('#meal-chips [data-meal]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.meal === state.meal)));
   $$('[data-village]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.village === state.village)));
 }
 function syncToggles(){
@@ -1557,9 +1631,14 @@ function resetFilters(){
   activeTab = {};
   clearSearch(); syncChips(); syncToggles(); render();
 }
-function openVenue(id){
+function setHash(h){
+  try { history.replaceState(null, '', location.pathname + location.search + (h ? '#' + h : '')); } catch (e) {}
+}
+function openVenue(id, tab){
   const v = VENUES.find(x => x.id === id);
   if (!v) return;
+  if (tab != null && !isNaN(tab)) activeTab[id] = tab;
+  setHash(id);
   clearSearch();
   if (state.meal === 'drinks' || !venueOK(v, now().mins)) {
     state.meal = 'all'; state.village = 'all'; state.noRes = state.allAges = state.casual = false;
@@ -1575,6 +1654,13 @@ function openVenue(id){
   setTimeout(() => el.classList.remove('flash'), 1700);
   const s = el.querySelector('summary');
   if (s) s.focus({preventScroll:true});
+}
+function selectTab(tab, focus){
+  const id = tab.dataset.v, i = +tab.dataset.i, body = tab.closest('.v-body');
+  activeTab[id] = i;
+  $$('.tab', body).forEach((b, j) => { b.setAttribute('aria-selected', String(j === i)); b.tabIndex = j === i ? 0 : -1; });
+  $$('.panel', body).forEach((p, j) => { p.hidden = j !== i; });
+  if (focus) tab.focus();
 }
 function toggleAll(){
   const ds = $$('details.venue');
@@ -1592,20 +1678,29 @@ document.addEventListener('click', e => {
   const t = e.target;
   if (!(t instanceof Element)) return;
   const mc = t.closest('[data-meal]');
-  if (mc) { state.meal = mc.dataset.meal; activeTab = {}; syncChips(); render(); if (state.q.trim() === '' && state.meal === 'drinks') { const d = $('#dr-h'); if (d) d.scrollIntoView({block:'nearest'}); } return; }
+  if (mc) {
+    state.meal = mc.dataset.meal; activeTab = {}; syncChips(); render();
+    setHash(state.meal === 'drinks' ? 'drinks' : '');
+    if (state.q.trim() === '' && state.meal === 'drinks') { const d = $('#dr-h'); if (d) d.scrollIntoView({block:'nearest'}); }
+    if (mc.dataset.scroll) $('#bar').scrollIntoView({behavior: reduced() ? 'auto' : 'smooth', block:'start'});
+    return;
+  }
   const vc = t.closest('[data-village]');
   if (vc) { state.village = vc.dataset.village; syncChips(); render(); return; }
   const tab = t.closest('.tab');
-  if (tab) {
-    const id = tab.dataset.v, i = +tab.dataset.i, body = tab.closest('.v-body');
-    activeTab[id] = i;
-    $$('.tab', body).forEach((b, j) => b.setAttribute('aria-selected', String(j === i)));
-    $$('.panel', body).forEach((p, j) => { p.hidden = j !== i; });
+  if (tab) { selectTab(tab, false); return; }
+  const op = t.closest('[data-open]');
+  if (op) { openVenue(op.dataset.open, op.dataset.tab != null ? +op.dataset.tab : null); return; }
+  const cp = t.closest('[data-copy]');
+  if (cp) {
+    const url = location.origin + location.pathname + '#' + cp.dataset.copy, orig = cp.textContent;
+    const done = ok => { cp.textContent = ok ? 'Link copied' : url; if (ok) setTimeout(() => { cp.textContent = orig; }, 1800); };
+    if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(url).then(() => done(true), () => done(false)); else done(false);
     return;
   }
-  const op = t.closest('[data-open]');
-  if (op) { openVenue(op.dataset.open); return; }
-  if (t.closest('[data-drinks]')) { clearSearch(); state.meal = 'drinks'; syncChips(); render(); const d = $('#dr-h'); if (d) d.scrollIntoView({behavior: reduced() ? 'auto' : 'smooth', block:'start'}); return; }
+  const sm = t.closest('details.venue>summary');
+  if (sm) { const d = sm.parentElement; setTimeout(() => { if (d.open) setHash(d.id); else if (location.hash === '#' + d.id) setHash(''); }, 0); return; }
+  if (t.closest('[data-drinks]')) { clearSearch(); state.meal = 'drinks'; syncChips(); render(); setHash('drinks'); const d = $('#dr-h'); if (d) d.scrollIntoView({behavior: reduced() ? 'auto' : 'smooth', block:'start'}); return; }
   if (t.closest('#expand-all')) { toggleAll(); return; }
   if (t.closest('#reset')) { resetFilters(); return; }
   if (t.closest('#qclear')) { clearSearch(); render(); $('#q').focus(); return; }
@@ -1614,6 +1709,19 @@ document.addEventListener('toggle', e => {
   const d = e.target;
   if (d && d.classList && d.classList.contains('venue')) { if (d.open) openSet.add(d.id); else openSet.delete(d.id); }
 }, true);
+document.addEventListener('keydown', e => {
+  const t = e.target;
+  if (t instanceof Element && t.classList.contains('tab')) {
+    const tabs = $$('.tab', t.closest('.tabs')), i = tabs.indexOf(t);
+    const j = {ArrowRight:i + 1, ArrowLeft:i - 1, Home:0, End:tabs.length - 1}[e.key];
+    if (j != null) { e.preventDefault(); selectTab(tabs[(j + tabs.length) % tabs.length], true); }
+    return;
+  }
+  if (e.key === '/' && !e.metaKey && !e.ctrlKey && !e.altKey && !(t instanceof HTMLInputElement || t instanceof HTMLTextAreaElement || (t instanceof HTMLElement && t.isContentEditable))) {
+    e.preventDefault(); $('#q').focus(); $('#q').select();
+  }
+  if (e.key === 'Escape' && t === $('#q') && state.q) { clearSearch(); render(); }
+});
 let qTimer = 0;
 $('#q').addEventListener('input', () => {
   clearTimeout(qTimer);
@@ -1634,6 +1742,18 @@ setInterval(() => {
   if (a && (a.id === 'q' || $('#list').contains(a))) { renderClock(now()); return; }
   render();
 }, 60000);
+
+const rd = $('#rules-d');
+if (rd && window.matchMedia && window.matchMedia('(max-width:719px)').matches) rd.open = false;
+let printOpened = [];
+window.addEventListener('beforeprint', () => {
+  printOpened = $$('details:not([open])');
+  printOpened.forEach(d => { d.open = true; });
+});
+window.addEventListener('afterprint', () => { printOpened.forEach(d => { d.open = false; }); printOpened = []; });
+if ('serviceWorker' in navigator && location.protocol === 'https:') {
+  window.addEventListener('load', () => { navigator.serviceWorker.register('sw.js').catch(() => {}); });
+}
 
 syncChips();
 render();
