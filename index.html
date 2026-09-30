@@ -1,0 +1,1644 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Beaches TCI Menu Book</title>
+<meta name="description" content="Unofficial family guide to the posted menus, hours, bars and drinks at Beaches Turks &amp; Caicos. Compiled September 28, 2026.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@400;500&family=Young+Serif&display=swap">
+<style>
+/* Layout: one reading column (max 860px). Sticky search and meal chips; places grouped by village, west to east; each row carries an hours strip on a 6 AM to 2 AM scale; menus open in place. */
+:root{
+  --bg:#F2F6F4;
+  --surface:#FFFFFF;
+  --surface-2:#E4EEEB;
+  --ink:#0F2A31;
+  --muted:#566B70;
+  --line:#D2DEDA;
+  --accent:#0A6F76;
+  --accent-ink:#FFFFFF;
+  --accent-soft:#D3EAE8;
+  --warn-fg:#7E5200;
+  --warn-bg:#FAE9C2;
+  --age-fg:#973341;
+  --age-bg:#F9DEE0;
+  --ok:#1B7F4C;
+  --seg-b:#E7B24A;
+  --seg-l:#52ACA7;
+  --seg-d:#0A6F76;
+  --seg-late:#3B4884;
+  --seg-s:#9FCBC6;
+  --mark:#FFE39A;
+  --font-display:"Young Serif","Iowan Old Style",Georgia,serif;
+  --font-body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-mono:"DM Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#08161A; --surface:#0E2026; --surface-2:#153038; --ink:#E1EDEB; --muted:#94AAAD; --line:#243C43;
+    --accent:#4CC5C7; --accent-ink:#04191C; --accent-soft:#15373A;
+    --warn-fg:#F1C766; --warn-bg:#392B0C; --age-fg:#F3A2AA; --age-bg:#391B20; --ok:#5DD08F;
+    --seg-b:#D3A64A; --seg-l:#48A39F; --seg-d:#4CC5C7; --seg-late:#8F9CE2; --seg-s:#2C5A5C;
+    --mark:#665415;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#08161A; --surface:#0E2026; --surface-2:#153038; --ink:#E1EDEB; --muted:#94AAAD; --line:#243C43;
+  --accent:#4CC5C7; --accent-ink:#04191C; --accent-soft:#15373A;
+  --warn-fg:#F1C766; --warn-bg:#392B0C; --age-fg:#F3A2AA; --age-bg:#391B20; --ok:#5DD08F;
+  --seg-b:#D3A64A; --seg-l:#48A39F; --seg-d:#4CC5C7; --seg-late:#8F9CE2; --seg-s:#2C5A5C;
+  --mark:#665415;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 var(--font-body);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:860px;margin-inline:auto;padding-inline:16px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.muted{color:var(--muted)}
+
+/* header */
+.top{padding-block:28px 6px}
+.eyebrow{margin:0 0 10px;font:500 12px/1.3 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{margin:0;font:400 clamp(32px,6.4vw,48px)/1.05 var(--font-display);letter-spacing:-.01em;text-wrap:balance}
+.lede{margin:12px 0 0;max-width:62ch;color:var(--muted)}
+.clock{margin-top:18px;display:grid;gap:12px 22px;grid-template-columns:minmax(0,1fr);padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+@media (min-width:640px){.clock{grid-template-columns:auto minmax(0,1fr);align-items:start}}
+.lbl{display:block;font:500 11px/1.3 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.clock-time{display:block;font:400 26px/1.1 var(--font-display);font-variant-numeric:tabular-nums;white-space:nowrap}
+.jumps{display:flex;flex-wrap:wrap;gap:6px}
+.jump{font:500 13px/1 var(--font-body);padding:7px 10px;border-radius:999px;border:1px solid var(--line);background:var(--surface-2);color:var(--ink);cursor:pointer}
+.jump::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ok);margin-right:6px;vertical-align:1px}
+.jump:hover{border-color:var(--accent)}
+
+/* rules */
+.rules{padding-block:26px 4px}
+.h2{margin:0 0 10px;font:400 23px/1.2 var(--font-display);text-wrap:balance}
+.rule-grid{display:grid;gap:0 28px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:720px){.rule-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.rule{padding-block:12px;border-top:1px solid var(--line);min-width:0}
+.rule h3{margin:0 0 4px;font:700 15px/1.35 var(--font-body)}
+.rule p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.5}
+
+/* sticky bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line);margin-top:22px}
+.bar-inner{display:grid;gap:8px;padding-block:10px;grid-template-columns:minmax(0,1fr)}
+.search{display:flex;align-items:center;gap:8px;padding:0 10px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+.search:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+.search svg{flex:none;color:var(--muted)}
+.search input{flex:1;min-width:0;border:0;background:transparent;color:var(--ink);font:inherit;font-size:16px;padding:11px 0;outline:none}
+.search input::placeholder{color:var(--muted)}
+.search input::-webkit-search-cancel-button{display:none}
+.clear{flex:none;border:0;background:transparent;color:var(--accent);font:500 13px var(--font-body);cursor:pointer;padding:6px}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.chips::-webkit-scrollbar{display:none}
+@media (min-width:720px){.chips{flex-wrap:wrap;overflow:visible}}
+.chip{flex:none;font:500 13.5px/1 var(--font-body);padding:9px 13px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+
+/* filters */
+.filters{display:grid;gap:12px;padding-block:14px 4px;grid-template-columns:minmax(0,1fr)}
+.filters>div{min-width:0}
+.toggles{display:flex;flex-wrap:wrap;gap:8px 18px}
+.tog{display:inline-flex;align-items:center;gap:7px;font-size:14px;cursor:pointer}
+.tog input{width:17px;height:17px;accent-color:var(--accent);margin:0}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font:400 12px/1.45 var(--font-mono);color:var(--muted)}
+.legend i{display:inline-block;width:14px;height:8px;border-radius:3px;margin-right:5px}
+.legend .note{flex-basis:100%;font-family:var(--font-body);font-size:13px}
+.legend svg{vertical-align:-2px}
+
+/* list */
+.list-tools{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:18px;font:500 12.5px var(--font-mono);color:var(--muted)}
+.linkbtn{border:0;background:none;padding:4px 0;color:var(--accent);font:500 13.5px var(--font-body);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.village{margin-top:22px}
+.v-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:9px 12px;background:var(--surface-2);border-radius:8px}
+.v-head h2{margin:0;font:400 19px/1.2 var(--font-display)}
+.v-head span{font:500 12px var(--font-mono);color:var(--muted);white-space:nowrap}
+.v-note{margin:6px 12px 0;font-size:13px;color:var(--muted)}
+.venue{border-bottom:1px solid var(--line);scroll-margin-top:150px;border-radius:4px}
+.venue>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr);gap:7px;padding:15px 4px 14px}
+.venue>summary::-webkit-details-marker{display:none}
+.v-top{display:flex;align-items:baseline;gap:10px}
+.v-name{flex:1 1 auto;min-width:0;font:400 21px/1.2 var(--font-display)}
+.status{flex:none;font:500 12px/1.2 var(--font-mono);color:var(--muted);text-align:right;max-width:48%}
+.status.open{color:var(--ok)}
+.status.open::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ok);margin-right:6px;vertical-align:1px}
+.status.na{font-style:italic}
+.chev{flex:none;align-self:center;width:9px;height:9px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg) translate(-2px,-2px)}
+details[open]>summary .chev{transform:rotate(-135deg)}
+@media (prefers-reduced-motion:no-preference){.chev{transition:transform .18s ease}}
+.v-meta{color:var(--muted);font-size:14.5px}
+.badges{display:flex;flex-wrap:wrap;gap:6px}
+.badges:empty{display:none}
+.badge{font:500 11.5px/1 var(--font-mono);padding:5px 8px;border-radius:6px;background:var(--surface-2);color:var(--ink)}
+.badge.res{background:var(--warn-bg);color:var(--warn-fg)}
+.badge.age{background:var(--age-bg);color:var(--age-fg)}
+.badge.dress{background:transparent;box-shadow:inset 0 0 0 1px var(--line)}
+.strip{position:relative;display:block;height:9px;border-radius:5px;background:var(--surface-2);margin-top:3px}
+.seg{position:absolute;top:0;bottom:0;border-radius:5px}
+.seg.breakfast{background:var(--seg-b)}
+.seg.lunch{background:var(--seg-l)}
+.seg.dinner{background:var(--seg-d)}
+.seg.day{background:linear-gradient(90deg,var(--seg-l),var(--seg-d))}
+.seg.late{background:var(--seg-late)}
+.seg.snacks{background:var(--seg-s)}
+.seg.unsure{background:linear-gradient(90deg,var(--seg-s),transparent)}
+.nowmark{position:absolute;top:-4px;bottom:-4px;width:2px;margin-left:-1px;background:var(--ink);border-radius:1px}
+.ticks{position:relative;display:block;height:14px;font:400 10.5px/14px var(--font-mono);color:var(--muted)}
+.ticks span{position:absolute;top:0;transform:translateX(-50%)}
+.ticks span:first-child{transform:none}
+.ticks span:last-child{transform:translateX(-100%)}
+.v-hours{font:400 12.5px/1.45 var(--font-mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.v-body{padding:2px 4px 22px}
+.v-links{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0 0 12px;font-size:14px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.tab{font:500 13.5px/1 var(--font-body);padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.src{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:0 0 8px;font-size:13.5px;color:var(--muted)}
+.fresh{font:500 11px/1 var(--font-mono);padding:4px 7px;border-radius:5px;background:var(--accent-soft);color:var(--accent)}
+.fresh.old{background:var(--warn-bg);color:var(--warn-fg)}
+.fresh.none,.fresh.guest{background:var(--surface-2);color:var(--muted)}
+.m-note{margin:0 0 10px;font-size:14px;color:var(--muted);max-width:65ch}
+.sec{margin-top:16px}
+.sec h4{margin:0 0 8px;font:700 12px/1.3 var(--font-body);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.s-note{margin:-4px 0 8px;font-size:13px;color:var(--muted)}
+.dishes{list-style:none;margin:0;padding:0;display:grid;gap:11px 28px;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr))}
+.dish{min-width:0}
+.d-name{font-weight:700}
+.d-desc{display:block;color:var(--muted);font-size:14px;line-height:1.4}
+.d-warn{display:block;margin-top:2px;font-size:12.5px;color:var(--warn-fg)}
+.tag{display:inline-block;margin-left:5px;padding:3px 5px;border-radius:4px;font:500 10.5px/1 var(--font-mono);color:var(--accent);box-shadow:inset 0 0 0 1px var(--line);vertical-align:2px}
+.tag.cost,.tag.nuts{box-shadow:none;background:var(--warn-bg);color:var(--warn-fg)}
+.ph{display:inline-flex;align-items:center;margin-left:6px;padding:2px;color:var(--muted);vertical-align:-3px;border-radius:4px}
+.ph:hover{color:var(--accent)}
+.v-notes{margin:16px 0 0;padding:12px 14px 12px 30px;background:var(--surface);border:1px solid var(--line);border-radius:10px;font-size:14px}
+.v-notes li+li{margin-top:6px}
+.flash{animation:flash 1.6s ease}
+@keyframes flash{0%{background:var(--accent-soft)}100%{background:transparent}}
+@media (prefers-reduced-motion:reduce){.flash{animation:none}}
+
+/* search results */
+.r-count{margin:18px 0 0;font:500 12.5px var(--font-mono);color:var(--muted)}
+.r-venue{padding-block:14px;border-bottom:1px solid var(--line)}
+.r-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:0 0 6px}
+.r-head button{border:0;background:none;padding:0;cursor:pointer;color:var(--accent);font:400 19px/1.25 var(--font-display);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.r-head span{font-size:13px;color:var(--muted)}
+.r-menu{margin:10px 0 6px;font:500 11.5px var(--font-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+mark{background:var(--mark);color:inherit;border-radius:2px;padding:0 1px}
+.empty{padding:26px 0;color:var(--muted)}
+.empty p{margin:0 0 8px}
+
+/* drinks */
+.drinks{padding-top:22px}
+.d-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));margin-top:14px}
+.d-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;min-width:0}
+.d-card h3{margin:0 0 10px;font:400 18px/1.2 var(--font-display)}
+.d-card .dishes{grid-template-columns:1fr}
+.d-card .src{margin:12px 0 0;font-size:12.5px}
+.bars{margin-top:28px}
+.bar-v{display:grid;gap:4px 24px;grid-template-columns:minmax(0,1fr);padding-block:11px;border-top:1px solid var(--line)}
+@media (min-width:720px){.bar-v{grid-template-columns:210px minmax(0,1fr)}}
+.bar-v h3{margin:0;font:700 14.5px/1.4 var(--font-body)}
+.bar-v ul{margin:0;padding:0;list-style:none;display:grid;gap:5px}
+.bar-v li{font-size:14.5px}
+.bar-src{margin:12px 0 0;font-size:12.5px;color:var(--muted)}
+
+/* also + footer */
+.also{margin-top:36px}
+.also ul{margin:0;padding-left:18px;color:var(--muted);font-size:14.5px;max-width:70ch}
+.also li+li{margin-top:6px}
+.also b{color:var(--ink)}
+.foot{margin-top:36px;padding-block:18px 44px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted)}
+.foot h2{font:400 18px/1.2 var(--font-display);color:var(--ink);margin:0 0 8px}
+.foot p{max-width:70ch}
+.foot ul{margin:0 0 14px;padding-left:18px}
+.foot li{margin:3px 0}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="cam" viewBox="0 0 16 16"><path d="M5.6 3.2 6.6 1.8h2.8l1 1.4H13c.8 0 1.5.7 1.5 1.5v6.8c0 .8-.7 1.5-1.5 1.5H3c-.8 0-1.5-.7-1.5-1.5V4.7c0-.8.7-1.5 1.5-1.5z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><circle cx="8" cy="8.1" r="2.6" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+</svg>
+
+<header class="wrap top">
+  <p class="eyebrow">Grace Bay, Providenciales · unofficial family guide</p>
+  <h1>Beaches TCI Menu Book</h1>
+  <p class="lede">Every menu Beaches Turks &amp; Caicos has posted online, condensed and searchable, with hours, house rules, bars and drinks. Compiled September 28, 2026 from the resort’s own menu PDFs and a handful of 2023–26 guest guides.</p>
+  <div class="clock">
+    <div><span class="lbl" id="clock-src">Resort time</span><span class="clock-time" id="clock-time">&nbsp;</span></div>
+    <div><span class="lbl">Open right now</span><div class="jumps" id="open-now"></div></div>
+  </div>
+</header>
+
+<section class="wrap rules" aria-labelledby="rules-h">
+  <h2 class="h2" id="rules-h">Before you book a table</h2>
+  <div class="rule-grid">
+    <div class="rule"><h3>Book Kimonos and Butch’s</h3><p>They are the only two the resort marks reservation-required, both at dinner. Book in the Beaches app or at the Culinary Concierge desk; Kimonos fills fast. Some guides add Le Petit Chateau and Sapodilla’s, so check the app on day one.</p></div>
+    <div class="rule"><h3>Pack one dinner outfit</h3><p>Evening attire at Sky, Sapodilla’s, Le Petit Chateau, and Butch’s at dinner. A travel-agent guide puts that at long pants and a collared shirt for men, no beachwear.</p></div>
+    <div class="rule"><h3>Three restaurants are 12 and up</h3><p>Sky, Sapodilla’s and Le Petit Chateau, per the resort.</p></div>
+    <div class="rule"><h3>Allergies and special diets</h3><p>Register them at the Culinary Concierge desk (central, open days). Special preparations or products the resort doesn’t stock, kosher included, need a month’s notice before arrival. The menus state the kitchens are not allergen-free.</p></div>
+    <div class="rule"><h3>A few things cost extra</h3><p>Food and standard drinks are included. Butch’s and Pinta print prices on premium wine, and guides report paid wine lists at Sky, Sapodilla’s and Le Petit Chateau.</p></div>
+    <div class="rule"><h3>Menus drift</h3><p>The posted PDFs range from 2020 to 2026, and each menu here shows its date. At check-in you get a sheet with hours and a QR code for each restaurant’s current menu.</p></div>
+  </div>
+</section>
+
+<div class="bar" id="bar">
+  <div class="wrap bar-inner">
+    <div class="search">
+      <svg width="18" height="18" viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m13 13 4.5 4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <label class="sr" for="q">Search dishes and drinks</label>
+      <input id="q" type="search" placeholder="Search: conch, lobster, vegan, gf, kids, martini" autocomplete="off" enterkeyhint="search">
+      <button type="button" class="clear" id="qclear" hidden>Clear</button>
+    </div>
+    <div class="chips" role="group" aria-label="Meal" id="meal-chips">
+      <button type="button" class="chip" data-meal="all" aria-pressed="true">All</button>
+      <button type="button" class="chip" data-meal="now" aria-pressed="false">Open now</button>
+      <button type="button" class="chip" data-meal="breakfast" aria-pressed="false">Breakfast</button>
+      <button type="button" class="chip" data-meal="lunch" aria-pressed="false">Lunch</button>
+      <button type="button" class="chip" data-meal="dinner" aria-pressed="false">Dinner</button>
+      <button type="button" class="chip" data-meal="snacks" aria-pressed="false">Coffee &amp; treats</button>
+      <button type="button" class="chip" data-meal="late" aria-pressed="false">Late night</button>
+      <button type="button" class="chip" data-meal="drinks" aria-pressed="false">Bars &amp; drinks</button>
+    </div>
+  </div>
+</div>
+
+<section class="wrap filters" id="filters" aria-label="More filters">
+  <div><span class="lbl">Area</span><div class="chips" role="group" aria-label="Area" id="village-chips"></div></div>
+  <div><span class="lbl">Only show</span>
+    <div class="toggles">
+      <label class="tog"><input type="checkbox" id="f-nores"> No reservation needed</label>
+      <label class="tog"><input type="checkbox" id="f-ages"> All ages</label>
+      <label class="tog"><input type="checkbox" id="f-casual"> Casual dress</label>
+    </div>
+  </div>
+  <div class="legend">
+    <span><i style="background:var(--seg-b)"></i>Breakfast</span>
+    <span><i style="background:var(--seg-l)"></i>Lunch</span>
+    <span><i style="background:var(--seg-d)"></i>Dinner</span>
+    <span><i style="background:var(--seg-late)"></i>Late night</span>
+    <span><i style="background:var(--seg-s)"></i>All day</span>
+    <span class="note">Hours strips run 6 AM to 2 AM; the dark tick is now, resort time. V, VG, GF and DF appear only where the resort prints them. “nuts” means a nut is named in the dish; $ costs extra. The <svg width="14" height="14" aria-hidden="true"><use href="#cam"/></svg> icon searches photos of that dish at the resort.</span>
+  </div>
+</section>
+
+<p class="sr" id="live" aria-live="polite"></p>
+<main class="wrap" id="list"></main>
+
+<section class="wrap also" aria-labelledby="also-h">
+  <h2 class="h2" id="also-h">Also mentioned, not confirmed</h2>
+  <ul>
+    <li><b>Calypso’s Snow Cone Station</b>, Treasure Beach. Named on the resort’s Treasure Beach page but missing from its dining list; no hours or menu posted.</li>
+    <li><b>Curls n’ Swirls</b>, a milkshake and ice cream truck in the waterpark in 2025 guides. Not on the 2026 dining list.</li>
+    <li><b>Bombay Club</b>, an Indian restaurant in 2024 and 2025 guides. Not on the current list; Cricketer’s now serves a tandoori chicken plate.</li>
+    <li><b>Room service</b> is limited to Butler-level rooms, per two guides.</li>
+  </ul>
+</section>
+
+<footer class="wrap foot">
+  <h2>Sources</h2>
+  <p>Hours, dress codes, age limits, reservation rules and menu PDFs come from the resort’s restaurant page, checked September 28, 2026. Each menu links its own PDF. Village locations, bar names and guest reports come from the guides below; where they disagree, the page says so.</p>
+  <ul>
+    <li><a href="https://www.beaches.com/resorts/turks-caicos/restaurants/" target="_blank" rel="noopener">Beaches Turks &amp; Caicos restaurants and menus</a></li>
+    <li><a href="https://www.beaches.com/resorts/turks-caicos/treasure-beach/" target="_blank" rel="noopener">Treasure Beach Village</a> and <a href="https://www.beaches.com/all-inclusive/premium-drinks/" target="_blank" rel="noopener">included drinks</a> (resort)</li>
+    <li><a href="https://www.beaches.com/blog/beaches-cocktail-recipes/" target="_blank" rel="noopener">Beaches blog: most popular cocktails</a> (Mar 2025)</li>
+    <li><a href="https://shorelinejourneys.com/beaches-turks-and-caicos-dining-guide/" target="_blank" rel="noopener">Shoreline Journeys dining guide</a> (Oct 2025) and <a href="https://shorelinejourneys.com/food-trucks-beaches-turks-and-caicos/" target="_blank" rel="noopener">food trucks</a> (Mar 2025)</li>
+    <li><a href="https://travelfam.com/beaches-turks-and-caicos-map/" target="_blank" rel="noopener">TravelFam resort map guide</a> (Apr 2026)</li>
+    <li><a href="https://mommatogo.com/beaches-turks-and-caicos-resort-villages/" target="_blank" rel="noopener">Momma To Go village guide</a> (Mar 2026)</li>
+    <li><a href="https://destinationsanddesserts.com/beaches-turks-and-caicos-restaurants/" target="_blank" rel="noopener">Destinations &amp; Desserts dining guide</a> (Mar 2026)</li>
+    <li><a href="https://www.familytravelmagazine.com/a-guide-to-beaches-turks-and-caicos-restaurants/" target="_blank" rel="noopener">Family Travel Magazine restaurant guide</a> (Mar 2024)</li>
+    <li>Turks Treasures: <a href="https://www.turkstreasures.com/beaches-resorts/caribbean-village/" target="_blank" rel="noopener">Caribbean Village</a> and <a href="https://www.turkstreasures.com/beaches-resorts/jojos-yoyos/" target="_blank" rel="noopener">Jojo’s and Yoyo’s</a></li>
+    <li><a href="https://www.runninginaskirt.com/beaches-turks-and-caicos-restaurants/" target="_blank" rel="noopener">Running in a Skirt restaurant guide</a> (Jun 2025)</li>
+    <li><a href="https://www.alwaysbringsunscreen.com/beaches-tci/open-bar" target="_blank" rel="noopener">Always Bring Sunscreen: the open bar</a></li>
+    <li><a href="https://marvelousmousetravels.com/beaches-turks-and-caicos-bars-and-lounges/" target="_blank" rel="noopener">Marvelous Mouse Travels: bars and lounges</a> (Dec 2023)</li>
+    <li><a href="https://travelclubelite.com/destinations/caribbean-mexico/turks-caicos/beaches-turks-caicos/" target="_blank" rel="noopener">Travel Club Elite resort listing</a> (Jul 2026)</li>
+    <li><a href="https://stuffedsuitcase.com/paradise-cheers-7-hidden-drinks-at-beaches-turks-caicos/" target="_blank" rel="noopener">Stuffed Suitcase: hidden drinks</a> (2015, updated 2018)</li>
+  </ul>
+  <p>Unofficial. Not affiliated with Beaches Resorts or Sandals. Dish descriptions are shortened ingredient lists from the resort’s posted menus. This site hosts no photos; the camera links search the web for photos of each place and dish. Confirm allergies with the kitchen.</p>
+</footer>
+
+<script>
+(function(){
+'use strict';
+
+/* ---------- data ---------- */
+const P = 'https://cdn.sandals.com/rfcm-system/prd/restaurant-menus/';
+const OFFICIAL = 'https://www.beaches.com/resorts/turks-caicos/restaurants/';
+
+const VILLAGES = [
+  {id:'treasure', name:'Treasure Beach Village', short:'Treasure Beach', note:'Newest village, opened March 1, 2026.'},
+  {id:'caribbean', name:'Caribbean & Seaside Villages', short:'Caribbean & Seaside', note:''},
+  {id:'french', name:'French Village', short:'French', note:''},
+  {id:'waterpark', name:'Pirates Island Waterpark', short:'Waterpark', note:''},
+  {id:'italian', name:'Italian Village', short:'Italian', note:''},
+  {id:'keywest', name:'Key West Village', short:'Key West', note:''},
+  {id:'beach', name:'Beach trucks', short:'Beach trucks', note:'Truck spots can shift.'}
+];
+
+const VENUES = [
+/* ===== Treasure Beach ===== */
+{id:'pinta', name:'Pinta Food Hall', village:'treasure', cuisine:'Food hall with Caribbean, Italian, pizza, Asian and Mexican counters', kind:'restaurant', res:'none', age:0, dress:'casual',
+ hours:[['breakfast','06:30','10:30'],['lunch','12:00','15:30'],['dinner','17:30','21:30']],
+ menus:[
+  {meal:'breakfast', label:'Breakfast', kind:'sign', url:P+'369breakfast-all/Pinta_Buffet_Sign.pdf', note:'Breakfast buffet. The posted PDF is a sign with no dishes listed.'},
+  {meal:'lunch', label:'Lunch', kind:'menu', date:'2026', url:P+'369lunch-all/FB_2026_BTC_Pinta_Lunch_Feb_25.pdf', sections:[
+   {t:'Conch counter (Caribbean)', items:[
+    ['Conch Salad','citrus, onion, tomato, bell pepper, scotch bonnet, scallion','GF DF'],
+    ['Conch Fritter','diced conch, peppers, herbs, scotch bonnet, calypso sauce'],
+    ['Cracked Conch','tenderized and fried, creole dipping sauce'],
+    ['Jerk Platter','sausage, pork and chicken','DF'],
+    ['Jerk Pork Bowl','romaine, avocado, blue cheese, corn, cherry tomato','GF'],
+    ['Caribbean Chicken Cabbage','roasted pineapple, bell pepper, guava-thyme vinaigrette','GF'],
+    ['Smash Burger','seasoned beef, onion, pepper jack, pickled pineapple, aioli'],
+    ['Bean Dip','cannellini, tahini, tofu, scotch bonnet oil, pimento flatbread','VG'],
+    ['Rice & Peas','','GF'],
+    ['Fried Sweet Plantains','','VG DF']
+   ]},
+   {t:'Pizzeria', items:[
+    ['Say Cheese','red sauce, mozzarella','V'],
+    ['Sweet & Hot','red sauce, mozzarella, pepperoni, hot honey'],
+    ['Meat Lover’s','sausage, pepperoni, bacon, caramelized onion'],
+    ['Jerk Chicken','white pizza, scotch bonnet, scallion, smoked gouda, garlic oil'],
+    ['Locked & Loaded','white pizza, baked potato, bacon, sour cream, chives'],
+    ['Fun Guy','white pizza, roasted garlic, mushroom, red onion, arugula, ricotta','V']
+   ]},
+   {t:'Italian', items:[
+    ['Spaghetti Vongole','clams, white wine, garlic, chili, parsley, lemon zest'],
+    ['Rigatoni Vodka Sauce','mushroom, roasted red pepper, tomato, cream, parmesan','V'],
+    ['Spaghetti & Meatballs','pork and beef meatballs, tomato ragù'],
+    ['Fritto Misto','fried shrimp, calamari and snapper, lemon-garlic aioli'],
+    ['Panino Italiano','salami, pepperoni, ham, provolone, hot peppers'],
+    ['Caprese Salad','tomato, fresh mozzarella, basil, balsamic','V'],
+    ['Buttered Noodles','butter, parsley','V'],
+    ['Marinated Olives','whipped ricotta, grilled sourdough','V'],
+    ['Garlic Bread','','V']
+   ]},
+   {t:'Asian', items:[
+    ['Kung Pao Shrimp','Sichuan spice, vegetables, roasted peanuts, dried chilies'],
+    ['Pad Thai','rice noodles, egg, vegetables, peanuts, tamarind; add shrimp, chicken or beef','DF GF'],
+    ['Chicken Karaage','soy, ginger and garlic marinade','DF'],
+    ['Beef & Broccoli','soy, garlic, ginger, sesame','DF'],
+    ['Fried Rice','egg, garlic, sesame, soy, oyster sauce; add chicken or shrimp'],
+    ['Beef Potstickers','ground beef, garlic, ginger, vegetables','DF'],
+    ['Pork or Shrimp Shumai','','DF'],
+    ['Cheeseburger Bao Bun','beef bites, cheese, lettuce, pickles, spiced sauce'],
+    ['Crispy Spring Roll','vegetables, garlic, soy','VG DF'],
+    ['Cucumber Salad','rice vinegar, soy, ginger, sesame, cilantro','VG DF GF'],
+    ['Cold Noodle Bowl','vegetables, herbs, ginger, chili, sesame-soy dressing','VG DF GF']
+   ]},
+   {t:'Mexican', items:[
+    ['Pork Carnitas Taco','one taco; braised pork shoulder, guacamole, jalapeño cream'],
+    ['Chicken Tinga Taco','one taco; smoky chicken, chipotle tomato, pickled cabbage, salsa verde'],
+    ['Savory Beef Taco','one taco; spiced flank steak, lettuce, pico'],
+    ['Roasted Pumpkin Taco','one taco; pumpkin, chili-oil mushrooms, pico','V'],
+    ['Quesadillas','one piece each: cheese, chicken, or beef barbacoa'],
+    ['Shrimp Coctel','poached shrimp, avocado, tomato sauce, lime, tortilla chips','DF GF'],
+    ['Queso & Chips','cheese sauce, ground beef, queso fresco, pico'],
+    ['Elotes','corn on the cob, crema, parmesan, tajín, chipotle mayo','V GF'],
+    ['Churro','spiced sugar; chocolate, white chocolate and dulce de leche sauces']
+   ]},
+   {t:'Drinks', items:[
+    ['Mocktails','Bight Water (pineapple, limeade, vanilla), Crazy Coco (coconut, citrus), Sandita (watermelon, mint, citrus)'],
+    ['Caribbean cocktails','Goombay Smash (rums, apricot, juices), Ginger-rita (tequila, ginger), Arc Rum Old Fashioned'],
+    ['Wine by the bottle','Catena malbec $45; Santa Margherita pinot grigio, Kim Crawford sauvignon blanc, Whispering Angel rosé $55; Meiomi pinot noir $65; Simi cabernet $85','$']
+   ]}
+  ]},
+  {meal:'dinner', label:'Dinner', kind:'menu', date:'2026', url:P+'369dinner-all/FB_2026_BTC_Pinta_Dinner_Menu_Feb_25.pdf', sections:[
+   {t:'Conch counter (Caribbean)', items:[
+    ['Jerk Marinated Shrimp','coconut grits, escovitch pickle'],
+    ['Tropical Curried Chicken','thighs, root vegetables, coconut curry, rice & peas, plantains, mango chutney','DF'],
+    ['Pimento-Dusted Lamb Chops','sweet potato and plantain hash, cocoa and scotch bonnet demi-glace'],
+    ['Cracked Conch','tenderized and fried, creole dipping sauce'],
+    ['Conch Chowder','root vegetables, potato, herbs, scotch bonnet','DF GF'],
+    ['Jerk Pork Bowl','romaine, avocado, blue cheese, corn, cherry tomato','GF'],
+    ['Bean Dip','cannellini, tahini, tofu, scotch bonnet oil, pimento flatbread','VG'],
+    ['Rice & Peas','','GF'],
+    ['Fried Sweet Plantains','','VG DF']
+   ]},
+   {t:'Italian', items:[
+    ['Braised Osso Buco','veal shank, white wine, tomato, gremolata, mushrooms, blue cheese polenta'],
+    ['Swordfish Peperonata','peppers, tomato, capers, garlic, olives, basil oil'],
+    ['Crumbed Chicken Milanese','breaded scallopini, arugula, sun-dried tomato, pecorino'],
+    ['Lasagna','beef ragù, marinara, whipped ricotta, mozzarella'],
+    ['Hand-Rolled Potato Gnocchi','basil-parmesan pesto, toasted pine nuts, lemon zest','V'],
+    ['Rigatoni Vodka Sauce','mushroom, roasted red pepper, tomato, cream, parmesan','V'],
+    ['Spaghetti & Meatballs','pork and beef, tomato ragù'],
+    ['Prosciutto & Mozzarella','grape tomatoes, roasted artichoke, arugula, tomato cream'],
+    ['Mediterranean Salad','greens, tomato, cucumber, roasted peppers, olives, lemon-herb vinaigrette','VG'],
+    ['Buttered Noodles','butter, parsley','V'],
+    ['Garlic Bread','','V']
+   ]},
+   {t:'Pizzeria', items:[
+    ['Say Cheese','red sauce, mozzarella','V'],
+    ['Chocolate Calzone','banana and hazelnut praline custard'],
+    ['Coconut-Cream Cheese Calzone','amarena cherries']
+   ]},
+   {t:'Asian', items:[
+    ['Glazed Salmon','pan-seared, miso-ginger glaze, chili, sesame','DF GF'],
+    ['BBQ Pork','char siu style, bok choy, jasmine rice','DF'],
+    ['Orange Chicken','crispy, orange glaze, garlic, ginger, chili','DF'],
+    ['Bang Bang Shrimp','fried shrimp, Asian slaw, bang bang sauce, sriracha','DF GF'],
+    ['Beef & Broccoli','soy, garlic, ginger, sesame','DF'],
+    ['Pad Thai','rice noodles, egg, vegetables, peanuts, tamarind; add shrimp, chicken or beef','DF GF'],
+    ['Fried Rice','egg, garlic, sesame, soy, oyster sauce','V','Marked vegetarian, but lists oyster sauce.'],
+    ['Chicken Xiao Long Bao','soup dumplings, black vinegar, soy, ginger','DF'],
+    ['Teriyaki Chicken Bao Bun','pickled vegetables, cabbage, sesame aioli','DF'],
+    ['Crispy Spring Roll','vegetables, garlic, soy','VG DF'],
+    ['Iceberg Ginger Salad','carrot, cucumber, scallion, sesame, citrus-ginger dressing','VG DF GF']
+   ]},
+   {t:'Mexican', items:[
+    ['Carne Asada','grilled flank steak, salsa roja, pickled onion, jalapeño, queso fresco, corn'],
+    ['Pork Belly Rice Bowl','pork belly skewers, Mexican rice, refried beans, pico'],
+    ['Tuna Tostada','marinated tuna, coriander crema, fried leeks, tajín, avocado'],
+    ['Pork Carnitas Taco','one taco; braised pork shoulder, guacamole, jalapeño cream'],
+    ['Chicken Tinga Taco','one taco; smoky chicken, chipotle tomato, pickled cabbage, salsa verde'],
+    ['Roasted Pumpkin Taco','one taco; pumpkin, chili-oil mushrooms, pico','VG'],
+    ['Queso & Chips','cheese sauce, ground beef, queso fresco, pico'],
+    ['Elotes','corn on the cob, crema, parmesan, tajín, chipotle mayo','V GF'],
+    ['Watermelon Wedges','basil and cilantro sugar','VG']
+   ]},
+   {t:'Drinks', items:[
+    ['Mocktails','Bight Water (pineapple, limeade, vanilla), Crazy Coco (coconut, citrus), Sandita (watermelon, mint, citrus)'],
+    ['Caribbean cocktails','Goombay Smash (rums, apricot, juices), Ginger-rita (tequila, ginger), Arc Rum Old Fashioned'],
+    ['Wine by the bottle','Catena malbec $45; Santa Margherita pinot grigio, Kim Crawford sauvignon blanc, Whispering Angel rosé $55; Meiomi pinot noir $65; Simi cabernet $85','$']
+   ]}
+  ]}
+ ],
+ notes:['Order at the counters; the resort calls it an à la carte and buffet hybrid.','Bottled wine carries a price here, $45 to $85.']
+},
+{id:'butchs', name:'Butch’s Island Chop House', village:'treasure', cuisine:'Steakhouse, with a kids’ menu', kind:'restaurant', res:'dinner', age:0, dress:'evening-dinner',
+ hours:[['breakfast','07:30','11:00'],['dinner','17:00','22:00']],
+ menus:[
+  {meal:'breakfast', label:'Breakfast', kind:'menu', date:'2026', url:P+'368breakfast-all/FB_2026_BTC_Butches_Chophouse_Breakfast_SHRIMP_Mar_30.pdf', sections:[
+   {t:'Plates', items:[
+    ['Cinnamon Roll French Toast','maple cream cheese, caramelized banana, candied walnuts'],
+    ['Chocolate Chip Buttermilk Pancakes','maple syrup, whipped cream'],
+    ['Shrimp Omelet','butter-poached shrimp, herb mascarpone, hash browns'],
+    ['Eggs Benedict','English muffin, hollandaise; Canadian bacon, smoked salmon or crab'],
+    ['Steak & Eggs','6 oz flat iron, eggs your way, hash browns'],
+    ['2 Eggs Any Style','bacon, farmer’s sausage, hash browns, toast'],
+    ['Egg Sandwich','English muffin, fried egg, bacon, American cheese, hash browns'],
+    ['Open-Faced Ciabatta Toast','crushed avocado, feta, pico; add poached egg or smoked salmon'],
+    ['Bagel Platter','smoked salmon, cream cheese, capers, red onion, tomato, cucumber'],
+    ['Smoothie Bowl','honey yogurt, charred pineapple, quinoa, almonds, pecans, hemp seeds'],
+    ['Pastry Basket','croissant, banana bread, muffin, danish'],
+    ['Fruit Plate','seasonal tropical fruit']
+   ]},
+   {t:'Sides', items:[['Sides','hash browns, bacon, sausage, baked beans, toast']]}
+  ]},
+  {meal:'dinner', label:'Dinner', kind:'menu', date:'2026', url:P+'368dinner-all/FB_2026_BTC_Butch_Chophouse_Dinner_SHRIMP_Menu_Mar_30.pdf', sections:[
+   {t:'Beginnings', items:[
+    ['The Wedge','lump crab, sun-dried tomato, crispy pancetta, fried onion, buttermilk dressing'],
+    ['Tuna Tartare','charred pineapple, cucumber, sweet potato'],
+    ['Shrimp Cocktail','curry-mango Marie Rose, cocktail sauce'],
+    ['Jerk Meatballs','escovitch relish, herb oil'],
+    ['Roasted Lamb Ribs','orange-rosemary glaze'],
+    ['Island Bloom','spiced blooming onion'],
+    ['Conch Chowder','root vegetables, potato, scotch bonnet'],
+    ['Simple Greens','watermelon radish, blistered tomato, guava vinaigrette']
+   ]},
+   {t:'Signature cuts', items:[
+    ['Dry-Aged Kansas Strip, 14 oz','bone-in NY strip, for two','','The resort site stars the dry-aged steaks without saying why; ask whether it carries a charge.'],
+    ['NY Strip, 10 oz',''],
+    ['Filet Mignon, 6 oz',''],
+    ['Ribeye, 12 oz',''],
+    ['Tomahawk Jerk-Spiced Pork Chop, 14 oz',''],
+    ['Spatchcock Cornish Hen',''],
+    ['Branzino Fillet, 7 oz','']
+   ]},
+   {t:'Mains', items:[
+    ['1981 Surf & Turf','5 oz broiled filet, roasted jumbo prawn, drawn butter, whipped potato, broccolini'],
+    ['Snapper Fillet','cannellini beans and peppers, sauce vierge'],
+    ['Thick-Cut Pumpkin Steak','mushroom farro risotto, date and red wine glaze','VG'],
+    ['Spinners','crispy sage, pumpkin, brown butter']
+   ]},
+   {t:'Sauces & sides', items:[
+    ['Sauces','chimichurri, béarnaise, Appleton rum and green peppercorn, red wine demi-glace'],
+    ['Sides','rainbow carrots, broccolini, Brussels sprouts, whipped potato, creamed spinach, fries, mac & cheese, mushrooms']
+   ]},
+   {t:'Kids', kids:true, items:[
+    ['Steak & Frites','petite tenderloin, fries, broccolini, red wine demi-glace'],
+    ['Roasted Chicken Breast','whipped potato, rainbow carrots, pan jus'],
+    ['Seared Atlantic Salmon','whipped potato, creamed spinach, lemon butter']
+   ]},
+   {t:'Sweets', items:[
+    ['Banana Foster','vanilla ice cream, cinnamon donut, honeycomb, sugarcane tuile'],
+    ['Tropical Crème Brûlée','fruit custard, local sugar crust'],
+    ['Spiced Baked Cheesecake','speculoos, charred pineapple'],
+    ['Brownie','vanilla ice cream, coconut crunch']
+   ]},
+   {t:'Mini martinis', items:[
+    ['Build your own','gin or vodka; wet, dry, dirty or 50/50; shaken or stirred; up or on the rocks; pick a garnish'],
+    ['House minis','Crown in Hand, Get Busy, Ernest’s Way, Vega, Knickerbocker']
+   ]},
+   {t:'Wine (priced)', items:[
+    ['By the glass','Catena malbec $15, Unshackled chardonnay $17, Ruffino Chianti Riserva $19','$'],
+    ['By the bottle','$45 to $195, from Catena malbec to Double Diamond cabernet; Veuve Clicquot $125','$']
+   ]}
+  ]}
+ ],
+ notes:['Reservations and evening attire apply at dinner only (resort site).','The dinner menu prints wine prices by the glass and bottle; assume those are extra.']
+},
+{id:'bru', name:'Brü', village:'treasure', cuisine:'Coffee bar by day, cocktail bar at night', kind:'cafe', res:'none', age:0, dress:'casual',
+ hours:[['snacks','06:00','23:00']],
+ menus:[{meal:'snacks', label:'All day', kind:'menu', date:'2026', url:P+'370snacks-all/FB_2026_BTC_Bru_Mar_31.pdf', sections:[
+  {t:'Coffee & tea', items:[
+   ['Espresso drinks','Blue Mountain blend: espresso, americano, latte, macchiato, cortado, cappuccino, mochaccino, double bon'],
+   ['Iced & specialty','cold brew, ginger-turmeric latte, matcha latte, chai latte'],
+   ['Teas','sorrel, tropical green, black pekoe']
+  ]},
+  {t:'Spiked coffee', items:[
+   ['Irish','americano, Irish whiskey, cream'],
+   ['Black Pearl','Tia Maria, Jamaican rum, cold brew'],
+   ['Jamaican','rum cream, double espresso'],
+   ['Mexican','Kahlúa, tequila, double espresso']
+  ]},
+  {t:'Cocktails', items:[
+   ['Blue Mountain Boneshaker','aged rum, coffee liqueur, Blue Mountain coffee, falernum, sea salt'],
+   ['Lion’s Mane','bourbon, allspice dram, mango, lime, bitters'],
+   ['Liquid Sunshine','gin, apricot brandy, sparkling wine, bitters'],
+   ['El Diablo','tequila, crème de mûre, ginger beer, lime'],
+   ['Jadoo Punch','white rum, Aperol, coconut water, passion fruit, lemon'],
+   ['Ginger Champagne Cocktail','ginger syrup, sparkling wine'],
+   ['Arc Old Fashioned','Caribbean rum old fashioned'],
+   ['Hand-Shaken Daiquiri','white rum, lime']
+  ]}
+ ]}],
+ notes:['The resort mentions pastries to go; the posted menu lists drinks only.']
+},
+
+/* ===== Caribbean & Seaside ===== */
+{id:'reflections', name:'Reflections', village:'caribbean', cuisine:'International buffet', kind:'buffet', res:'none', age:0, dress:'casual',
+ hours:[['breakfast','06:30','10:30'],['lunch','12:30','14:30'],['dinner','17:00','21:30']],
+ menus:[{meal:'all', label:'All meals', kind:'sign', url:P+'85breakfast-all/Reflections_Breakfast_Buffet_Sign_for_RFCM.pdf', note:'Buffet at breakfast, lunch and dinner. The posted PDFs are signs with no dishes listed.'}],
+ notes:['Guest guide (Turks Treasures): made-to-order plates at breakfast and lunch alongside the buffet.']
+},
+{id:'arizonas', name:'Arizona’s', village:'caribbean', cuisine:'Southwestern: buffet lunch, à la carte dinner', kind:'restaurant', res:'none', age:0, dress:'casual',
+ hours:[['lunch','12:00','16:00'],['dinner','17:30','21:30']],
+ menus:[
+  {meal:'lunch', label:'Lunch', kind:'sign', url:P+'86lunch-all/arizona_buffet.pdf', note:'Lunch buffet. The posted PDF is a sign with no dishes listed.'},
+  {meal:'dinner', label:'Dinner', kind:'menu', date:'2026', url:P+'86dinner-all/FB_2026_BTC_Arizona_Dinner_Menu_MAR_30.pdf', sections:[
+   {t:'Starters', items:[
+    ['Tajín Ahi Tuna Tostada','rare-seared ahi, shaved jalapeño, cilantro, chipotle crema'],
+    ['Guacamole','bacon, grilled scallion, jalapeño, charred pico, corn chips'],
+    ['Pulled Pork Taquito','pico, crème fraîche, guacamole'],
+    ['Shrimp Cocktail','poached shrimp, red onion, cilantro, lime, jalapeño, tostones'],
+    ['Black Bean Soup','cumin crema, queso fresco, tomato','V'],
+    ['Chopped Salad','iceberg, tomato, cucumber, peppers, jalapeño, coconut-lime dressing','VG'],
+    ['Caesar Salad','romaine, croutons, anchovies, avocado-lime dressing']
+   ]},
+   {t:'Mains', items:[
+    ['Bourbon Baby Back Ribs','bourbon glaze, grilled corn on the cob'],
+    ['Honey-Chipotle Grilled T-Bone','grilled corn with paprika-lime butter and parmesan, baked potato, sour cream'],
+    ['Grilled Shrimp Tacos','soft tortillas, salsa mexicana, corn salsa, guacamole, sour cream'],
+    ['Mexican Bowl','spiced pulled pork, black beans, candied sweet potato, Mexican rice, kale chips, corn salsa, chili crema'],
+    ['Mahi Mahi a la Veracruzana','braised mahi, Mexican rice, grilled rapini'],
+    ['Tex-Mex Burger','tomato, pickled red onion, lettuce, jalapeño, chipotle aioli'],
+    ['Lentil Chili Bowl','braised lentils, tomato, chili, corn, avocado, corn chips','VG']
+   ]},
+   {t:'Kids', kids:true, items:[
+    ['Baby Back Ribs','coleslaw, corn'],
+    ['BBQ Chicken Drumstick','french fries'],
+    ['Salsa Mac & Cheese','','V'],
+    ['Cheese Quesadilla','','V']
+   ]},
+   {t:'Desserts', items:[
+    ['Chocolate-Chile Mousse','','VG'],
+    ['Flan de Café',''],
+    ['Mango Lime Tart','']
+   ]}
+  ]}
+ ],
+ notes:['Guides split on the village: Seaside (by the Cascades pool) or Caribbean. The resort map groups them as one area.']
+},
+{id:'schooners', name:'Schooners', village:'caribbean', cuisine:'Seafood, open-air by the beach', kind:'restaurant', res:'none', age:0, dress:'casual',
+ hours:[['breakfast','07:30','11:00'],['dinner','17:00','21:30']],
+ menus:[
+  {meal:'breakfast', label:'Breakfast', kind:'menu', date:'2020', url:P+'88breakfast-all/BTC_2020_Schooner_breakfast_menu.pdf', sections:[
+   {t:'Hot plates', items:[
+    ['Fried Fish Escoveitch','island-style fried snapper, hash browns, festival'],
+    ['Signature Omelet','sautéed seafood, peppers, onion, avocado, prosciutto, cheddar'],
+    ['French Toast','caramelized banana, Nutella, roasted pecans'],
+    ['Buttermilk Pancakes','chocolate chip, blueberry or vanilla bean'],
+    ['Salmon Eggs Benedict','smoked salmon, poached eggs, hollandaise'],
+    ['Steak & Eggs','grilled beef medallion, fried eggs, breakfast potatoes'],
+    ['Two Eggs Any Style','hash browns; bacon, ham or sausage'],
+    ['Vegan Jerk Pork & Beans','plant-based jerk pork, grilled tomato, hash browns','VG']
+   ]},
+   {t:'Lighter', items:[
+    ['Smoked Salmon & Avocado Toast','shaved red onion, capers'],
+    ['Smoothie Bowl','mango yogurt, quinoa, fruit, pecans, almonds, coconut'],
+    ['Steel-Cut Oatmeal','brown sugar, berry compote, almonds'],
+    ['Pastry Basket','croissants, danish, muffins'],
+    ['Seasonal Fruit Salad',''],
+    ['Cereal','several brands; regular, low-fat or soy milk'],
+    ['Fruit Juices','orange, apple, pineapple, grapefruit, cranberry']
+   ]},
+   {t:'Sides', items:[['Sides','pork sausage, grilled ham, bacon, baked beans, toast, hash browns']]}
+  ]},
+  {meal:'dinner', label:'Dinner', kind:'menu', date:'2023', url:P+'88dinner-all/BTC_2023_Schooner_dinner_menu.pdf', sections:[
+   {t:'Starters', items:[
+    ['TCI Conch Chowder','local conch, celery, carrot, peppers, potato'],
+    ['Fried Crab Cake','coleslaw, mango-chili-scallion salsa'],
+    ['Pan-Seared Scallops','creamed Brussels sprouts, bacon, corn grits'],
+    ['Steamed Mussels','garlic, herbs, white wine cream'],
+    ['Market Salad','shrimp, heirloom tomato, hearts of palm, arugula, passion fruit vinaigrette'],
+    ['Kale Salad','apple, shaved radish, roasted chickpeas, asiago, cider vinaigrette'],
+    ['Charred Vegetable Salad','grilled broccoli, Brussels sprouts, honey carrots, lemon-yogurt, hemp seeds']
+   ]},
+   {t:'Mains', items:[
+    ['Pan-Seared Snapper','red Thai curry, PEI mussels, baby corn, bok choy, soba'],
+    ['Grilled Swordfish Steak','harissa marinade, roasted root vegetables, cucumber raita, herb salad'],
+    ['Seared Tuna','cauliflower-ginger-carrot purée, green vegetables, sherry mignonette'],
+    ['Chargrilled Ribeye','asparagus, Boursin whipped potato, thyme demi-glace, fried Tabasco onions'],
+    ['Chicken & Mushroom Alfredo','linguine, alfredo, shaved asiago'],
+    ['Vegan Aubergine','eggplant stuffed with plant-based chorizo and rice, tomato ragout, basil oil','VG'],
+    ['Roasted Cauliflower Steak','plant-based Italian sausage and quinoa cake, broccoli rabe, coconut curry cream']
+   ]},
+   {t:'Kids', kids:true, items:[
+    ['Penne Pasta','tomato sauce, parmesan'],
+    ['Chicken Nuggets & Fries',''],
+    ['Fish & Chips','remoulade']
+   ]},
+   {t:'Desserts', items:[
+    ['Lemon Tart','stewed pineapple, crisp meringue'],
+    ['Flourless Chocolate Cake','berry compote'],
+    ['Honey Mascarpone Shortcake','whipped honey mascarpone, mixed fruit, cinnamon crisp']
+   ]}
+  ]}
+ ],
+ notes:['Both posted menus are older (2020 and 2023); expect changes.','Guides split on the village: Seaside or Caribbean. The resort map groups them as one area.']
+},
+{id:'sapodillas', name:'Sapodilla’s', village:'caribbean', cuisine:'Caribbean fine dining, indoor or garden terrace', kind:'restaurant', res:'check', age:12, dress:'evening',
+ hours:[['dinner','17:30','21:30']],
+ menus:[{meal:'dinner', label:'Dinner', kind:'menu', date:'undated', url:P+'89dinner-all/BTC_Sapodillas_FAW.pdf', sections:[
+  {t:'Starters', items:[
+   ['Cracked Conch & Calamari','crispy conch and calamari, escoveitch vegetables, remoulade'],
+   ['Snapper Carpaccio','chilled lemon-coconut broth, roasted pineapple relish, chili oil'],
+   ['West Indian Curried Butternut Squash','herb croutons, roasted cashews, chive oil'],
+   ['Warm Grilled Prawn & Noodle Salad','sesame-lemongrass vinaigrette, julienned vegetables, wonton crunch'],
+   ['Sapodilla Salad','endive, hearts of palm, tomato, orange, ricotta, mango vinaigrette'],
+   ['Arugula & Almond Salad','red wine poached pear, blue cheese, almond brittle, roast leek vinaigrette'],
+   ['Vegan Chorizo','plant-based chorizo, yellow lentil bisque, jerk mango chutney','VG']
+  ]},
+  {t:'Mains', items:[
+   ['Grilled Spiny Lobster','watermelon, jerk vegetables, sweet corn soubise, herb oil'],
+   ['Jamaican-Style Steamed Snapper','peppers, onion, pumpkin, okra, thyme, scotch bonnet, coconut reduction'],
+   ['South Caicos Grouper','seafood, tomato and wine ragoût, sweet potato purée, asparagus'],
+   ['Beef Tenderloin','foie gras torchon, creamed cassava, grilled scallion, Blue Mountain coffee reduction'],
+   ['Roasted Lamb Rack','pommes pont neuf, balsamic braised onions, crisp beans, jus'],
+   ['Caribbean-Style Couscous','roasted vegetables, paneer, coconut-curry cream, toasted almonds; chicken option'],
+   ['Vegan Jerk Chicken Roulade','plant-based chicken, sweet potato purée, wilted greens, carrots, roast garlic jus','VG']
+  ]},
+  {t:'Desserts', items:[
+   ['Banana Rum Tart','banana and hazelnut tart, cinnamon snap'],
+   ['Coconut Crema Catalana','baked coconut custard, compressed pineapple, mango'],
+   ['Sinful Chocolate','cinnamon ice cream'],
+   ['Raspberry Yogurt Parfait','citrus mascarpone, stewed berries']
+  ]}
+ ]}],
+ notes:['Resort site: ages 12+, evening attire, no reservation required. A 2025 guide says reservations are required, and a 2026 site says 18+. Check the app on arrival.']
+},
+{id:'bellanapoli', name:'Bella Napoli Pizzeria', village:'caribbean', cuisine:'Wood-fired pizza, walk-up', kind:'quick', res:'none', age:0, dress:'casual',
+ hours:[['lunch','11:00','17:00']],
+ menus:[{meal:'lunch', label:'Lunch', kind:'menu', date:'undated', url:P+'135lunch-all/BTC_Bella_Napoli_Horizontal_SAN40.pdf', sections:[
+  {t:'Pizza', items:[
+   ['Conchiglia','tomato, South Caicos conch, red onion, island peppers'],
+   ['Giamaicano','mozzarella, jerk chicken, ripe mango'],
+   ['Margherita','tomato, fresh mozzarella, basil'],
+   ['Formaggio','tomato sauce, fresh mozzarella'],
+   ['Calabrese','tomato sauce, mozzarella, pepperoni'],
+   ['Carni (Meat Lover)','bacon, pepperoni, sausage'],
+   ['Hawaiana','ham, mozzarella, pineapple'],
+   ['Pollo al Barbecue','BBQ sauce, smoked gouda, chicken, caramelized onion, cilantro'],
+   ['Prosciutto e Funghi','béchamel, mozzarella, prosciutto, mushroom, spinach'],
+   ['Puttanesca','olives, capers, anchovies, tomato, chili flakes'],
+   ['Vegetariana','olives, onion, artichoke, mushroom, bell pepper, tomato'],
+   ['Aglio','garlic cream cheese, mozzarella, garlic confit, parmesan, parsley']
+  ]},
+  {t:'Calzones & bites', items:[
+   ['Calzone','tomato sauce, mozzarella, pepperoni'],
+   ['Pizza Bites','dough balls, garlic-herb butter, marinara'],
+   ['Calzone Dolce','chocolate sauce, banana']
+  ]}
+ ]}],
+ notes:['Between the beach and the Caribbean Village pool (Shoreline Journeys). One guest guide warns pizza waits can run close to an hour; order early (Turks Treasures).']
+},
+
+/* ===== French ===== */
+{id:'kimonos', name:'Kimonos', village:'french', cuisine:'Japanese teppanyaki, cooked at the table', kind:'restaurant', res:'dinner', age:0, dress:'casual',
+ hours:[['dinner','17:00','21:00']],
+ menus:[{meal:'dinner', label:'Dinner', kind:'menu', date:'2026', url:P+'87dinner-all/FB_2026_BTC_Kimonos_Dinner.pdf', sections:[
+  {t:'Starters', items:[
+   ['Appetizer Sampler','marinated crab salad with sriracha aioli, lemongrass shrimp with soba, vegetable gyoza with ponzu'],
+   ['Coconut-Lime Soup','shiitake, tofu, scallion'],
+   ['Imperial Salad','greens, shaved cabbage, tomato, cucumber, pepper, carrot, ginger dressing','VG']
+  ]},
+  {t:'Emperor’s Feast, off the grill', note:'Served with ginger-sesame, sweet chili and teriyaki sauces.', items:[
+   ['Gyuniku Samurai','USDA beef striploin'],
+   ['Toriniku Banzai','chicken breast'],
+   ['Ebi','jumbo shrimp'],
+   ['Shiira','seared mahi-mahi'],
+   ['Egg Fried Rice','green peas, scallion']
+  ]},
+  {t:'Vegetarian options', items:[
+   ['Stir-Fried Noodles','vegetables, yakisoba sauce','VG'],
+   ['Tofu','stir-fried vegetables, tofu','VG']
+  ]},
+  {t:'Dessert', items:[['Trio of Ice Cream','red bean, green tea, coconut']]}
+ ]}],
+ notes:['The resort says it books quickly; reserve early.','2026 guides place it in the French Village next to Soy; one 2025 guide says Caribbean Village.','Guide report (2026): loud inside. The Friday Sesame Street parade passes by around 6:30 PM.']
+},
+{id:'soy', name:'Soy Sushi Bar', village:'french', cuisine:'Sushi and small plates', kind:'restaurant', res:'none', age:0, dress:'casual',
+ hours:[['dinner','17:30','21:30']],
+ menus:[{meal:'dinner', label:'Dinner', kind:'menu', date:'2024', url:P+'126dinner-all/2024_BTC_Soy_Menu.pdf', sections:[
+  {t:'Starters', items:[
+   ['Conch Ceviche','Turks & Caicos conch, spicy lime'],
+   ['Garlic Tuna','tuna sashimi, seaweed salad, roasted garlic ponzu'],
+   ['Salmon Carpaccio','sashimi-grade salmon, lemon vinaigrette'],
+   ['Sashimi Poke','mixed sashimi, wonton chips'],
+   ['Seaweed Salad','sesame-soy wakame'],
+   ['Edamame','kosher salt'],
+   ['Miso Soup','']
+  ]},
+  {t:'Nigiri (2 pc) and sashimi (3 pc)', items:[['Fish choices','salmon, tuna, yellowtail, eel, imitation crab, scallop, conch']]},
+  {t:'Rolls (4 pc)', items:[
+   ['Seared Tuna Tataki','signature roll; shrimp tempura, seared tuna, ponzu, scallion'],
+   ['Spicy Crispy Shrimp','shrimp tempura, spicy mayo, avocado, tempura crunch'],
+   ['Volcano','spicy tuna, spicy crab, sushi sauce'],
+   ['Rocky Road','crab, cucumber, avocado, shrimp, tempura flakes'],
+   ['Spicy Tuna','marinated tuna, cucumber'],
+   ['Alaska','crab, avocado, cucumber, smoked salmon, mayo'],
+   ['Alaska California','snow crab, cucumber, avocado'],
+   ['Philadelphia','cream cheese, cucumber, spring onion, sesame'],
+   ['Futo Maki','carrot, lettuce, ginger, cucumber, avocado'],
+   ['Avocado Roll',''],
+   ['Sake, Maguro or Hamachi Roll','salmon, tuna or yellowtail']
+  ]},
+  {t:'Sushi bowls', items:[
+   ['Rainbow','crab, cucumber, avocado, salmon, tuna, yellowtail, masago'],
+   ['Dragon','crab, cucumber, avocado, broiled eel, eel sauce'],
+   ['Fire Cracker','spicy tuna, tempura flakes, sweet soy, hot sauce, soy aioli']
+  ]}
+ ]}],
+ notes:['Next door to Kimonos (Shoreline Journeys).']
+},
+{id:'lepetitchateau', name:'Le Petit Chateau', village:'french', cuisine:'Classic French', kind:'restaurant', res:'check', age:12, dress:'evening',
+ hours:[['dinner','17:30','21:30']],
+ menus:[{meal:'dinner', label:'Dinner', kind:'menu', date:'2024', url:P+'92dinner-all/BTC_2024_Le_Petit_Chateau_KIDS.pdf', sections:[
+  {t:'Les entrées', items:[
+   ['Soupe à l’Oignon','caramelized onion, beef broth, gruyère toast'],
+   ['Coquilles St Jacques','seared scallops, gruyère cream, forest mushrooms, panko crisp'],
+   ['Salade Niçoise','ahi tuna, olive, fingerling chips, haricots verts, poached egg, lemon dressing'],
+   ['Quinoa aux Crevettes','shrimp, parsley quinoa, crispy shallot, mustard vinaigrette'],
+   ['Salade Verte','baby gem, green grapes, apple, fennel, truffle-honey vinaigrette']
+  ]},
+  {t:'Les plats', items:[
+   ['Canard','seared duck breast, forest mushrooms, kale chips, red wine plums, orange jus'],
+   ['Tournedos Rossini à la Bordelaise','beef fillet, foie gras, pommes dauphinoise, truffle bordelaise'],
+   ['Carré d’Agneau','lamb rack, smoked tomato, eggplant, pommes sarladaises, mustard-thyme jus'],
+   ['Corvina Rex Poêlé','pan-seared corvina, fennel-leek cream, shellfish bisque, asparagus'],
+   ['Crevettes à la Provençale','sautéed shrimp, tomato confit, olives, capers, herbed polenta, blue cheese'],
+   ['Escalope Cordon Bleu','chicken breast with ham and gruyère, grilled vegetables, red wine jus'],
+   ['Feuilleté de Ratatouille','puff pastry, caramelized onion, goat cheese, tomato, smoked eggplant'],
+   ['Viande de Soja au Balsamique','plant-based mince, portobello, balsamic-ginger, asparagus salad']
+  ]},
+  {t:'Les desserts', items:[
+   ['Fondant au Chocolat','molten chocolate cake, rum mousseline, stewed berries'],
+   ['Crème Brûlée au Grand Marnier','orange custard, financier, pineapple skewer'],
+   ['Clafoutis Pêche et Framboise','peach and raspberry custard cake']
+  ]},
+  {t:'Pour les gamins (kids)', kids:true, items:[
+   ['Suprême de Volaille Grillé','grilled chicken, mashed potato, broccoli and carrot'],
+   ['Steak Frites','petite tenderloin, fries, broccoli'],
+   ['Crevettes Frites','fried shrimp, rice, corn on the cob, sweet chili']
+  ]}
+ ]}],
+ notes:['Resort site: ages 12+, evening attire, no reservation required. A 2026 travel-agent guide lists it as reservation-only. Check the app on arrival.','The menu still carries a kids’ page despite the age minimum.','Guide report (2026): the Sesame Street show next door drowns out the patio; sit inside or come after it ends.']
+},
+{id:'cafedeparis', name:'Café de Paris', village:'french', cuisine:'French patisserie and coffee', kind:'cafe', res:'none', age:0, dress:'casual',
+ hours:[['snacks','06:00','22:00']],
+ menus:[{meal:'snacks', label:'All day', kind:'sign', url:P+'93snacks-all/Cafe_de_Paris_Sign_for_RFCM.pdf', note:'The posted PDF is a sign: Blue Mountain coffee, pastries and desserts.', sections:[
+  {t:'Reported by guests (2025)', guest:true, items:[
+   ['Croissants',''],
+   ['Macarons',''],
+   ['Chocolate Éclairs',''],
+   ['Cappuccinos and lattes','hot or iced; caramel and mocha versions']
+  ]}
+ ]}],
+ notes:[]
+},
+{id:'giuseppes', name:'Giuseppe’s', village:'french', cuisine:'Italian and international buffet', kind:'buffet', res:'none', age:0, dress:'casual',
+ hours:[], meals:['breakfast','lunch','dinner'],
+ menus:[{meal:'all', label:'Buffet', kind:'none', note:'No menu or hours on the resort site, which describes a pizza and pasta buffet with indoor and outdoor seating. 2024 and 2025 guides describe breakfast, lunch and dinner, with an egg station at breakfast.'}],
+ notes:[]
+},
+
+/* ===== Waterpark ===== */
+{id:'bobbydees', name:'Bobby Dee’s', village:'waterpark', cuisine:'1950s diner inside the pirate ship', kind:'quick', res:'none', age:0, dress:'casual',
+ hours:[['snacks','11:00','18:00',true]], meals:['lunch'],
+ menus:[{meal:'snacks', label:'All day', kind:'menu', date:'2023', url:P+'91snacks-all/BTC_2023_BobbyDees.pdf', sections:[
+  {t:'Burgers', items:[
+   ['Bobby D’s Smash Burger','double smashed patty, American cheese, lettuce, tomato, secret sauce'],
+   ['Bacon-Mushroom Cheeseburger','bacon, sautéed mushrooms, caramelized onion, Swiss'],
+   ['Spicy BBQ Burger','BBQ glaze, onion ring, pepper jack, lettuce, tomato, pickle'],
+   ['Southwest Chicken Burger','grilled chicken breast, chipotle aioli'],
+   ['TCI Fish Burger','beer-battered snapper, coleslaw, mango-jerk ketchup'],
+   ['Tex-Mex Veggie Burger','plant-based vegan patty, salsa, guacamole']
+  ]},
+  {t:'Old-time favorites', items:[
+   ['Philly Cheesesteak','shaved ribeye, provolone, grilled onions and peppers'],
+   ['Chili Cheese Dog','all-beef hot dog, chili, melted cheese'],
+   ['All-Beef Hot Dog',''],
+   ['Salt & Pepper Chicken Wings','sweet BBQ, sweet Thai chili or hot Buffalo'],
+   ['Pizzadilla','pepperoni, mozzarella and tomato sauce in a soft tortilla'],
+   ['Tuna Salad Sandwich','whole wheat bread']
+  ]},
+  {t:'Little Mates and sides', kids:true, items:[
+   ['Chicken Nuggets & Fries',''],
+   ['Grilled Cheese Sandwich',''],
+   ['Mac & Cheese',''],
+   ['Chili Mac & Cheese',''],
+   ['Chili & Nacho Chips',''],
+   ['French Fries',''],
+   ['Hummus',''],
+   ['Carrot & Celery Sticks',''],
+   ['Buttered Peas & Carrots',''],
+   ['Fruit Cup','']
+  ]}
+ ]}],
+ notes:['Inside the pirate ship at Pirates Island Waterpark (menu).','The resort lists 11:00 AM to 6:00 AM. That may be a typo; a 2025 guide lists lunch, snacks and late night. Check on arrival.','Guides mention soft-serve and milkshakes; neither is on the posted menu.']
+},
+{id:'mrmac', name:'Mr. Mac', village:'waterpark', cuisine:'Mac and cheese truck', kind:'truck', res:'none', age:0, dress:'casual',
+ hours:[], meals:['lunch','snacks'],
+ menus:[{meal:'lunch', label:'Menu', kind:'guest', note:'No menu or hours on the resort site. These are dishes guests reported in 2025 (Shoreline Journeys, Running in a Skirt).', sections:[
+  {t:'Reported by guests (2025)', guest:true, items:[
+   ['Classic Mac & Cheese',''],
+   ['Lobster Mac',''],
+   ['Crab Mac & Cheese',''],
+   ['Jerk Chicken Mac',''],
+   ['Buffalo Chicken Mac',''],
+   ['Pulled Pork Mac',''],
+   ['Cheeseburger Mac',''],
+   ['Mexican-Style Mac','salsa and guacamole on top'],
+   ['Fried Mac & Cheese Balls','']
+  ]}
+ ]}],
+ notes:['Guides disagree on the spot: inside Pirates Island Waterpark, or more central.']
+},
+
+/* ===== Italian ===== */
+{id:'marios', name:'Mario’s', village:'italian', cuisine:'Italian: breakfast buffet, à la carte dinner', kind:'restaurant', res:'none', age:0, dress:'casual',
+ hours:[['breakfast','06:30','10:30'],['dinner','17:00','21:30']],
+ menus:[
+  {meal:'breakfast', label:'Breakfast', kind:'sign', url:P+'162breakfast-all/Mario%27s_Breakfast_Buffet_Sign_for_RFCM.pdf', note:'Breakfast buffet. The posted PDF is a sign with no dishes listed.'},
+  {meal:'dinner', label:'Dinner', kind:'menu', date:'2026', url:P+'162dinner-all/FB_2026_BTC_Mario%27s_Dinner_Menu.pdf', sections:[
+   {t:'Antipasto buffet', items:[['Il Buffet degli Antipasti','self-serve Italian starters before your main']]},
+   {t:'Mains', items:[
+    ['Ossobuco','braised veal shank, saffron polenta, gremolata'],
+    ['Costoletta di Vitello alla Griglia','grilled milk-fed veal chop, butternut purée, vegetable ragù, veal jus'],
+    ['Lasagne Classiche','meat ragù, fresh mozzarella, mascarpone'],
+    ['Linguine con Polpo','baby octopus, chili-parmesan tomato broth, toasted almonds, lemon-parsley'],
+    ['Fettuccine ai Gamberi','seared shrimp, oven-dried tomato, lemon cream, arugula'],
+    ['Rigatoni in Salsa alla Vodka','Italian sausage, spinach, vodka cream, parmesan'],
+    ['Filetto di Salmone Scottato in Padella','pan-fried salmon, kale, chorizo and cannellini ragù, parsley-basil cream'],
+    ['Petto di Pollo alla Parmigiana','breaded chicken breast, spaghetti, tomato sauce'],
+    ['Risotto al Tartufo e Piselli','green pea purée, truffle-parmesan tuile','V'],
+    ['Penne alla Sorrentina','tomato sauce, cherry tomato, mozzarella, basil','V'],
+    ['Polpette di Verdure','lentil and vegetable balls, fettuccine, olives, garlic, tomato','VG']
+   ]},
+   {t:'Kids', kids:true, items:[
+    ['Pollo Grigliato','grilled chicken, alfredo, mashed potato, vegetables'],
+    ['Spaghetti e Polpette','meatballs, marinara, parmesan'],
+    ['Salmone Fritto in Padella','pan-seared salmon, roast potato, lemon butter, broccoli and carrot']
+   ]},
+   {t:'Dolci', items:[
+    ['Tiramisù','espresso-soaked sponge, marsala, mascarpone, cream'],
+    ['Torta di Pistacchi e Mandorle','pistachio, raisin and cherry-almond tart, citrus ricotta'],
+    ['Crostata al Cioccolato','warm chocolate tart, bitter chocolate glaze, almond ice cream']
+   ]}
+  ]}
+ ],
+ notes:['Dinner is à la carte after the antipasto buffet.']
+},
+{id:'dinos', name:'Dino’s Pizzeria', village:'italian', cuisine:'Neapolitan pizza and panini, walk-up', kind:'quick', res:'none', age:0, dress:'casual',
+ hours:[['lunch','11:00','17:00']],
+ menus:[{meal:'lunch', label:'Lunch', kind:'menu', date:'2024', url:P+'159lunch-all/BTC_Dinos_Lunch_24_V2.pdf', sections:[
+  {t:'Pizza', items:[
+   ['Margherita','tomato sauce, buffalo mozzarella, basil','V'],
+   ['Tradizionale','tomato sauce, mozzarella','V'],
+   ['Diavola','tomato sauce, mozzarella, pepperoni'],
+   ['Quattro Formaggi','béchamel, brie, buffalo mozzarella, fontina, parmesan','V'],
+   ['Funghi','béchamel, mozzarella, mushroom, arugula','V'],
+   ['Ortolana','tomato sauce, mozzarella, grilled vegetables','V'],
+   ['Carni','pepperoni, ground beef, bacon, Italian sausage, roasted red pepper'],
+   ['Pollo e Pesto','pesto, mozzarella, chicken, parmesan']
+  ]},
+  {t:'Salads and sandwiches', items:[
+   ['Dino’s Smash Burger','double patty, grilled onion, mushroom, provolone, cream cheese mayo'],
+   ['Panino al Pollo','chicken Milanese on ciabatta, lemon-rosemary mayo, tomato, arugula'],
+   ['Panino con Polpette','meatballs, asiago, ciabatta'],
+   ['Panino Mediterraneo','onion focaccia, olives, portobello, zucchini, roasted pepper, pesto, mozzarella','V'],
+   ['Insalata di Cesare','romaine, bacon, cherry tomato, parmesan, toast points'],
+   ['Panzanella','greens, Tuscan bread, peppers, onion, capers, red wine vinaigrette','VG']
+  ]}
+ ]}],
+ notes:['Next to the Italian Village pool (Shoreline Journeys). A 2025 guide mentions gelato; it is not on the posted menu.']
+},
+{id:'cricketers', name:'Cricketer’s Pub', village:'italian', cuisine:'British pub fare, noon to 2 AM', kind:'restaurant', res:'none', age:0, dress:'casual',
+ hours:[['day','12:00','22:00'],['late','22:00','26:00']],
+ menus:[{meal:'day', label:'Noon to 2 AM', kind:'menu', date:'2026', url:P+'157lunch-all/FB_2026_BTC_Criketer%27s_Menu_%281%29.pdf', sections:[
+  {t:'First innings', items:[
+   ['Creamy Spinach & Artichoke Dip','pita','V'],
+   ['Roasted Cauliflower Soup','spring onion, crispy florets','V'],
+   ['English Garden Salad','romaine, radish, peas, cucumber, mint, lemon-honey dressing','VG','Marked vegan, but the dressing lists honey.']
+  ]},
+  {t:'Pub plates', items:[
+   ['Fish & Chips','Turks Head beer batter, fries, mushy peas, tartar sauce'],
+   ['Tandoori Chicken Leg','garlic broccolini, basmati, mango chutney, raita, garlic naan'],
+   ['Chicken & Leek Pie','caramelized apple, onion, flaky pastry'],
+   ['Vegetarian Shepherd’s Pie','lentils, kidney beans, vegetables, parmesan-potato crust','V'],
+   ['Buffalo Chicken Wings','blue cheese dip, carrot and celery, fries']
+  ]},
+  {t:'Handhelds', note:'With salad, fries or truffle-parmesan fries.', items:[
+   ['Braised Beef Short Rib Grilled Cheese','ciabatta, caramelized onion, havarti, garlic aioli, jus'],
+   ['Bacon-Mushroom Burger','hand-pressed patty, bacon, mushroom, Swiss'],
+   ['Lentil & Black Bean Burger','brioche, herb aioli, smoked provolone','V'],
+   ['Cricketer’s Corn Dog','corn-battered Italian sausage, grainy mustard aioli, spiced ketchup']
+  ]},
+  {t:'For the wee ones', kids:true, items:[
+   ['Cheeseburger & Fries',''],
+   ['Petit Steak & Frites',''],
+   ['BBQ Grilled Chicken, Rice & Broccoli','','GF'],
+   ['Veggie Sticks with Pita & Hummus','','VG']
+  ]},
+  {t:'Desserts', items:[
+   ['Sticky Date Pudding','vanilla ice cream, caramel sauce'],
+   ['Cherry Crumble Pie','cherry compote, butter crumble, brown bread ice cream']
+  ]}
+ ]}],
+ notes:['One menu from noon to 2 AM; the resort lists 10 PM to 2 AM as late night.','Guinness and Newcastle on hand (guest guide).']
+},
+{id:'barefoot', name:'Barefoot by the Sea', village:'italian', cuisine:'Seafood with your feet in the sand', kind:'restaurant', res:'none', age:0, dress:'casual',
+ hours:[['lunch','12:30','14:30'],['dinner','17:30','21:30']],
+ menus:[
+  {meal:'lunch', label:'Lunch', kind:'menu', date:'2020', url:P+'156lunch-all/BTC_2020_BarefootbytheSea_lunch_FAW.pdf', sections:[
+   {t:'Lunch', items:[
+    ['TCI Conch Salad','Provo conch, onion, cucumber, sweet pepper, scotch bonnet, cilantro, lime'],
+    ['Fish Tacos','seared snapper, roasted corn salsa, pico, slaw, flour tortillas'],
+    ['Grilled Mahi Mahi Caesar','romaine, sun-dried tomato, citrus relish, herb croutons'],
+    ['Fried Fish Sandwich','anchovy aioli, tomato, lettuce, fries'],
+    ['Chilled Cucumber Soup','grilled shrimp skewer, mint'],
+    ['Pulled Pork Sandwich','BBQ pork, pineapple relish, coleslaw, fries'],
+    ['Club Sandwich','chicken salad, apple, bacon, Kaiser bun; greens or fries'],
+    ['Herb Roasted Chicken','fries, coleslaw, pan gravy'],
+    ['Vegan Caribbean Cobb Salad','plant-based jerk chicken, greens, avocado, tomato, cucumber, avocado-coconut dressing','VG'],
+    ['Vegan Taco Salad','plant-based chili, lettuce, avocado, salsa, tortilla shell','VG']
+   ]},
+   {t:'Kids', kids:true, items:[
+    ['Whole Wheat Tuna Melt','cucumber sticks'],
+    ['Penne with Chicken & Broccoli',''],
+    ['Ham & Cheese Wrap','mixed greens']
+   ]},
+   {t:'Desserts', items:[['Deep Dish Apple Pie',''],['Warm Chocolate Brownie','']]}
+  ]},
+  {meal:'dinner', label:'Dinner', kind:'menu', date:'2026', url:P+'156dinner-all/FB_2026_BTC_Barefoot_by_the_Sea_Dinner.pdf', sections:[
+   {t:'Starters', items:[
+    ['Conch Fritters','lemon and cracked pepper aioli'],
+    ['Coconut Crusted Shrimp','spicy mango sauce'],
+    ['Bahamian Crab Cakes','crab, peppers, onion, corn, remoulade'],
+    ['Caribbean Spiced Seafood Chowder','lemongrass cream, sourdough bread bowl'],
+    ['Pork Belly Griot','braised and fried pork belly, sweet plantain, mango, avocado, spicy citrus','DF'],
+    ['Caribbean Spiced Salad','greens, spiced chickpeas, quinoa, hearts of palm, mango','GF VG']
+   ]},
+   {t:'Mains', items:[
+    ['Jerk Spiced Mahi Mahi','corn purée, plantain cake, escovitch relish, avocado salsa; based on a 2025 gold-medal dish by a TCI junior chef','DF'],
+    ['Caicos Fish Stew','coconut-crusted grouper, peppers, pumpkin, okra, jasmine rice','DF'],
+    ['Surf & Turf','shrimp kabob, strip steak, whipped potato, red wine reduction, scotch bonnet relish'],
+    ['Tamarind-Glazed BBQ Ribs','baby back ribs, potato salad, festival, coleslaw'],
+    ['Island Veggie Burger','chickpea and lentil patty, pineapple chutney, sweet potato fries, jerk mayo','V']
+   ]},
+   {t:'Kids', kids:true, items:[
+    ['Broccoli & Cheese Macaroni Pie','creamy coleslaw'],
+    ['Popcorn Chicken','fries, honey mustard'],
+    ['Beef Kabobs','teriyaki glaze, broccoli, jasmine rice']
+   ]},
+   {t:'Desserts', items:[
+    ['White Chocolate Cheesecake','mango salsa, white chocolate crumble','GF'],
+    ['Baked Lemon Tart','raspberry sauce, whipped cream'],
+    ['Cocoa Banana Tart','milk chocolate and passion fruit ganache, streusel']
+   ]}
+  ]}
+ ],
+ notes:['On the beach along the Italian Village (Shoreline Journeys).','The lunch PDF dates from 2020; dinner is the 2026 menu.']
+},
+{id:'jojo', name:'Jojo Java', village:'italian', cuisine:'Espresso bar, Blue Mountain coffee', kind:'cafe', res:'none', age:0, dress:'casual',
+ hours:[['snacks','06:00','22:00']],
+ menus:[{meal:'snacks', label:'All day', kind:'menu', date:'undated', url:P+'362snacks-all/Jojo%27s_Temporary_Menu%2C_Letter.pdf', note:'The posted menu is labeled temporary.', sections:[
+  {t:'Espresso', items:[
+   ['Espresso','Blue Mountain blend, single or double'],
+   ['Double Bon','double espresso over sweetened condensed milk'],
+   ['Espresso Tonic','double espresso, tonic, ice'],
+   ['Caffè Latte',''],
+   ['Cappuccino',''],
+   ['Flat White',''],
+   ['Macchiato','dry or wet'],
+   ['Americano',''],
+   ['Mochaccino','cappuccino with chocolate']
+  ]},
+  {t:'Drip, cold brew and iced', items:[
+   ['Drip Coffee','Blue Mountain blend, regular or decaf'],
+   ['Café au Lait',''],
+   ['Cold Brew Iced Latte',''],
+   ['Cold Brew Tonic',''],
+   ['Iced Latte, Americano or Tea',''],
+   ['Hot or Iced Chocolate','']
+  ]},
+  {t:'Kids', kids:true, items:[['Babyccino','chocolate, marshmallow, milk']]}
+ ]}],
+ notes:['Guest reports: caramel, vanilla and hazelnut syrups on request (Turks Treasures); pastries tend to sell out early (Destinations & Desserts).']
+},
+{id:'yoyos', name:'Yoyo’s', village:'italian', cuisine:'Frozen yogurt', kind:'treat', res:'none', age:0, dress:'casual',
+ hours:[['snacks','10:00','22:00']],
+ menus:[{meal:'snacks', label:'All day', kind:'sign', url:P+'363snacks-all/Yoyo_RFCM_Sign.pdf', note:'Flavors and toppings change daily, per the posted sign.'}],
+ notes:['Shares a building with Jojo Java (Destinations & Desserts).']
+},
+
+/* ===== Key West ===== */
+{id:'bayside', name:'Bayside', village:'keywest', cuisine:'International buffet, open-air', kind:'buffet', res:'none', age:0, dress:'casual',
+ hours:[['breakfast','07:00','10:30'],['lunch','12:00','15:00']], meals:['dinner'], hoursNote:'Dinner listed without hours',
+ menus:[{meal:'all', label:'All meals', kind:'sign', url:P+'209breakfast-all/Bayside_Buffet_Sign_for_RFCM.pdf', note:'Buffet at breakfast, lunch and dinner. The posted PDFs are signs with no dishes listed.'}],
+ notes:[]
+},
+{id:'neptunes', name:'Neptunes', village:'keywest', cuisine:'Mediterranean seafood, beachfront', kind:'restaurant', res:'none', age:0, dress:'casual',
+ hours:[['breakfast','07:30','10:30'],['lunch','12:30','14:30'],['dinner','17:00','21:30']],
+ menus:[
+  {meal:'breakfast', label:'Breakfast', kind:'menu', date:'2020', url:P+'210breakfast-all/BTC_Neptunes_Breakfast_2020.pdf', sections:[
+   {t:'Hot plates', items:[
+    ['Classic Eggs Benedict','grilled ham, hollandaise, paprika'],
+    ['Avocado Toast','oven-dried tomato, feta, poached egg, hollandaise'],
+    ['Banana-Stuffed French Toast','berry compote, warm rum syrup'],
+    ['Fluffy Pancake','blueberry compote, maple syrup'],
+    ['Frittata Rustica','spinach, asiago, provolone, roasted vegetables, prosciutto, dill sour cream'],
+    ['Steak & Eggs','chargrilled steak, two eggs, hash browns'],
+    ['Two Eggs Any Style','hash browns; bacon, ham or sausage'],
+    ['Vegan Chorizo & Baked Beans','plant-based chorizo, tomato, onion, pepper, hash browns','VG']
+   ]},
+   {t:'Lighter', items:[
+    ['Muesli Berry Boost','berries, granola, honey yogurt'],
+    ['Fruit Salad','tropical fruit, berries, orange-ginger syrup'],
+    ['Steel-Cut Oatmeal','brown sugar, golden raisins, almonds'],
+    ['Pastry Basket','croissants, danish, muffins'],
+    ['Yogurt, cereal and juices','']
+   ]},
+   {t:'Sides', items:[['Sides','pork sausage, ham, bacon, baked beans, toast, hash browns']]}
+  ]},
+  {meal:'lunch', label:'Lunch', kind:'menu', date:'2020', url:P+'210lunch-all/BTC_Neptunes_Lunch_2020%28Update%29.pdf', sections:[
+   {t:'Lunch', items:[
+    ['Saffron Fish Basket','fried white fish, lemon tzatziki'],
+    ['Shrimp Bruschetta','garlic toast, tomato, arugula, pesto oil'],
+    ['Mahi Mahi','grilled, market vegetables, lemon-butter cream, fried capers'],
+    ['Salmon & Vegetable Kebob','apple and vegetable quinoa'],
+    ['Grilled Curried Chicken','pita, lettuce, tomato, tzatziki'],
+    ['Greek Salad','tomato, cucumber, onion, olives, feta, pita; add chicken or a shrimp skewer'],
+    ['Fattoush Salad','romaine, tomato, cucumber, radish, crispy pita, lemon; add chicken or shrimp'],
+    ['Soup & Sandwich','lentil and root vegetable soup, grilled ham and cheese, onion rings'],
+    ['Chargrilled Beef Burger','choice of cheese, fries'],
+    ['Plant-Based Burger','plant-based patty, tomato chutney, fries']
+   ]},
+   {t:'Kids', kids:true, items:[
+    ['Kids’ Burger','house sauce, fries'],
+    ['Pita with Peanut Butter & Apple','carrot and cucumber sticks']
+   ]},
+   {t:'Desserts', items:[
+    ['Chocolate Churros','banana cream, chocolate sauce'],
+    ['Sugared Doughnut','strawberry jam, whipped cream'],
+    ['Pineapple Tagine','pineapple with vanilla, anise, cardamom and clove']
+   ]}
+  ]},
+  {meal:'dinner', label:'Dinner', kind:'menu', date:'2025', url:P+'210dinner-all/FB_2025_BTC_Neptunes_Dinner_WEB.pdf', sections:[
+   {t:'Starters', items:[
+    ['Mediterranean Seafood Bisque','coconut-saffron bisque, prawns, mussels, white fish, fennel','GF DF'],
+    ['Baby Octopus Stifado','Greek octopus stew, tomato, olives, white wine, grilled garlic bread','DF'],
+    ['Steamed Mussels','shallots, leeks, white wine, cream, garlic crostini'],
+    ['Charred Carrot & Walnut Salad','creamed feta, candied walnuts, za’atar, burnt orange','V GF'],
+    ['Roasted Beet Salad','lemon yogurt, greens, spiced hemp-seed dukkah','V GF'],
+    ['Melon & Field Greens Salad','cantaloupe, honeydew, lemon, olive oil','V VG DF']
+   ]},
+   {t:'Mains', items:[
+    ['Grilled Branzino','whole roasted, lemon emulsion, tomato-olive salad, crispy chickpeas','GF DF'],
+    ['Grilled Swordfish','pea purée, heirloom tomatoes, pink peppercorn beurre blanc','GF'],
+    ['Slow-Braised Lamb Shank','parsnip purée, red wine jus, broccolini, chermoula'],
+    ['Harissa-Glazed Chicken','garlic and white bean purée, plantain chips, citrus herb salad','GF'],
+    ['Clams & Italian Sausage','linguine, lemon-caper beurre blanc, salsa verde'],
+    ['Butternut Squash & Sage Farrotto','risotto-style farro, brown butter, pistachio crumble','V']
+   ]},
+   {t:'For the little ones', kids:true, items:[
+    ['Battered Fish','pea purée, tartar sauce'],
+    ['Chicken Souvlaki Kabobs','roasted potatoes, broccolini','DF'],
+    ['Penne Pasta','tomato sauce, parmesan','V']
+   ]},
+   {t:'Desserts', items:[
+    ['Baklava Cheesecake','honeyed nuts, phyllo layers, apple compote','V GF','Marked gluten-free, but lists phyllo. Ask.'],
+    ['Lemon Éclair','lemon cream, craquelin, meringue crumble','V'],
+    ['Citrus Olive Oil Cake','pineapple compote','V GF']
+   ]}
+  ]}
+ ],
+ notes:['Two guides single out breakfast here for the view.','Breakfast and lunch PDFs date from 2020; dinner is the 2025 menu.']
+},
+{id:'sky', name:'Sky', village:'keywest', cuisine:'Rooftop, Caribbean seafood', kind:'restaurant', res:'none', age:12, dress:'evening',
+ hours:[['breakfast','07:30','10:30'],['dinner','17:30','21:30']],
+ menus:[
+  {meal:'breakfast', label:'Breakfast', kind:'menu', date:'2024', url:P+'216breakfast-all/FB_2024_BTC_Sky_Breakfast_2.pdf', sections:[
+   {t:'Breakfast', items:[
+    ['Apple-Stuffed French Toast','salted caramel apples, crème anglaise'],
+    ['Smoked Salmon Waffles','crème fraîche, egg, capers, lemon'],
+    ['Key West Egg Tostada','corn tortilla, charred tomato salsa, avocado, fried egg, candied jalapeño'],
+    ['Avocado Toast','pickled onion, crisp pancetta, poached egg, pico'],
+    ['Oatmeal Banana Hotcakes','maple syrup','GF VG'],
+    ['Buttermilk Pancakes','whipped cream, maple syrup'],
+    ['Ocean Breeze Breakfast','2 eggs, bacon, sausage, hash browns, roasted tomato'],
+    ['Tropical Smoothie Bowl','guava Greek yogurt, fruit, toasted coconut, house granola'],
+    ['Tropical Fruit Plate','']
+   ]}
+  ]},
+  {meal:'dinner', label:'Dinner', kind:'menu', date:'2024', url:P+'216dinner-all/FB_2024_BTC_Sky_Menu_%28Revised%29.pdf', sections:[
+   {t:'Starters', items:[
+    ['Scallop Ceviche','lime, celery, smoked saffron salt, shishito'],
+    ['Tuna Tartare','avocado purée, pickled onion, radish, spicy citrus, crispy tortilla'],
+    ['Paila Seafood Stew','mussels, shrimp, clams, tomato, cilantro'],
+    ['Chipotle Braised Pork Belly','sweet potato purée, chipotle BBQ, pickled onion'],
+    ['Kale & Quinoa Salad','marinated watermelon, almonds, Dijon gastrique']
+   ]},
+   {t:'Mains', items:[
+    ['Peruvian Seafood Rice','mussels, shrimp, squid, baby octopus, avocado cream'],
+    ['Pan-Seared Mahi Mahi','corn and jalapeño quinoa pilaf, ajillo sauce, charred onion soubise'],
+    ['Grilled Salmon','cassava purée, mango, tomato, basil, roasted kale'],
+    ['Pan-Seared Duck Breast','wild mushrooms, asparagus, carrot purée, coffee-tamarind sauce'],
+    ['Beef Tenderloin','potato rösti, nikkei sauce, asparagus, baby carrots'],
+    ['Börek','creamed spinach, cashew-tofu ricotta, blistered tomatoes, almonds','VG']
+   ]},
+   {t:'Desserts', items:[
+    ['Tropical Fruit Pavlova','meringue, chantilly, berry compote'],
+    ['Brownie Cheesecake','dark chocolate brownie layers, cookie crumble']
+   ]}
+  ]}
+ ],
+ notes:['The resort lists a 12+ minimum without separating breakfast from dinner; one guide calls it adults-only at dinner. Confirm before bringing younger kids to breakfast.']
+},
+
+/* ===== Beach trucks ===== */
+{id:'jerktruck', name:'Jerk Truck', village:'beach', cuisine:'Caribbean jerk off the grill', kind:'truck', res:'none', age:0, dress:'casual',
+ hours:[['lunch','11:00','17:00']],
+ menus:[{meal:'lunch', label:'Lunch', kind:'guest', url:P+'337lunch-all/BTC_Jerk_Truck_Menu.pdf', note:'The posted menu PDF is an image with no readable text. Items below come from a 2025 guest guide that calls it the Jerk Shack.', sections:[
+  {t:'Reported by guests (2025)', guest:true, items:[
+   ['Jerk Chicken',''],
+   ['Jerk Pork',''],
+   ['Grilled Fish',''],
+   ['Sides','rice and peas, slaw, festival']
+  ]}
+ ]}],
+ notes:['Heat is adjustable, and sauce comes on the side if you ask (Shoreline Journeys).']
+},
+{id:'dive', name:'The Dive', village:'beach', cuisine:'Drinks truck on the sand', kind:'drinks', res:'none', age:0, dress:'resort',
+ hours:[], meals:['snacks'],
+ menus:[{meal:'snacks', label:'Drinks', kind:'guest', note:'No food. The resort lists fresh juices, beer and made-to-order cocktails.', sections:[
+  {t:'Reported by guests (2025)', guest:true, items:[
+   ['Rum punch and frozen drinks',''],
+   ['Beaches Blue','the blue house cocktail'],
+   ['Smoothies, virgin piña coladas and mocktails','for kids']
+  ]}
+ ]}],
+ notes:[]
+}
+];
+
+const DRINKS = [
+ {t:'Included everywhere', src:'Resort drinks page; Always Bring Sunscreen guide', items:[
+  ['Premium liquors','unlimited at every bar'],
+  ['Appleton Estate rum','the house rum at all Beaches bars'],
+  ['Robert Mondavi Twin Oaks wine','six varietals made for Beaches'],
+  ['Beer','Turk’s Head, Turk’s Head Light, Stella Artois, Red Stripe, Miller Lite; Guinness and Newcastle at Cricketer’s'],
+  ['Named spirits','Don Julio tequila, Johnnie Walker Black (guest guide)'],
+  ['Blue Mountain coffee','at the cafés and specialty restaurants']
+ ]},
+ {t:'Signature cocktails', src:'Beaches blog (Mar 2025); guest guides 2023–25', items:[
+  ['Dirty Banana','dark rum, banana, cream'],
+  ['Frozen Bob Marley','layered strawberry, mango and blue curaçao'],
+  ['Miami Vice','half strawberry daiquiri, half piña colada'],
+  ['Hummingbird','rum, banana, chocolate, cherry'],
+  ['Purple Rain','gin, cranberry, blue curaçao'],
+  ['Beaches Blue','the blue house cocktail (guest guide)'],
+  ['Rum punch and frozen drinks','at every bar (guest guide)']
+ ]},
+ {t:'Kids and no alcohol', kids:true, src:'Resort Treasure Beach page; Pinta and Jojo Java menus; guest guides', items:[
+  ['Virgin Piña Colada','the resort pitches them at the Treasure Beach pool'],
+  ['Pinta mocktails','Bight Water (pineapple, limeade, vanilla), Crazy Coco (coconut, citrus), Sandita (watermelon, mint, citrus)'],
+  ['Smoothies and mocktails','at the bars and The Dive'],
+  ['Bobby D’s Bar','non-alcoholic bar at the waterpark'],
+  ['Babyccino','chocolate, marshmallow and milk at Jojo Java']
+ ]},
+ {t:'Costs extra', src:'Butch’s and Pinta menus; Always Bring Sunscreen guide', items:[
+  ['Butch’s wine','$15 to $19 a glass; bottles $45 to $195','$'],
+  ['Pinta wine','bottles $45 to $85','$'],
+  ['Other wine lists','name-brand bottles for sale at Sky, Sapodilla’s and Le Petit Chateau (guest guide)','$']
+ ]},
+ {t:'Older guest reports', src:'Stuffed Suitcase (2015, updated 2018); Marvelous Mouse (2023). Ask; some may be gone.', items:[
+  ['Frozen Mojito',''],
+  ['Caicos Sling','rum, pineapple, bubbles'],
+  ['Saki Cruise','vanilla vodka, sake, cranberry, pineapple'],
+  ['Pimm’s Cup','Pimm’s, citrus, lemon-lime soda'],
+  ['Fuzzy Buccaneer','rum, peach schnapps, orange juice'],
+  ['Dirty Monkey',''],
+  ['Fresh Coconut Water','cut from the resort’s palms']
+ ]}
+];
+
+const BARS = {
+ treasure:[['Brü','coffee by day, cocktails at night; 6a to 11p'],['Treasure Beach swim-up bar','at the lagoon pool'],['Pinta Food Hall bar',''],['Butch’s bar','build-your-own mini martinis']],
+ caribbean:[['Turtles','Caribbean Village lobby; adults-only martini bar'],['Cascades pool bar','swim-up'],['Iguana’s Bar','by the Iguana pool'],['Arizona’s bar','inside the restaurant'],['Schooners bar','']],
+ french:[['Riviera Bar','French Village pool; swim-up and stand-up'],['Le Bar de Musique',''],['Kimonos bar','']],
+ waterpark:[['Liquid by Beaches','evening bar and dance club; teens early, adults later (2023 guide)'],['Bobby D’s Bar','non-alcoholic']],
+ italian:[['Trevi swim-up bar','Italian Village pool'],['Kelly’s Bar','concierge lobby; grab a drink on the go'],['Cricketer’s Pub','to 2a; Guinness and Newcastle; karaoke and dance nights (2023 guide)']],
+ keywest:[['Bayside Bar','']],
+ beach:[['The Dive','drinks truck on the sand']]
+};
+
+/* ---------- helpers ---------- */
+const $ = (s, r) => (r || document).querySelector(s);
+const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const norm = s => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[’‘]/g, "'").toLowerCase();
+const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const toMin = hm => { const p = hm.split(':'); return (+p[0]) * 60 + (+p[1]); };
+function fmt(m){ m = ((m % 1440) + 1440) % 1440; const h = Math.floor(m / 60), mm = m % 60; return ((h % 12) || 12) + (mm ? ':' + String(mm).padStart(2, '0') : '') + (h < 12 ? 'a' : 'p'); }
+const reduced = () => window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const gimg = q => 'https://www.google.com/search?tbm=isch&q=' + encodeURIComponent(q.replace(/[’‘]/g, "'"));
+const villageName = id => (VILLAGES.find(v => v.id === id) || {}).name || '';
+const CAM = '<svg width="15" height="15" aria-hidden="true" focusable="false"><use href="#cam"/></svg>';
+const TAGTITLE = {V:'Vegetarian, as printed', VG:'Vegan, as printed', GF:'Gluten-free, as printed', DF:'Dairy-free, as printed'};
+const TAGWORDS = {V:'vegetarian veggie', VG:'vegan vegetarian plant', GF:'gf gluten-free gluten free', DF:'df dairy-free dairy free', '$':'priced extra cost'};
+const NUT = /\b(almonds?|pistachios?|walnuts?|pecans?|cashews?|hazelnuts?|peanuts?|pine nuts|praline|baklava|nutella|nuts?)\b/i;
+const NOPHOTO = /^(Sides|Sauces|Mocktails|Caribbean cocktails|Wine by the bottle|By the glass|By the bottle|Build your own|House minis|Fish choices|Yogurt, cereal|Cereal|Fruit Juices|Espresso drinks|Iced & specialty|Teas|Premium liquors|Beer|Named spirits|Other wine lists|Butch’s wine|Pinta wine|Smoothies and mocktails|Rum punch and frozen drinks|Il Buffet|Quesadillas)/;
+const DRINK_VENUE = {id:'drinks', name:'Bars & drinks', drinks:true};
+
+/* ---------- prep ---------- */
+VENUES.forEach(v => {
+  v.win = (v.hours || []).map(h => ({m:h[0], s:toMin(h[1]), e:toMin(h[2]), u:!!h[3]}));
+  const ms = new Set(v.meals || []);
+  v.win.forEach(w => { if (w.m === 'day') { ms.add('lunch'); ms.add('dinner'); } else if (w.m !== 'late') ms.add(w.m); });
+  if (['cafe', 'treat', 'drinks'].includes(v.kind)) ms.add('snacks');
+  v.mealSet = ms;
+  v.unposted = (v.meals || []).filter(m => !v.win.some(w => w.m === m || (w.m === 'day' && (m === 'lunch' || m === 'dinner'))));
+});
+
+function entry(v, m, mi, s, it){
+  const name = it[0], desc = it[1] || '', tags = it[2] || '';
+  let words = tags.split(' ').filter(Boolean).map(t => TAGWORDS[t] || '').join(' ');
+  if (s.kids) words += ' kids kid children';
+  if (NUT.test(name + ' ' + desc)) words += ' nuts nut';
+  return {v, m, mi, s, it, hay: norm([name, desc, s.t, words].join(' '))};
+}
+const IDX = [];
+VENUES.forEach(v => (v.menus || []).forEach((m, mi) => (m.sections || []).forEach(s => s.items.forEach(it => IDX.push(entry(v, m, mi, s, it))))));
+DRINKS.forEach((s, si) => s.items.forEach(it => IDX.push(entry(DRINK_VENUE, {label:s.t, meal:'drinks'}, si, s, it))));
+VILLAGES.forEach(vg => (BARS[vg.id] || []).forEach(b => IDX.push(entry(DRINK_VENUE, {label:'Bars · ' + vg.short, meal:'drinks', bar:true}, 100 + VILLAGES.indexOf(vg), {t:vg.name + ' bar'}, [b[0], b[1]]))));
+
+/* ---------- time ---------- */
+function now(){
+  const d = new Date();
+  try {
+    const parts = new Intl.DateTimeFormat('en-US', {timeZone:'America/Grand_Turk', weekday:'short', hour:'numeric', minute:'2-digit', hour12:true}).formatToParts(d);
+    const g = k => (parts.find(p => p.type === k) || {}).value || '';
+    const h = parseInt(g('hour'), 10), mi = parseInt(g('minute'), 10), ap = g('dayPeriod');
+    if (isNaN(h) || isNaN(mi)) throw new Error('parse');
+    const h24 = (h % 12) + (/p/i.test(ap) ? 12 : 0);
+    return {mins:h24 * 60 + mi, label:g('weekday') + ' ' + h + ':' + String(mi).padStart(2, '0') + ' ' + ap, tz:true};
+  } catch (e) {
+    const h = d.getHours(), mi = d.getMinutes();
+    return {mins:h * 60 + mi, label:d.toLocaleTimeString([], {weekday:'short', hour:'numeric', minute:'2-digit'}), tz:false};
+  }
+}
+function openAt(w, t){ return w.e <= 1440 ? (t >= w.s && t < w.e) : (t >= w.s || t < w.e - 1440); }
+function statusOf(v, t){
+  const known = v.win.filter(w => !w.u);
+  const cur = known.find(w => openAt(w, t));
+  if (cur) return {k:'open', txt:'Open until ' + fmt(cur.e)};
+  if (v.unposted.includes('dinner') && t >= 1020 && t < 1290) return {k:'na', txt:'Dinner hours not posted'};
+  if (!v.win.length) return {k:'na', txt:'Hours not posted'};
+  if (!known.length) { const u = v.win[0]; return {k:'na', txt: t >= u.s ? 'Close time unclear' : 'Opens ' + fmt(u.s)}; }
+  const later = known.filter(w => w.s > t).sort((a, b) => a.s - b.s)[0];
+  if (later) return {k:'later', txt:'Opens ' + fmt(later.s)};
+  const first = known.slice().sort((a, b) => a.s - b.s)[0];
+  return {k:'closed', txt:'Closed, opens ' + fmt(first.s)};
+}
+
+/* ---------- state ---------- */
+const state = {q:'', meal:'all', village:'all', noRes:false, allAges:false, casual:false};
+const openSet = new Set();
+let activeTab = {};
+
+function venueOK(v, t){
+  if (state.village !== 'all' && v.village !== state.village) return false;
+  const dinnerish = !['breakfast', 'lunch', 'snacks'].includes(state.meal);
+  if (state.noRes && v.res === 'dinner' && dinnerish) return false;
+  if (state.allAges && v.age) return false;
+  if (state.casual && (v.dress === 'evening' || (v.dress === 'evening-dinner' && dinnerish))) return false;
+  switch (state.meal) {
+    case 'all': return true;
+    case 'now': return statusOf(v, t).k === 'open';
+    case 'late': return v.win.some(w => !w.u && w.e > 1320);
+    case 'drinks': return false;
+    default: return v.mealSet.has(state.meal);
+  }
+}
+function menuOK(m){
+  const f = state.meal;
+  if (!['breakfast', 'lunch', 'dinner', 'snacks'].includes(f)) return true;
+  if (m.meal === 'all') return true;
+  if (m.meal === 'day') return f === 'lunch' || f === 'dinner';
+  return m.meal === f;
+}
+const filtersActive = () => state.meal !== 'all' || state.village !== 'all' || state.noRes || state.allAges || state.casual;
+
+/* ---------- render pieces ---------- */
+function hl(text, terms){
+  const ts = (terms || []).filter(x => x.length > 1);
+  if (!ts.length) return esc(text);
+  const re = new RegExp('(' + ts.map(escRe).join('|') + ')', 'ig');
+  return String(text).split(re).map((p, i) => i % 2 ? '<mark>' + esc(p) + '</mark>' : esc(p)).join('');
+}
+function dishHTML(v, it, s, terms){
+  const name = it[0], desc = it[1] || '', tags = (it[2] || '').split(' ').filter(Boolean), warn = it[3];
+  let tg = tags.map(x => x === '$' ? '<span class="tag cost" title="Costs extra">$</span>' : '<span class="tag" title="' + (TAGTITLE[x] || x) + '">' + x + '</span>').join('');
+  if (NUT.test(name + ' ' + desc)) tg += '<span class="tag nuts" title="A nut is named in this dish">nuts</span>';
+  let ph = '';
+  if (!NOPHOTO.test(name)) {
+    const q = v.drinks ? (s.t.endsWith(' bar') ? 'Beaches Turks and Caicos ' + name : 'Beaches resort ' + name + ' drink') : 'Beaches Turks and Caicos ' + v.name + ' ' + name;
+    ph = '<a class="ph" href="' + gimg(q) + '" target="_blank" rel="noopener" aria-label="Photos of ' + esc(name) + '">' + CAM + '</a>';
+  }
+  return '<li class="dish"><span class="d-name">' + hl(name, terms) + '</span>' + tg + ph +
+    (desc ? '<span class="d-desc">' + hl(desc, terms) + '</span>' : '') +
+    (warn ? '<span class="d-warn">' + esc(warn) + '</span>' : '') + '</li>';
+}
+function freshness(m){
+  if (m.kind === 'sign') return '<span class="fresh none">No itemized menu posted</span>';
+  if (m.kind === 'none') return '<span class="fresh none">No menu posted</span>';
+  if (m.kind === 'guest') return '<span class="fresh guest">Guest reports</span>';
+  if (!m.date || m.date === 'undated') return '<span class="fresh old">Undated menu</span>';
+  const y = +m.date;
+  return '<span class="fresh' + (y < 2025 ? ' old' : '') + '">' + y + ' menu' + (y < 2025 ? ', may be outdated' : '') + '</span>';
+}
+function panelHTML(v, m, i, active, single){
+  let h = '<div class="panel" role="' + (single ? 'region' : 'tabpanel') + '" id="' + v.id + '-p' + i + '"' + (single ? ' aria-label="' + esc(m.label) + '"' : ' aria-labelledby="' + v.id + '-t' + i + '"') + (active ? '' : ' hidden') + '>';
+  h += '<p class="src">' + (single ? '<strong>' + esc(m.label) + '</strong>' : '') + freshness(m) + (m.url ? '<a href="' + m.url + '" target="_blank" rel="noopener">Resort PDF ↗</a>' : '') + '</p>';
+  if (m.note) h += '<p class="m-note">' + esc(m.note) + '</p>';
+  (m.sections || []).forEach(s => {
+    h += '<section class="sec"><h4>' + esc(s.t) + '</h4>' + (s.note ? '<p class="s-note">' + esc(s.note) + '</p>' : '') + '<ul class="dishes">' + s.items.map(it => dishHTML(v, it, s, null)).join('') + '</ul></section>';
+  });
+  return h + '</div>';
+}
+function defaultTab(v){
+  const ms = v.menus || [];
+  const f = state.meal;
+  let i = -1;
+  if (['breakfast', 'lunch', 'dinner', 'snacks'].includes(f)) i = ms.findIndex(m => m.meal === f);
+  if (i < 0 && f === 'now') {
+    const t = now().mins, w = v.win.find(x => !x.u && openAt(x, t));
+    if (w && ['breakfast', 'lunch', 'dinner', 'snacks'].includes(w.m)) i = ms.findIndex(m => m.meal === w.m);
+  }
+  if (i < 0) {
+    const t = now().mins;
+    const later = v.win.filter(x => !x.u && (openAt(x, t) || x.s > t)).sort((a, b) => a.s - b.s)[0];
+    if (later) i = ms.findIndex(m => m.meal === later.m);
+  }
+  if (i < 0) i = ms.findIndex(m => m.kind === 'menu');
+  return i < 0 ? 0 : i;
+}
+function badgesHTML(v){
+  const b = [];
+  if (v.res === 'dinner') b.push('<span class="badge res">Reserve for dinner</span>');
+  if (v.res === 'check') b.push('<span class="badge res">Reservations: check the app</span>');
+  if (v.age) b.push('<span class="badge age">Ages ' + v.age + '+</span>');
+  if (v.dress === 'evening') b.push('<span class="badge dress">Evening attire</span>');
+  if (v.dress === 'evening-dinner') b.push('<span class="badge dress">Evening attire at dinner</span>');
+  if (v.dress === 'resort') b.push('<span class="badge dress">Resort casual</span>');
+  const K = {buffet:'Buffet', truck:'Food truck', drinks:'Drinks only', cafe:'Café', treat:'Treats', quick:'Quick service'};
+  if (K[v.kind]) b.push('<span class="badge">' + K[v.kind] + '</span>');
+  return b.join('');
+}
+const LAB = {breakfast:'Breakfast', lunch:'Lunch', dinner:'Dinner', day:'Lunch and dinner', late:'Late night', snacks:'Open'};
+function hoursText(v){
+  const parts = v.win.map(w => w.u ? LAB[w.m] + ' from ' + fmt(w.s) + ', close time unclear' : LAB[w.m] + ' ' + fmt(w.s) + '–' + fmt(w.e));
+  if (v.hoursNote) parts.push(v.hoursNote);
+  return parts.length ? parts.join(' · ') : 'Hours not posted';
+}
+const S0 = 360, S1 = 1560;
+const pct = m => (Math.min(Math.max(m, S0), S1) - S0) / (S1 - S0) * 100;
+function stripHTML(v, t){
+  let h = '<span class="strip" aria-hidden="true">';
+  v.win.forEach(w => { const a = pct(w.s), b = pct(w.e); h += '<span class="seg ' + w.m + (w.u ? ' unsure' : '') + '" style="left:' + a.toFixed(2) + '%;width:' + (b - a).toFixed(2) + '%"></span>'; });
+  const tt = t < S0 ? t + 1440 : t;
+  if (tt >= S0 && tt <= S1) h += '<span class="nowmark" style="left:' + pct(tt).toFixed(2) + '%"></span>';
+  h += '</span><span class="ticks" aria-hidden="true"><span style="left:0">6a</span><span style="left:30%">noon</span><span style="left:60%">6p</span><span style="left:90%">12a</span><span style="left:100%">2a</span></span>';
+  return h;
+}
+function venueHTML(v, t){
+  const st = statusOf(v, t);
+  const ms = v.menus || [];
+  const ai = (v.id in activeTab) ? activeTab[v.id] : defaultTab(v);
+  const single = ms.length < 2;
+  const tabs = single ? '' : '<div class="tabs" role="tablist" aria-label="' + esc(v.name) + ' menus">' + ms.map((m, i) => '<button type="button" class="tab" role="tab" id="' + v.id + '-t' + i + '" aria-controls="' + v.id + '-p' + i + '" aria-selected="' + (i === ai) + '" data-v="' + v.id + '" data-i="' + i + '">' + esc(m.label) + '</button>').join('') + '</div>';
+  const panels = ms.map((m, i) => panelHTML(v, m, i, i === ai, single)).join('');
+  const notes = (v.notes || []).length ? '<ul class="v-notes">' + v.notes.map(n => '<li>' + esc(n) + '</li>').join('') + '</ul>' : '';
+  const links = '<p class="v-links"><a href="' + gimg('Beaches Turks and Caicos ' + v.name) + '" target="_blank" rel="noopener">Photos of ' + esc(v.name) + ' ↗</a><a href="' + OFFICIAL + '" target="_blank" rel="noopener">Resort dining page ↗</a></p>';
+  return '<details class="venue" id="' + v.id + '"' + (openSet.has(v.id) ? ' open' : '') + '>' +
+    '<summary><span class="v-top"><span class="v-name">' + esc(v.name) + '</span><span class="status ' + st.k + '">' + esc(st.txt) + '</span><span class="chev" aria-hidden="true"></span></span>' +
+    '<span class="v-meta">' + esc(v.cuisine) + '</span><span class="badges">' + badgesHTML(v) + '</span>' +
+    stripHTML(v, t) + '<span class="v-hours">' + esc(hoursText(v)) + '</span></summary>' +
+    '<div class="v-body">' + links + tabs + panels + notes + '</div></details>';
+}
+function listHTML(t){
+  const vis = VENUES.filter(v => venueOK(v, t));
+  if (!vis.length) {
+    const msg = state.meal === 'now' ? 'Nothing with posted hours is open right now at the resort.' : 'No places match these filters.';
+    return '<div class="empty"><p>' + msg + '</p><button type="button" class="linkbtn" id="reset">Reset filters</button></div>';
+  }
+  let h = '<div class="list-tools"><span>' + vis.length + ' of ' + VENUES.length + ' places</span><button type="button" class="linkbtn" id="expand-all">' + (vis.every(v => openSet.has(v.id)) ? 'Collapse all' : 'Expand all') + '</button></div>';
+  VILLAGES.forEach(vg => {
+    const vs = vis.filter(v => v.village === vg.id);
+    if (!vs.length) return;
+    h += '<section class="village" aria-labelledby="vh-' + vg.id + '"><div class="v-head"><h2 id="vh-' + vg.id + '">' + esc(vg.name) + '</h2><span>' + vs.length + (vs.length === 1 ? ' place' : ' places') + '</span></div>' +
+      (vg.note ? '<p class="v-note">' + esc(vg.note) + '</p>' : '') + vs.map(v => venueHTML(v, t)).join('') + '</section>';
+  });
+  return h;
+}
+function resultsHTML(t){
+  const terms = norm(state.q).split(/\s+/).filter(Boolean);
+  const hits = IDX.filter(r => (r.v.drinks ? (state.meal === 'all' || state.meal === 'drinks') : (state.meal !== 'drinks' && venueOK(r.v, t) && menuOK(r.m))) && terms.every(x => r.hay.includes(x)));
+  if (!hits.length) {
+    return '<div class="empty"><p>Nothing matches “' + esc(state.q.trim()) + '”' + (filtersActive() ? ' with these filters' : '') + '.</p><p>Try one ingredient (conch, snapper, lobster) or a tag (vegan, gf, kids, nuts).</p>' + (filtersActive() ? '<button type="button" class="linkbtn" id="reset">Reset filters</button>' : '') + '</div>';
+  }
+  const groups = new Map();
+  hits.forEach(r => {
+    if (!groups.has(r.v.id)) groups.set(r.v.id, {v:r.v, menus:new Map()});
+    const g = groups.get(r.v.id), k = r.mi + '|' + r.m.label;
+    if (!g.menus.has(k)) g.menus.set(k, {m:r.m, items:[]});
+    g.menus.get(k).items.push(r);
+  });
+  let h = '<p class="r-count">' + hits.length + (hits.length === 1 ? ' match' : ' matches') + ' at ' + groups.size + (groups.size === 1 ? ' place' : ' places') + '</p>';
+  groups.forEach(g => {
+    const head = g.v.drinks ? '<button type="button" data-drinks="1">Bars &amp; drinks</button><span>Bars and drink lists</span>' : '<button type="button" data-open="' + g.v.id + '">' + esc(g.v.name) + '</button><span>' + esc(villageName(g.v.village)) + '</span>';
+    h += '<article class="r-venue"><div class="r-head">' + head + '</div>';
+    g.menus.forEach(mm => {
+      const lab = mm.m.label + (mm.m.date && mm.m.date !== 'undated' ? ' · ' + mm.m.date : '');
+      h += '<p class="r-menu">' + esc(lab) + '</p><ul class="dishes">' + mm.items.map(r => dishHTML(r.v, r.it, r.s, terms)).join('') + '</ul>';
+    });
+    h += '</article>';
+  });
+  return h;
+}
+function drinksHTML(){
+  let h = '<section class="drinks" aria-labelledby="dr-h"><h2 class="h2" id="dr-h">Bars &amp; drinks</h2><p class="m-note">Drinks are included at every bar, restaurant and truck. The resort advertises 14 bars but doesn’t list them; the names below come from recent guides and may include bars that have closed or changed. Full drink menus for Brü, Butch’s, Pinta and Jojo Java also sit inside those places’ menus.</p><div class="d-grid">';
+  DRINKS.forEach(s => {
+    h += '<article class="d-card"><h3>' + esc(s.t) + '</h3><ul class="dishes">' + s.items.map(it => dishHTML(DRINK_VENUE, it, s, null)).join('') + '</ul><p class="src">' + esc(s.src) + '</p></article>';
+  });
+  h += '</div><div class="bars"><h2 class="h2">Bars by village</h2>';
+  VILLAGES.forEach(vg => {
+    const bs = BARS[vg.id];
+    if (!bs) return;
+    h += '<div class="bar-v"><h3>' + esc(vg.name) + '</h3><ul>' + bs.map(b => '<li><b>' + esc(b[0]) + '</b>' + (b[1] ? ' <span class="muted">· ' + esc(b[1]) + '</span>' : '') + '<a class="ph" href="' + gimg('Beaches Turks and Caicos ' + b[0]) + '" target="_blank" rel="noopener" aria-label="Photos of ' + esc(b[0]) + '">' + CAM + '</a></li>').join('') + '</ul></div>';
+  });
+  h += '<p class="bar-src">Bar names and spots: TravelFam (Apr 2026), Travel Club Elite (Jul 2026), Momma To Go (Mar 2026), Turks Treasures, Marvelous Mouse Travels (Dec 2023).</p></div></section>';
+  return h;
+}
+function renderClock(n){
+  $('#clock-time').textContent = n.label;
+  $('#clock-src').textContent = n.tz ? 'Resort time, Providenciales' : 'Your device time';
+  const open = VENUES.filter(v => statusOf(v, n.mins).k === 'open');
+  $('#open-now').innerHTML = open.length ? open.map(v => '<button type="button" class="jump" data-open="' + v.id + '">' + esc(v.name) + '</button>').join('') : '<span class="muted">Nothing with posted hours is open right now.</span>';
+}
+function render(){
+  const n = now();
+  renderClock(n);
+  const searching = state.q.trim().length > 0;
+  let h;
+  if (searching) h = resultsHTML(n.mins);
+  else if (state.meal === 'drinks') h = drinksHTML();
+  else h = listHTML(n.mins);
+  $('#list').innerHTML = h;
+  $('#filters').hidden = state.meal === 'drinks';
+  const live = $('#live');
+  if (live) live.textContent = searching ? ($('.r-count') ? $('.r-count').textContent : 'No matches') : (state.meal === 'drinks' ? 'Showing bars and drinks' : (($('.list-tools span') || {}).textContent || ''));
+}
+function syncChips(){
+  $$('[data-meal]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.meal === state.meal)));
+  $$('[data-village]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.village === state.village)));
+}
+function syncToggles(){
+  $('#f-nores').checked = state.noRes;
+  $('#f-ages').checked = state.allAges;
+  $('#f-casual').checked = state.casual;
+}
+function clearSearch(){ $('#q').value = ''; state.q = ''; $('#qclear').hidden = true; }
+function resetFilters(){
+  state.meal = 'all'; state.village = 'all'; state.noRes = state.allAges = state.casual = false;
+  activeTab = {};
+  clearSearch(); syncChips(); syncToggles(); render();
+}
+function openVenue(id){
+  const v = VENUES.find(x => x.id === id);
+  if (!v) return;
+  clearSearch();
+  if (state.meal === 'drinks' || !venueOK(v, now().mins)) {
+    state.meal = 'all'; state.village = 'all'; state.noRes = state.allAges = state.casual = false;
+    syncChips(); syncToggles();
+  }
+  openSet.add(id);
+  render();
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.open = true;
+  el.scrollIntoView({behavior: reduced() ? 'auto' : 'smooth', block:'start'});
+  el.classList.add('flash');
+  setTimeout(() => el.classList.remove('flash'), 1700);
+  const s = el.querySelector('summary');
+  if (s) s.focus({preventScroll:true});
+}
+function toggleAll(){
+  const ds = $$('details.venue');
+  const anyClosed = ds.some(d => !d.open);
+  ds.forEach(d => { d.open = anyClosed; if (anyClosed) openSet.add(d.id); else openSet.delete(d.id); });
+  const b = $('#expand-all');
+  if (b) b.textContent = anyClosed ? 'Collapse all' : 'Expand all';
+}
+
+/* ---------- events ---------- */
+$('#village-chips').innerHTML = '<button type="button" class="chip" data-village="all" aria-pressed="true">All areas</button>' +
+  VILLAGES.map(v => '<button type="button" class="chip" data-village="' + v.id + '" aria-pressed="false">' + esc(v.short) + '</button>').join('');
+
+document.addEventListener('click', e => {
+  const t = e.target;
+  if (!(t instanceof Element)) return;
+  const mc = t.closest('[data-meal]');
+  if (mc) { state.meal = mc.dataset.meal; activeTab = {}; syncChips(); render(); if (state.q.trim() === '' && state.meal === 'drinks') { const d = $('#dr-h'); if (d) d.scrollIntoView({block:'nearest'}); } return; }
+  const vc = t.closest('[data-village]');
+  if (vc) { state.village = vc.dataset.village; syncChips(); render(); return; }
+  const tab = t.closest('.tab');
+  if (tab) {
+    const id = tab.dataset.v, i = +tab.dataset.i, body = tab.closest('.v-body');
+    activeTab[id] = i;
+    $$('.tab', body).forEach((b, j) => b.setAttribute('aria-selected', String(j === i)));
+    $$('.panel', body).forEach((p, j) => { p.hidden = j !== i; });
+    return;
+  }
+  const op = t.closest('[data-open]');
+  if (op) { openVenue(op.dataset.open); return; }
+  if (t.closest('[data-drinks]')) { clearSearch(); state.meal = 'drinks'; syncChips(); render(); const d = $('#dr-h'); if (d) d.scrollIntoView({behavior: reduced() ? 'auto' : 'smooth', block:'start'}); return; }
+  if (t.closest('#expand-all')) { toggleAll(); return; }
+  if (t.closest('#reset')) { resetFilters(); return; }
+  if (t.closest('#qclear')) { clearSearch(); render(); $('#q').focus(); return; }
+});
+document.addEventListener('toggle', e => {
+  const d = e.target;
+  if (d && d.classList && d.classList.contains('venue')) { if (d.open) openSet.add(d.id); else openSet.delete(d.id); }
+}, true);
+let qTimer = 0;
+$('#q').addEventListener('input', () => {
+  clearTimeout(qTimer);
+  qTimer = setTimeout(() => { state.q = $('#q').value; $('#qclear').hidden = !state.q; render(); }, 140);
+});
+[['f-nores', 'noRes'], ['f-ages', 'allAges'], ['f-casual', 'casual']].forEach(p => {
+  $('#' + p[0]).addEventListener('change', e => { state[p[1]] = e.target.checked; render(); });
+});
+function fromHash(){
+  const h = decodeURIComponent(location.hash.slice(1));
+  if (!h) return;
+  if (h === 'drinks') { state.meal = 'drinks'; syncChips(); render(); return; }
+  if (VENUES.some(v => v.id === h)) openVenue(h);
+}
+window.addEventListener('hashchange', fromHash);
+setInterval(() => {
+  const a = document.activeElement;
+  if (a && (a.id === 'q' || $('#list').contains(a))) { renderClock(now()); return; }
+  render();
+}, 60000);
+
+syncChips();
+render();
+fromHash();
+})();
+</script>
+</body>
+</html>
