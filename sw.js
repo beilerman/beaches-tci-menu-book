@@ -1,6 +1,6 @@
 /* Offline support for spotty resort Wi-Fi: the page is fetched network-first (so updates show up
    immediately when online) and falls back to the last cached copy; fonts and icons are cache-first. */
-const CACHE = 'menu-book-v1';
+const CACHE = 'menu-book-v2';
 const CORE = ['./', 'index.html', 'favicon.svg', 'manifest.webmanifest', 'apple-touch-icon.png'];
 
 self.addEventListener('install', e => {

@@ -13,3 +13,5 @@ Live: https://beaches-tci-menu-book.vercel.app (pushes to `main` deploy automati
 - The site is deliberately `noindex` (`robots.txt` + meta tag); links still unfurl with a preview card.
 
 Not affiliated with Beaches Resorts or Sandals.
+
+Photo galleries use locally stored WebP images in `assets/photos/`, with provenance and dish matches in `catalog.json` (also embedded as `PHOTOS` in the page). Loaded photos cache for offline revisits; photos not yet loaded still require a connection. Guest pictures reflect earlier visits, not guaranteed current presentation.
