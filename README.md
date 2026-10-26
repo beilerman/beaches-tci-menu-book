@@ -41,3 +41,7 @@ connection. Guest pictures reflect earlier visits, not guaranteed current
 presentation. Photos may show extra sides and never calibrate calorie estimates.
 Validate/re-embed: `python3 scripts/sync_photos.py`; check only with `--check`.
 The helper requires Pillow. Photo and calorie updates must both pass their checks.
+Browser helpers: `scripts/check_photos.cjs` checks every actual image and the
+viewer; `scripts/check_offline.cjs` checks menu/report navigation while offline.
+Set `PREVIEW_URL` to verify production. The service worker keeps the report in a
+separate navigation cache entry so it cannot replace the menu's offline copy.

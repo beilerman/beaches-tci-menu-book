@@ -30,11 +30,16 @@ Passed:
   dish images were additionally reviewed full size. Mobile viewer and desktop
   French-onion-soup search were visually inspected after integration.
 
+The subsequent cache regression check confirmed the menu and report stay distinct
+when both are loaded online and then opened offline (505 menu calorie rows and
+533 report rows). Navigation now caches each page under its own key, and cache
+writes extend the service-worker event lifetime. The test registers the worker
+on secure localhost; production verification is recorded separately.
+
 Flow boundaries: static HTTP page -> embedded reviewed dataset -> item identity
 lookup -> calorie/serving HTML. No backend, authentication or external API is
 required for calculations. The offline navigation cache remains network-first;
-the calorie data is embedded in that same HTML. Live HTTPS service-worker offline
-behavior was not exercised on the local HTTP preview.
+the calorie data is embedded in that same HTML.
 
 Limitations: software consistency is verified; actual food weight, composition,
 calories and current availability are not. All numeric estimates remain Grade D.

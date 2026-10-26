@@ -16,16 +16,27 @@ fs.mkdirSync(qa,{recursive:true});
    const context=await browser.newContext({viewport:{width,height:1000}});
    const page=await context.newPage();
    const errors=[];page.on('pageerror',e=>errors.push(e.message));
-   await page.goto(base+'/#neptunes');
+   await page.goto(base+'/#neptunes',{waitUntil:'domcontentloaded'});
    await page.locator('#neptunes[open]').waitFor();
    assert.equal(await page.locator('.photo-gallery').count(),26);
    assert.equal(await page.locator('.dish-photo').count(),15);
    // Decode every catalog file in the browser, including offscreen/lazy images.
-   const images=await page.evaluate(async urls=>Promise.all(urls.map(async src=>{
-    const im=new Image();im.src=src;
-    try{await im.decode();return {src,ok:im.naturalWidth>=220,width:im.naturalWidth,height:im.naturalHeight};}
-    catch{return {src,ok:false};}
-   })),catalog.map(p=>p.local));
+   const images=await page.evaluate(async urls=>{
+    const results=[];
+    // Bound concurrency so cold-cache production checks do not flood the browser.
+    for(let offset=0;offset<urls.length;offset+=8){
+     results.push(...await Promise.all(urls.slice(offset,offset+8).map(async src=>{
+      const im=new Image();im.src=src;
+      let timer;
+      try{
+       await Promise.race([im.decode(),new Promise((_,reject)=>{timer=setTimeout(()=>reject(new Error('Image decode timeout')),30000);})]);
+       return {src,ok:im.naturalWidth>=220,width:im.naturalWidth,height:im.naturalHeight};
+      }catch(e){im.src='';return {src,ok:false,error:e.message};}
+      finally{clearTimeout(timer);}
+     })));
+    }
+    return results;
+   },catalog.map(p=>p.local));
    assert.equal(images.filter(p=>!p.ok).length,0,JSON.stringify(images.filter(p=>!p.ok)));
    await page.locator('#neptunes .tab').filter({hasText:'Breakfast'}).click();
    const eggs=page.locator('#neptunes .panel:not([hidden]) .dish').filter({hasText:'Classic Eggs Benedict'});
