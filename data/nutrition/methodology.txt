@@ -1,0 +1,114 @@
+BEACHES TURKS & CAICOS CALORIE ESTIMATES
+Prepared October 26, 2026
+
+Purpose and coverage
+An unofficial calorie comparison layer for the existing Beaches Menu Book. The
+533 records include individual dishes, duplicate lunch/dinner listings, guest
+reports, and some grouped choices. They are not 533 unique dishes. Buffet signs
+without named dishes are outside the row inventory and have no fixed estimate.
+No official Beaches calorie declaration was used. The menu inventory was not
+comprehensively refreshed; historical dates and guest-source qualifications remain.
+
+What Grade D means
+Every numeric estimate is Grade D, "Use with caution": ingredient descriptions
+plus hypothetical portions and generic food proxies. The grade describes evidence
+quality, not whether a food is healthy. No resort food was weighed, recipes are
+not disclosed, and neither pictures nor AI illustrations establish mass/nutrition.
+No A/B/C upgrade is made from an item name, photo, menu weight or source count.
+
+Arithmetic and ranges
+For each component, kcal = edible grams * source kcal per 100 g / 100.
+Central estimates sum the central component amounts. Lower and upper scenarios
+sum the corresponding low/high component amounts. Unless a component has an
+explicitly specified bound, the scenario weights are 65%, 100%, and 150% of the
+assumed central amount. These are sensitivity scenarios chosen by the modeler,
+not measurements, empirical restaurant-portion bounds, probability distributions,
+or confidence intervals. Actual portions/composition may fall outside them.
+The scenarios vary quantities; they do not prove the chosen proxy or recipe.
+Central display values round to the nearest 10 kcal; lower values round down and
+upper values round up. Very small central values display as <10 kcal, not zero.
+All unrounded arithmetic and component weights are retained in estimates.json.
+
+USDA source data
+USDA FoodData Central, FNDDS 2021-2023 (October 2024 release):
+https://fdc.nal.usda.gov/download-datasets/
+https://www.ars.usda.gov/ARSUserFiles/80400530/pdf/fndds/2021_2023_FNDDS_Doc.pdf
+The complete dataset already existed locally from the Trash Can Tables work.
+profiles.json preserves the exact selected FDC IDs, descriptions, calories per
+100 edible grams, provenance URLs and source-file SHA-256. Rebuilding uses these
+retained profiles and does not require that large local dataset.
+
+Cooked conch is not present in that FNDDS release. Its profile is from USDA SR28
+(2015), NDB 15250/FDC 173720, 130 kcal per 100 g, page 678 of the official report:
+https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg15.pdf#page=678
+This is a cooked-conch proxy even for citrus-marinated conch, not a measured raw
+conch value. Fried preparations model coating/oil or a clearly identified proxy.
+
+Proxy limitations
+Food profiles are approximate matches, not Beaches recipes. Examples include
+generic white fish for mahi/grouper/corvina, sea bass for branzino, bulgur for farro,
+mashed potato for cassava/parsnip puree, meatless links for plant-based chorizo,
+ricotta for mascarpone, cooked pasta for rice/soba noodles, and prepared pastry,
+cake, pudding or pie for specialty desserts. Relevant differences are recorded
+in item notes and the exact proxy names are visible. Some prepared USDA foods
+already contain cooking fat. Added components represent named accompaniments or
+explicitly assumed extra fat; the model does not establish actual retained oil.
+Ingredient substitutions, food hydration and richer recipes can change calories.
+No separate macro, sodium, allergen or daily calorie target is inferred.
+
+Serving decisions
+Pizza: one assumed whole individual pizza, generally around 350 g centrally;
+diameter and actual weight unknown. It is not per slice.
+Soy rolls: four pieces as listed. Nigiri/sashimi alternatives remain unavailable.
+Butch's 14 oz bone-in Kansas strip for two: half the estimated cooked edible meat
+per person, with assumed bone/cooking loss. Side/sauce choices excluded.
+Other labeled steak ounces: weight basis is unknown; cooked edible weights span
+assumed pre-cook/cooked interpretations. Bones are excluded from edible weights.
+Children's meals use explicit smaller assumptions, not adult meal estimates.
+Kimonos proteins, rice, soup and starters are separate components of a meal.
+Optional add-on protein and selectable fries/salad are excluded where the serving
+line says so. Named fixed accompaniments are included. Reorders/refills not modeled.
+Generic side/sauce lists and unnamed buffets do not receive a universal number.
+
+Cocktail evidence checked live
+https://www.beaches.com/blog/beaches-cocktail-recipes/
+The official March 16, 2025 blog was read October 26, 2026. Dirty Banana and
+Hummingbird models use its ingredient lists with generic liquor profiles, assumed
+banana size, liquid densities and syrup concentrations. These remain Grade D.
+No exact served volume, brand ABV or measured cocktail nutrition is asserted.
+Dirty Banana: the saved short description mentions cream; the official recipe
+lists milk and creme de cacao. The model follows the official ingredient list.
+Bob Marley: rum listed but incorporation unclear; commercial mixes unspecified.
+Miami Vice: two rum pours listed, commercial daiquiri/colada mix brands and
+concentrations unspecified. No fixed numerical estimate assigned.
+Purple Rain: rum in ingredient list, gin in directions; splash sizes unspecified.
+Those three remain unavailable. Old guest-report cocktails with named ingredients
+are explicitly hypothetical recipe scenarios, not verified resort recipes.
+
+Menu/source evidence checked live, limited scope
+Official dining index and representative Pinta lunch, Butch's dinner, Soy dinner
+and Kimonos dinner PDFs were read October 26, 2026. This checks examples of named ingredients,
+four-piece/meal-component interpretation and the shared steak description; it
+does not revalidate every dish or upgrade any estimate's evidence grade.
+https://www.beaches.com/resorts/turks-caicos/restaurants/
+https://cdn.sandals.com/rfcm-system/prd/restaurant-menus/369lunch-all/FB_2026_BTC_Pinta_Lunch_Feb_25.pdf
+https://cdn.sandals.com/rfcm-system/prd/restaurant-menus/368dinner-all/FB_2026_BTC_Butch_Chophouse_Dinner_SHRIMP_Menu_Mar_30.pdf
+https://cdn.sandals.com/rfcm-system/prd/restaurant-menus/87dinner-all/FB_2026_BTC_Kimonos_Dinner.pdf
+https://cdn.sandals.com/rfcm-system/prd/restaurant-menus/126dinner-all/2024_BTC_Soy_Menu.pdf
+Other menu/guest references come from the existing site inventory, not fresh
+verification. Each record retains its menu date, guest flag and ingredient link.
+
+Reproducibility
+scripts/nutrition_models.py contains one explicit model/withholding decision for
+every pinned inventory row. No fuzzy or keyword matching assigns nutrition.
+scripts/menu_inventory.cjs reads the actual page data. The builder refuses a menu
+snapshot mismatch. Rebuild: python3 scripts/build_nutrition.py
+Byte-for-byte freshness: python3 scripts/build_nutrition.py --check
+Domain checks: python3 -m unittest discover -s tests -v
+Browser checks: node scripts/check_nutrition.cjs (Playwright required).
+Passing these checks establishes software consistency, not nutrition accuracy.
+
+Publication
+Pushing main deploys the site. The user approved publication and an additional
+photo search in this conversation on October 26, 2026. Local checks are recorded
+separately from the final live-site verification.

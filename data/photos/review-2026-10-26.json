@@ -1,0 +1,938 @@
+{
+  "reviewed": "2026-10-26",
+  "new_photos": 47,
+  "total_photos": 88,
+  "new_exact_dish_matches": 4,
+  "existing_dish_match_added": "Pinta Spaghetti & Meatballs",
+  "limitations": "Source dates are article dates, not verified photo dates. Images are not evidence of measured mass or calories. Unclear dishes stay in restaurant galleries without exact item matches.",
+  "photos": [
+    {
+      "file": "schooners-official-006",
+      "venue": "schooners",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-006.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Schooners open-air dining terrace — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/schooners-official-006.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "7089ee72d69548feb20f8b92ad9f62dcad1160e0bdde107f3a8523bd7c730955"
+    },
+    {
+      "file": "sapodillas-official-007",
+      "venue": "sapodillas",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-007.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Sapodilla’s dining room — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/sapodillas-official-007.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "26d27072747a7920d55831a8679966db7fae46ff78577af498d4192a44c825af"
+    },
+    {
+      "file": "giuseppes-official-008",
+      "venue": "giuseppes",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-008.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Giuseppe’s exterior and terrace — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/giuseppes-official-008.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "23b164b558b5019b8f80ca276e6da27b964fc8bbe188cf7d50d2828a565c5f09"
+    },
+    {
+      "file": "bobbydees-official-009",
+      "venue": "bobbydees",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-009.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Bobby Dee’s diner interior — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/bobbydees-official-009.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "0a87b7b871b0f864c48e2b5ae9062028037c561f9712a74176c3dc7f8bf1900f"
+    },
+    {
+      "file": "lepetitchateau-official-010",
+      "venue": "lepetitchateau",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-010.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Le Petit Chateau dining room — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/lepetitchateau-official-010.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "a85ecf2d32e550988732f1cad3920cb11882b7173e00b9e73a306587adf4eb5f"
+    },
+    {
+      "file": "lepetitchateau-official-011",
+      "venue": "lepetitchateau",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-011.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Le Petit Chateau entrance — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/lepetitchateau-official-011.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "267af94609c77eea23254f029a899347e89b662a2641a3eeb5708c87ef5030c2"
+    },
+    {
+      "file": "cafedeparis-official-012",
+      "venue": "cafedeparis",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-012.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Café de Paris terrace — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/cafedeparis-official-012.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "1bd375bafa912365a31ad08ff3c07dfadaa9f9c16aac89937821cfa9c9c18ee9"
+    },
+    {
+      "file": "cafedeparis-official-013",
+      "venue": "cafedeparis",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-013.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Café de Paris interior — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/cafedeparis-official-013.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "b3930c37f3593c69e96961750eb1534b1a0355c32433792edd16f663ed1e14b6"
+    },
+    {
+      "file": "bellanapoli-official-014",
+      "venue": "bellanapoli",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-014.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Bella Napoli pizza counter — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/bellanapoli-official-014.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "6d30e79a45533ad2a02d3e515bb2f255b103d2f4262c7074ee007ca6f01370e1"
+    },
+    {
+      "file": "barefoot-official-015",
+      "venue": "barefoot",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-015.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Barefoot by the Sea beachfront seating — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/barefoot-official-015.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "76b4068e146d1d61ec4a0753de977bc91c0dd4d1b7cd9381c1df185c279f6d2e"
+    },
+    {
+      "file": "cricketers-official-016",
+      "venue": "cricketers",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-016.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Cricketer’s Pub exterior — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/cricketers-official-016.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "7a35f7d9a7484d585c3ac4f8626b3100b177ecc9ae1801dd35e1b16f2dc28c75"
+    },
+    {
+      "file": "dinos-official-030",
+      "venue": "dinos",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-030.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Pizza promotional image on Dino’s resort page; exact menu item unverified",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/dinos-official-030.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "promotional",
+      "sha256": "2fe518d5c999f221a0a88e1e6e89810ac1194bf13a0ec83dc79b0b27ebecaabd"
+    },
+    {
+      "file": "soy-official-026",
+      "venue": "soy",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-026.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Soy Sushi Bar entrance — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/soy-official-026.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "94d504634bc694f24b3268edbb1102d98f09306d4cb8db8f14800531ef1eba52"
+    },
+    {
+      "file": "bayside-official-018",
+      "venue": "bayside",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-018.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Bayside dining terrace — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/bayside-official-018.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "9d1d2a4f8a2a56876d64740e33295b8f51dfe51dcbad9a39de154f89cee11bdc"
+    },
+    {
+      "file": "sky-official-019",
+      "venue": "sky",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-019.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Sky’s ocean-view terrace — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/sky-official-019.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "bd13e69dacdbedb6823d70562f19bf81eee263bc91f438261e42f51edc3eae42"
+    },
+    {
+      "file": "neptunes-official-020",
+      "venue": "neptunes",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-020.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Neptunes dining room — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/neptunes-official-020.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "59be4681e5084326c4e11207ce74888c6743be46487fb598a349374e9a2b482a"
+    },
+    {
+      "file": "jerktruck-official-023",
+      "venue": "jerktruck",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-023.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Jerk Truck counter — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/jerktruck-official-023.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "5f2451a6d75fa21d80219bb520a5c796fb9787a40907c701c0368ed22ca29eed"
+    },
+    {
+      "file": "jojo-official-028",
+      "venue": "jojo",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-028.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Coffee promotional image on Jojo Java’s resort page; not a specific menu drink",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/jojo-official-028.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "promotional",
+      "sha256": "23d57067ae8470a26f81b7382c006e7b81d70b532e1337dbf5f758310f953052"
+    },
+    {
+      "file": "mrmac-official-022",
+      "venue": "mrmac",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-022.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Mr. Mac truck and seating — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/mrmac-official-022.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "ac105a7128803f23c4974c29303b5bcbb95b1ab2612436ad2dd58fe0786212bb"
+    },
+    {
+      "file": "dive-official-021",
+      "venue": "dive",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-021.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "The Dive drinks truck — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/dive-official-021.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "3d006aad0e91e54cffee6206e2edfed8c4812fda0c5687c7d79a3d226471751e"
+    },
+    {
+      "file": "yoyos-official-029",
+      "venue": "yoyos",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-029.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Frozen-treat promotional image on YoYo’s resort page; exact serving unverified",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/yoyos-official-029.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "promotional",
+      "sha256": "1014e79668af9310632290ed225945b7bd8687516109fc8824235126704e6a98"
+    },
+    {
+      "file": "pinta-official-256",
+      "venue": "pinta",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-256.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Pinta Food Hall interior — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/pinta-official-256.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "2f997d01cb076163236f5a794a6087b3a43faecd4227ca460f296173e2267d08"
+    },
+    {
+      "file": "butchs-official-255",
+      "venue": "butchs",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-255.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Butch’s Island Chop House dining room — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/butchs-official-255.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "87a5e0cf5ff4200196401ef716cdd194497c04ae94ead744cc96806dcf2b3fd5"
+    },
+    {
+      "file": "bru-official-257",
+      "venue": "bru",
+      "src": "https://cdn.sandals.com/beaches/v11/media/btc/restaurants/large/btc-257.jpg",
+      "source": "https://www.beaches.com/resorts/turks-caicos/restaurants/",
+      "credit": "Beaches Resorts",
+      "kind": "official",
+      "caption": "Brü coffee and cocktail bar — official resort photo",
+      "dishes": [],
+      "original_size": [
+        1920,
+        1017
+      ],
+      "local": "assets/photos/bru-official-257.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "92ddca711a3a818049b8c9d6807a0dac80e578469feeffff43e9ab61162e5f79"
+    },
+    {
+      "file": "bobbydees-shoreline-2",
+      "venue": "bobbydees",
+      "src": "https://shorelinejourneys.com/wp-content/uploads/2025/04/IMG_3143-1024x768.jpeg",
+      "source": "https://shorelinejourneys.com/beaches-turks-and-caicos-dining-guide/",
+      "credit": "Shoreline Journeys / Jennifer Salabsky",
+      "kind": "guest",
+      "caption": "Guest steak sandwich and fries at Bobby Dee’s (2025 guide)",
+      "dishes": [],
+      "source_period": "2025 article; photo date unverified",
+      "original_size": [
+        1024,
+        768
+      ],
+      "local": "assets/photos/bobbydees-shoreline-2.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "d38a9d9af6c832170b1975575b06a57c13d2cf9345e2f571c3a74e74cbee5e01"
+    },
+    {
+      "file": "marios-shoreline-4",
+      "venue": "marios",
+      "src": "https://shorelinejourneys.com/wp-content/uploads/2025/04/IMG_2662-1024x768.jpeg",
+      "source": "https://shorelinejourneys.com/beaches-turks-and-caicos-dining-guide/",
+      "credit": "Shoreline Journeys / Jennifer Salabsky",
+      "kind": "guest",
+      "caption": "Guest pasta dinner at Mario’s (2025 guide); exact menu version unverified",
+      "dishes": [],
+      "source_period": "2025 article; photo date unverified",
+      "original_size": [
+        1024,
+        768
+      ],
+      "local": "assets/photos/marios-shoreline-4.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "9bd1a33ce85c571473a3b80ae035b7144fbe44e8f952f86e375f663dfea87680"
+    },
+    {
+      "file": "marios-shoreline-5",
+      "venue": "marios",
+      "src": "https://shorelinejourneys.com/wp-content/uploads/2025/04/IMG_2663-1024x768.jpeg",
+      "source": "https://shorelinejourneys.com/beaches-turks-and-caicos-dining-guide/",
+      "credit": "Shoreline Journeys / Jennifer Salabsky",
+      "kind": "guest",
+      "caption": "Guest baked entrée at Mario’s (2025 guide); exact dish unverified",
+      "dishes": [],
+      "source_period": "2025 article; photo date unverified",
+      "original_size": [
+        1024,
+        768
+      ],
+      "local": "assets/photos/marios-shoreline-5.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "9d7833ba34668a77e8d949e6baafc03aba7da012f19d5ff4588e4ae636319671"
+    },
+    {
+      "file": "cricketers-shoreline-6",
+      "venue": "cricketers",
+      "src": "https://shorelinejourneys.com/wp-content/uploads/2025/04/IMG_2818-1024x768.jpeg",
+      "source": "https://shorelinejourneys.com/beaches-turks-and-caicos-dining-guide/",
+      "credit": "Shoreline Journeys / Jennifer Salabsky",
+      "kind": "guest",
+      "caption": "Guest pub lunch at Cricketer’s (2025 guide); exact current dish unverified",
+      "dishes": [],
+      "source_period": "2025 article; photo date unverified",
+      "original_size": [
+        1024,
+        768
+      ],
+      "local": "assets/photos/cricketers-shoreline-6.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "5fc0b4bc618c808fd905426a6051119c06240e368102b0f465ac1732340de67c"
+    },
+    {
+      "file": "cafedeparis-shoreline-8",
+      "venue": "cafedeparis",
+      "src": "https://shorelinejourneys.com/wp-content/uploads/2025/04/IMG_2789-768x1024.jpeg",
+      "source": "https://shorelinejourneys.com/beaches-turks-and-caicos-dining-guide/",
+      "credit": "Shoreline Journeys / Jennifer Salabsky",
+      "kind": "guest",
+      "caption": "Guest iced caramel coffee at Café de Paris (2025 guide)",
+      "dishes": [],
+      "source_period": "2025 article; photo date unverified",
+      "original_size": [
+        768,
+        1024
+      ],
+      "local": "assets/photos/cafedeparis-shoreline-8.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "bee583b3a16d10aaf07facb2e4c5eec4faa198ef247da422a1d1cc095a978736"
+    },
+    {
+      "file": "lepetitchateau-shoreline-9",
+      "venue": "lepetitchateau",
+      "src": "https://shorelinejourneys.com/wp-content/uploads/2025/04/IMG_3214-1024x768.jpeg",
+      "source": "https://shorelinejourneys.com/beaches-turks-and-caicos-dining-guide/",
+      "credit": "Shoreline Journeys / Jennifer Salabsky",
+      "kind": "guest",
+      "caption": "Guest scallop appetizer at Le Petit Chateau (2025 guide)",
+      "dishes": [],
+      "source_period": "2025 article; photo date unverified",
+      "original_size": [
+        1024,
+        768
+      ],
+      "local": "assets/photos/lepetitchateau-shoreline-9.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "a0de7083a8f5ffc4a6819dcbc5b70c3100db7b75b8c9f89d851c8bd80fd29162"
+    },
+    {
+      "file": "lepetitchateau-shoreline-10",
+      "venue": "lepetitchateau",
+      "src": "https://shorelinejourneys.com/wp-content/uploads/2025/04/IMG_3215-1024x768.jpeg",
+      "source": "https://shorelinejourneys.com/beaches-turks-and-caicos-dining-guide/",
+      "credit": "Shoreline Journeys / Jennifer Salabsky",
+      "kind": "guest",
+      "caption": "French onion soup at Le Petit Chateau — guest photo in 2025 guide",
+      "dishes": [
+        "Soupe à l’Oignon"
+      ],
+      "source_period": "2025 article; photo date unverified",
+      "original_size": [
+        1024,
+        768
+      ],
+      "local": "assets/photos/lepetitchateau-shoreline-10.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "match_note": "Source alt text identifies the dish and venue; visual review agrees. Historical appearance only; no calorie/weight calibration.",
+      "role": "dish",
+      "sha256": "e04f9070b7a1dd5e634a9d5a74d236b5f8bd858e35e0f94e025d863c368818fb"
+    },
+    {
+      "file": "lepetitchateau-shoreline-12",
+      "venue": "lepetitchateau",
+      "src": "https://shorelinejourneys.com/wp-content/uploads/2025/04/IMG_3220-1024x768.jpeg",
+      "source": "https://shorelinejourneys.com/beaches-turks-and-caicos-dining-guide/",
+      "credit": "Shoreline Journeys / Jennifer Salabsky",
+      "kind": "guest",
+      "caption": "Guest crème brûlée at Le Petit Chateau (2025 guide); flavor unverified",
+      "dishes": [],
+      "source_period": "2025 article; photo date unverified",
+      "original_size": [
+        1024,
+        768
+      ],
+      "local": "assets/photos/lepetitchateau-shoreline-12.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "59b648e8c2d7e8eacc3bb1206b332084f909f90d38d2d02466e05ec713379a8b"
+    },
+    {
+      "file": "arizonas-shoreline-13",
+      "venue": "arizonas",
+      "src": "https://shorelinejourneys.com/wp-content/uploads/2025/03/IMG_3029-1024x768.jpeg",
+      "source": "https://shorelinejourneys.com/beaches-turks-and-caicos-dining-guide/",
+      "credit": "Shoreline Journeys / Jennifer Salabsky",
+      "kind": "guest",
+      "caption": "Guest ribs dinner at Arizona’s (2025 guide); sauce and sides may differ today",
+      "dishes": [],
+      "source_period": "2025 article; photo date unverified",
+      "original_size": [
+        1024,
+        768
+      ],
+      "local": "assets/photos/arizonas-shoreline-13.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "a0e0d8ad778cba548a816666e88cb6dce2fcb2a2724962ddcb5a9a0b12238e38"
+    },
+    {
+      "file": "kimonos-shoreline-14",
+      "venue": "kimonos",
+      "src": "https://shorelinejourneys.com/wp-content/uploads/2025/04/IMG_2854-1024x768.jpeg",
+      "source": "https://shorelinejourneys.com/beaches-turks-and-caicos-dining-guide/",
+      "credit": "Shoreline Journeys / Jennifer Salabsky",
+      "kind": "guest",
+      "caption": "Kimonos chef preparing dinner — guest photo in 2025 guide",
+      "dishes": [],
+      "source_period": "2025 article; photo date unverified",
+      "original_size": [
+        1024,
+        768
+      ],
+      "local": "assets/photos/kimonos-shoreline-14.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "33993859a848b660ad0693653d10c447511d161eacc67e39ebd4169c5f701e32"
+    },
+    {
+      "file": "kimonos-shoreline-15",
+      "venue": "kimonos",
+      "src": "https://shorelinejourneys.com/wp-content/uploads/2025/04/IMG_2835-1024x768.jpeg",
+      "source": "https://shorelinejourneys.com/beaches-turks-and-caicos-dining-guide/",
+      "credit": "Shoreline Journeys / Jennifer Salabsky",
+      "kind": "guest",
+      "caption": "Kimonos appetizer plate — guest photo in 2025 guide; menu version may differ",
+      "dishes": [],
+      "source_period": "2025 article; photo date unverified",
+      "original_size": [
+        1024,
+        768
+      ],
+      "local": "assets/photos/kimonos-shoreline-15.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "9fb697dd874d34d8fd8636cca64aa4304f14afe1bf5d068687aa0bc6e5eb1fa5"
+    },
+    {
+      "file": "kimonos-shoreline-16",
+      "venue": "kimonos",
+      "src": "https://shorelinejourneys.com/wp-content/uploads/2025/04/IMG_2856-1024x768.jpeg",
+      "source": "https://shorelinejourneys.com/beaches-turks-and-caicos-dining-guide/",
+      "credit": "Shoreline Journeys / Jennifer Salabsky",
+      "kind": "guest",
+      "caption": "Kimonos mixed grill in progress — guest photo in 2025 guide",
+      "dishes": [],
+      "source_period": "2025 article; photo date unverified",
+      "original_size": [
+        1024,
+        768
+      ],
+      "local": "assets/photos/kimonos-shoreline-16.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "a6416682768131613e0893a7e33a46294c05aec5d7bc01b07f08e887c2a42338"
+    },
+    {
+      "file": "neptunes-shoreline-17",
+      "venue": "neptunes",
+      "src": "https://shorelinejourneys.com/wp-content/uploads/2025/04/IMG_3012-1024x768.jpeg",
+      "source": "https://shorelinejourneys.com/beaches-turks-and-caicos-dining-guide/",
+      "credit": "Shoreline Journeys / Jennifer Salabsky",
+      "kind": "guest",
+      "caption": "Eggs Benedict at Neptunes — guest photo in 2025 guide; pictured hash browns are extra to the modeled serving",
+      "dishes": [
+        "Classic Eggs Benedict"
+      ],
+      "source_period": "2025 article; photo date unverified",
+      "original_size": [
+        1024,
+        768
+      ],
+      "local": "assets/photos/neptunes-shoreline-17.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "match_note": "Source alt text identifies the dish and venue; visual review agrees. Historical appearance only; no calorie/weight calibration.",
+      "role": "dish",
+      "sha256": "8bc74dd2d0c0048bd2a07af205092c6d092f01f65ad3684ba6ef16b5dc26473b"
+    },
+    {
+      "file": "neptunes-shoreline-18",
+      "venue": "neptunes",
+      "src": "https://shorelinejourneys.com/wp-content/uploads/2025/03/IMG_3013-1024x768.jpeg",
+      "source": "https://shorelinejourneys.com/beaches-turks-and-caicos-dining-guide/",
+      "credit": "Shoreline Journeys / Jennifer Salabsky",
+      "kind": "guest",
+      "caption": "Blueberry pancakes at Neptunes — guest photo in 2025 guide; pictured bacon is extra to the modeled serving",
+      "dishes": [
+        "Fluffy Pancake"
+      ],
+      "source_period": "2025 article; photo date unverified",
+      "original_size": [
+        1024,
+        768
+      ],
+      "local": "assets/photos/neptunes-shoreline-18.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "match_note": "Source alt text identifies the dish and venue; visual review agrees. Historical appearance only; no calorie/weight calibration.",
+      "role": "dish",
+      "sha256": "e397b7e98c2257686b142210b4d195f1b33ced5973af8c5bf65f061aceb312be"
+    },
+    {
+      "file": "sky-shoreline-20",
+      "venue": "sky",
+      "src": "https://shorelinejourneys.com/wp-content/uploads/2025/04/IMG_2567-1024x768.jpeg",
+      "source": "https://shorelinejourneys.com/beaches-turks-and-caicos-dining-guide/",
+      "credit": "Shoreline Journeys / Jennifer Salabsky",
+      "kind": "guest",
+      "caption": "Apple French toast at Sky — guest photo in 2025 guide",
+      "dishes": [
+        "Apple-Stuffed French Toast"
+      ],
+      "source_period": "2025 article; photo date unverified",
+      "original_size": [
+        1024,
+        768
+      ],
+      "local": "assets/photos/sky-shoreline-20.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "match_note": "Source alt text identifies the dish and venue; visual review agrees. Historical appearance only; no calorie/weight calibration.",
+      "role": "dish",
+      "sha256": "ee05a7337abfc5ebc8516e463c18eb420c9af9d00b1dec322adf553a8dd25185"
+    },
+    {
+      "file": "butchs-mouse-2",
+      "venue": "butchs",
+      "src": "https://marvelousmousetravels.com/wp-content/uploads/2026/04/IMG_1170-scaled.jpeg",
+      "source": "https://marvelousmousetravels.com/new-dining-experiences-at-treasure-beach-village-at-beaches-turks-caicos/",
+      "credit": "Marvelous Mouse Travels / Kari Becker",
+      "kind": "guest",
+      "caption": "Guest French toast at Butch’s (April 2026 article); exact current recipe unverified",
+      "dishes": [],
+      "source_period": "April 7, 2026 article; photo date unverified",
+      "original_size": [
+        2560,
+        1920
+      ],
+      "local": "assets/photos/butchs-mouse-2.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "472a26e6a23328831bcbd848ecc368c31fcf20d34c61b727db655979500e943f"
+    },
+    {
+      "file": "butchs-mouse-3",
+      "venue": "butchs",
+      "src": "https://marvelousmousetravels.com/wp-content/uploads/2026/04/IMG_1168-scaled.jpeg",
+      "source": "https://marvelousmousetravels.com/new-dining-experiences-at-treasure-beach-village-at-beaches-turks-caicos/",
+      "credit": "Marvelous Mouse Travels / Kari Becker",
+      "kind": "guest",
+      "caption": "Guest fruit plate at Butch’s (April 2026 article)",
+      "dishes": [],
+      "source_period": "April 7, 2026 article; photo date unverified",
+      "original_size": [
+        1920,
+        2560
+      ],
+      "local": "assets/photos/butchs-mouse-3.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "f2dbd8c3657c13fb675e8d97ce8aebdbbf524e9edbe919de7f23eea95f87607e"
+    },
+    {
+      "file": "butchs-mouse-4",
+      "venue": "butchs",
+      "src": "https://marvelousmousetravels.com/wp-content/uploads/2026/04/IMG_1172-scaled.jpeg",
+      "source": "https://marvelousmousetravels.com/new-dining-experiences-at-treasure-beach-village-at-beaches-turks-caicos/",
+      "credit": "Marvelous Mouse Travels / Kari Becker",
+      "kind": "guest",
+      "caption": "Guest Eggs Benedict at Butch’s (April 2026 article); pictured portion may differ from the modeled example",
+      "dishes": [],
+      "source_period": "April 7, 2026 article; photo date unverified",
+      "original_size": [
+        2560,
+        1920
+      ],
+      "local": "assets/photos/butchs-mouse-4.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "4a1f1aec9300371fb592c402dd0b9a1674417e02a34a2fce3b3e5a042af1d55a"
+    },
+    {
+      "file": "butchs-mouse-5",
+      "venue": "butchs",
+      "src": "https://marvelousmousetravels.com/wp-content/uploads/2026/04/IMG_1152-scaled.jpeg",
+      "source": "https://marvelousmousetravels.com/new-dining-experiences-at-treasure-beach-village-at-beaches-turks-caicos/",
+      "credit": "Marvelous Mouse Travels / Kari Becker",
+      "kind": "guest",
+      "caption": "Guest steakhouse sides at Butch’s (April 2026 article)",
+      "dishes": [],
+      "source_period": "April 7, 2026 article; photo date unverified",
+      "original_size": [
+        1920,
+        2560
+      ],
+      "local": "assets/photos/butchs-mouse-5.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "f0c122dab763c5fe75d962195ac34a5cda8b5237e8bf774cdd51533bc5e5c510"
+    },
+    {
+      "file": "pinta-mouse-6",
+      "venue": "pinta",
+      "src": "https://marvelousmousetravels.com/wp-content/uploads/2026/04/IMG_0804-scaled.jpeg",
+      "source": "https://marvelousmousetravels.com/new-dining-experiences-at-treasure-beach-village-at-beaches-turks-caicos/",
+      "credit": "Marvelous Mouse Travels / Kari Becker",
+      "kind": "guest",
+      "caption": "Pinta breakfast buffet — guest photo in April 2026 article",
+      "dishes": [],
+      "source_period": "April 7, 2026 article; photo date unverified",
+      "original_size": [
+        1920,
+        2560
+      ],
+      "local": "assets/photos/pinta-mouse-6.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "42fb22f69736cad367e5c887674265c1ac5210f9d896d40455ed85ea121cf603"
+    },
+    {
+      "file": "pinta-mouse-7",
+      "venue": "pinta",
+      "src": "https://marvelousmousetravels.com/wp-content/uploads/2026/04/IMG_0812-scaled.jpeg",
+      "source": "https://marvelousmousetravels.com/new-dining-experiences-at-treasure-beach-village-at-beaches-turks-caicos/",
+      "credit": "Marvelous Mouse Travels / Kari Becker",
+      "kind": "guest",
+      "caption": "Pinta counter plates — guest photo in April 2026 article; exact dishes unverified",
+      "dishes": [],
+      "source_period": "April 7, 2026 article; photo date unverified",
+      "original_size": [
+        1920,
+        2560
+      ],
+      "local": "assets/photos/pinta-mouse-7.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "ff8637f68486d9ed2c93266313c5f4b49075fb4c1af053b18c85a2401284ae7c"
+    },
+    {
+      "file": "pinta-mouse-8",
+      "venue": "pinta",
+      "src": "https://marvelousmousetravels.com/wp-content/uploads/2026/04/IMG_1044-scaled.jpeg",
+      "source": "https://marvelousmousetravels.com/new-dining-experiences-at-treasure-beach-village-at-beaches-turks-caicos/",
+      "credit": "Marvelous Mouse Travels / Kari Becker",
+      "kind": "guest",
+      "caption": "Pinta dumplings and small plates — guest photo in April 2026 article; exact fillings unverified",
+      "dishes": [],
+      "source_period": "April 7, 2026 article; photo date unverified",
+      "original_size": [
+        1920,
+        2560
+      ],
+      "local": "assets/photos/pinta-mouse-8.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "8cb9925c0cd329ff2ef7b7ea70ba356ec2d422d34b1f45ff4c1d4442d3dd6144"
+    },
+    {
+      "file": "bru-mouse-9",
+      "venue": "bru",
+      "src": "https://marvelousmousetravels.com/wp-content/uploads/2026/04/IMG_0551-scaled.jpeg",
+      "source": "https://marvelousmousetravels.com/new-dining-experiences-at-treasure-beach-village-at-beaches-turks-caicos/",
+      "credit": "Marvelous Mouse Travels / Kari Becker",
+      "kind": "guest",
+      "caption": "Guest cocktail at Brü (April 2026 article); exact recipe unverified",
+      "dishes": [],
+      "source_period": "April 7, 2026 article; photo date unverified",
+      "original_size": [
+        1920,
+        2560
+      ],
+      "local": "assets/photos/bru-mouse-9.webp",
+      "reviewed": "2026-10-26",
+      "visual_review": "Contact sheet reviewed; named dish matches additionally reviewed full size.",
+      "role": "gallery",
+      "sha256": "41e284f84ce5875f44f467faa43b6d77a58ad90a876f63529c224882cc98d75f"
+    }
+  ]
+}

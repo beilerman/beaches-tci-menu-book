@@ -1,0 +1,1647 @@
+{
+  "schema_version": 1,
+  "dataset": "USDA FNDDS 2021-2023, October 2024 release; conch from SR28",
+  "dataset_source": "https://fdc.nal.usda.gov/download-datasets/",
+  "fndds_sha256": "2e7eb9fda92adf1d4d784dba5eaa3a7fd4418cd86ccff383c7c9294d79e9b808",
+  "review_date": "2026-10-26",
+  "profiles": {
+    "alfredo": {
+      "fdc_id": 2705809,
+      "description": "Alfredo sauce",
+      "kcal_per_100g": 150,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705809/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "almonds": {
+      "fdc_id": 2707485,
+      "description": "Almonds, NFS",
+      "kcal_per_100g": 598,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707485/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "american": {
+      "fdc_id": 2705764,
+      "description": "Cheese, American",
+      "kcal_per_100g": 340,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705764/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "applepie": {
+      "fdc_id": 2707995,
+      "description": "Pie, apple",
+      "kcal_per_100g": 296,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707995/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "avocado": {
+      "fdc_id": 2709223,
+      "description": "Avocado, raw",
+      "kcal_per_100g": 160,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709223/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "bacon": {
+      "fdc_id": 2705889,
+      "description": "Pork bacon, smoked or cured, cooked",
+      "kcal_per_100g": 468,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705889/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "bagel": {
+      "fdc_id": 2707684,
+      "description": "Bagel",
+      "kcal_per_100g": 264,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707684/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "bakedbeans": {
+      "fdc_id": 2707391,
+      "description": "Baked beans, vegetarian",
+      "kcal_per_100g": 94.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707391/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "bakedpotato": {
+      "fdc_id": 2709524,
+      "description": "Potato, baked, peel eaten",
+      "kcal_per_100g": 93.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709524/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "banana": {
+      "fdc_id": 2709224,
+      "description": "Banana, raw",
+      "kcal_per_100g": 97.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709224/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "bao": {
+      "fdc_id": 2708725,
+      "description": "Bao bun, no meat",
+      "kcal_per_100g": 268,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708725/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "bass": {
+      "fdc_id": 2706295,
+      "description": "Fish, bass, baked or broiled",
+      "kcal_per_100g": 161,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706295/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "bbq": {
+      "fdc_id": 2709750,
+      "description": "Barbecue sauce",
+      "kcal_per_100g": 172,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709750/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "beans": {
+      "fdc_id": 2707349,
+      "description": "Beans, from dried, NS as to type, no added fat",
+      "kcal_per_100g": 139,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707349/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "beef": {
+      "fdc_id": 2705854,
+      "description": "Beef, ground",
+      "kcal_per_100g": 261,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705854/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "beet": {
+      "fdc_id": 2709872,
+      "description": "Beets, fresh, cooked, no added fat",
+      "kcal_per_100g": 45.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709872/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "belly": {
+      "fdc_id": 2705901,
+      "description": "Pork, belly",
+      "kcal_per_100g": 404,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705901/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "bluecheese": {
+      "fdc_id": 2705705,
+      "description": "Cheese, Blue or Roquefort",
+      "kcal_per_100g": 353,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705705/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "bluecheesedressing": {
+      "fdc_id": 2710197,
+      "description": "Blue or roquefort cheese dressing",
+      "kcal_per_100g": 484,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710197/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "bread": {
+      "fdc_id": 2707610,
+      "description": "Bread, French or Vienna",
+      "kcal_per_100g": 272,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707610/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "broccoli": {
+      "fdc_id": 2709645,
+      "description": "Broccoli, fresh, cooked, no added fat",
+      "kcal_per_100g": 41.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709645/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "broth": {
+      "fdc_id": 2707132,
+      "description": "Soup, broth",
+      "kcal_per_100g": 6.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707132/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "brownie": {
+      "fdc_id": 2707904,
+      "description": "Cookie, brownie, without icing",
+      "kcal_per_100g": 405,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707904/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "bulgur": {
+      "fdc_id": 2708438,
+      "description": "Bulgur, no added fat",
+      "kcal_per_100g": 83.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708438/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "bun": {
+      "fdc_id": 2707657,
+      "description": "Roll, white, hamburger bun",
+      "kcal_per_100g": 267,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707657/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "butter": {
+      "fdc_id": 2710155,
+      "description": "Butter, stick",
+      "kcal_per_100g": 743,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710155/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "caesardressing": {
+      "fdc_id": 2710199,
+      "description": "Caesar dressing",
+      "kcal_per_100g": 542,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710199/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "cake": {
+      "fdc_id": 2707886,
+      "description": "Cake, sponge",
+      "kcal_per_100g": 290,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707886/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "canadian": {
+      "fdc_id": 2705884,
+      "description": "Canadian bacon, cooked",
+      "kcal_per_100g": 146,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705884/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "caramel": {
+      "fdc_id": 2710284,
+      "description": "Topping, butterscotch or caramel",
+      "kcal_per_100g": 216,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710284/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "carrot": {
+      "fdc_id": 2709664,
+      "description": "Carrots, fresh, cooked, no added fat",
+      "kcal_per_100g": 50.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709664/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "cashews": {
+      "fdc_id": 2707493,
+      "description": "Cashews, NFS",
+      "kcal_per_100g": 574,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707493/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "cauliflower": {
+      "fdc_id": 2709897,
+      "description": "Cauliflower, fresh, cooked, no added fat",
+      "kcal_per_100g": 26.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709897/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "celery": {
+      "fdc_id": 2709778,
+      "description": "Celery, raw",
+      "kcal_per_100g": 17.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709778/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "cheddar": {
+      "fdc_id": 2705709,
+      "description": "Cheese, Cheddar",
+      "kcal_per_100g": 409,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705709/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "cheesecake": {
+      "fdc_id": 2707861,
+      "description": "Cheesecake, plain",
+      "kcal_per_100g": 399,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707861/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "cherrypie": {
+      "fdc_id": 2707999,
+      "description": "Pie, cherry",
+      "kcal_per_100g": 311,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707999/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "chicken": {
+      "fdc_id": 2705956,
+      "description": "Chicken breast, baked, broiled, or roasted, skin not eaten, from raw",
+      "kcal_per_100g": 161,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705956/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "chickenleg": {
+      "fdc_id": 2705984,
+      "description": "Chicken leg, drumstick and thigh, baked or broiled, skin eaten",
+      "kcal_per_100g": 214,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705984/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "chips": {
+      "fdc_id": 2708202,
+      "description": "Tortilla chips, plain",
+      "kcal_per_100g": 472,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708202/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "choccake": {
+      "fdc_id": 2707866,
+      "description": "Cake or cupcake, chocolate with chocolate icing, bakery",
+      "kcal_per_100g": 345,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707866/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "choccheesecake": {
+      "fdc_id": 2707863,
+      "description": "Cheesecake, chocolate",
+      "kcal_per_100g": 394,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707863/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "chocolate": {
+      "fdc_id": 2710328,
+      "description": "Chocolate candy",
+      "kcal_per_100g": 535,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710328/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "chocpudding": {
+      "fdc_id": 2705679,
+      "description": "Pudding, chocolate, NFS",
+      "kcal_per_100g": 142,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705679/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "chocsyrup": {
+      "fdc_id": 2710276,
+      "description": "Chocolate syrup",
+      "kcal_per_100g": 269,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710276/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "choctart": {
+      "fdc_id": 2708005,
+      "description": "Pie, chocolate cream",
+      "kcal_per_100g": 291,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708005/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "churro": {
+      "fdc_id": 2708070,
+      "description": "Churros",
+      "kcal_per_100g": 419,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708070/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "cinnamonroll": {
+      "fdc_id": 2707668,
+      "description": "Roll, sweet, cinnamon bun, frosted",
+      "kcal_per_100g": 452,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707668/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "clams": {
+      "fdc_id": 2706342,
+      "description": "Clams, steamed or boiled",
+      "kcal_per_100g": 109,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706342/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "coconut": {
+      "fdc_id": 2707500,
+      "description": "Coconut, fresh",
+      "kcal_per_100g": 354,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707500/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "coconutcream": {
+      "fdc_id": 2707571,
+      "description": "Coconut cream, canned, sweetened",
+      "kcal_per_100g": 357,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707571/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "coconutmilk": {
+      "fdc_id": 2707568,
+      "description": "Coconut milk, used in cooking",
+      "kcal_per_100g": 230,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707568/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "coconutwater": {
+      "fdc_id": 2707572,
+      "description": "Coconut water, unsweetened",
+      "kcal_per_100g": 18.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707572/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "coffee": {
+      "fdc_id": 2710375,
+      "description": "Coffee, brewed",
+      "kcal_per_100g": 1.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710375/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "coffeeliqueur": {
+      "fdc_id": 2710625,
+      "description": "Liqueur, coffee flavored",
+      "kcal_per_100g": 336,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710625/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "condensed": {
+      "fdc_id": 2705402,
+      "description": "Milk, condensed, sweetened",
+      "kcal_per_100g": 321,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705402/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "cookie": {
+      "fdc_id": 2707964,
+      "description": "Cookie, shortbread",
+      "kcal_per_100g": 514,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707964/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "corn": {
+      "fdc_id": 2709910,
+      "description": "Corn, fresh, cooked, no added fat",
+      "kcal_per_100g": 86.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709910/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "corntortilla": {
+      "fdc_id": 2707823,
+      "description": "Tortilla, corn",
+      "kcal_per_100g": 218,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707823/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "couscous": {
+      "fdc_id": 2708441,
+      "description": "Couscous, plain, cooked",
+      "kcal_per_100g": 111,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708441/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "crab": {
+      "fdc_id": 2706344,
+      "description": "Crab",
+      "kcal_per_100g": 83.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706344/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "crabcake": {
+      "fdc_id": 2706549,
+      "description": "Crab, cake",
+      "kcal_per_100g": 214,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706549/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "cranberry": {
+      "fdc_id": 2710579,
+      "description": "Cranberry juice drink, with high vitamin C",
+      "kcal_per_100g": 54.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710579/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "cream": {
+      "fdc_id": 2705597,
+      "description": "Cream, heavy",
+      "kcal_per_100g": 343,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705597/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "creamcheese": {
+      "fdc_id": 2705760,
+      "description": "Cream cheese, regular, plain",
+      "kcal_per_100g": 343,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705760/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "creamedspinach": {
+      "fdc_id": 2709628,
+      "description": "Spinach, creamed",
+      "kcal_per_100g": 90.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709628/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "creamliqueur": {
+      "fdc_id": 2710624,
+      "description": "Liqueur, cream",
+      "kcal_per_100g": 296,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710624/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "croissant": {
+      "fdc_id": 2707678,
+      "description": "Croissant",
+      "kcal_per_100g": 406,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707678/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "cucumber": {
+      "fdc_id": 2709784,
+      "description": "Cucumber, raw",
+      "kcal_per_100g": 16.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709784/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "custard": {
+      "fdc_id": 2705682,
+      "description": "Custard",
+      "kcal_per_100g": 97.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705682/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "danish": {
+      "fdc_id": 2708060,
+      "description": "Danish pastry, with fruit",
+      "kcal_per_100g": 371,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708060/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "dates": {
+      "fdc_id": 2709203,
+      "description": "Date",
+      "kcal_per_100g": 282,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709203/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "dogbun": {
+      "fdc_id": 2707656,
+      "description": "Roll, white, hot dog bun",
+      "kcal_per_100g": 267,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707656/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "dressing": {
+      "fdc_id": 2710203,
+      "description": "Italian dressing, made with vinegar and oil",
+      "kcal_per_100g": 240,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710203/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "duck": {
+      "fdc_id": 2706139,
+      "description": "Duck, roasted, skin eaten",
+      "kcal_per_100g": 336,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706139/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "dumpling": {
+      "fdc_id": 2708344,
+      "description": "Dumpling, no meat",
+      "kcal_per_100g": 125,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708344/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "eclair": {
+      "fdc_id": 2708031,
+      "description": "Cream puff, eclair, custard or cream filled, iced",
+      "kcal_per_100g": 334,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708031/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "edamame": {
+      "fdc_id": 2707436,
+      "description": "Edamame, cooked",
+      "kcal_per_100g": 140,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707436/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "eel": {
+      "fdc_id": 2706247,
+      "description": "Fish, eel",
+      "kcal_per_100g": 273,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706247/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "egg": {
+      "fdc_id": 2707154,
+      "description": "Egg, whole, boiled or poached",
+      "kcal_per_100g": 143,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707154/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "eggplant": {
+      "fdc_id": 2709929,
+      "description": "Eggplant, cooked, no added fat",
+      "kcal_per_100g": 27.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709929/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "eggroll": {
+      "fdc_id": 2708700,
+      "description": "Egg roll, meatless",
+      "kcal_per_100g": 270,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708700/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "espresso": {
+      "fdc_id": 2710378,
+      "description": "Coffee, espresso",
+      "kcal_per_100g": 9.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710378/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "feta": {
+      "fdc_id": 2705714,
+      "description": "Cheese, Feta",
+      "kcal_per_100g": 273,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705714/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "filet": {
+      "fdc_id": 2705841,
+      "description": "Beef, steak, tenderloin",
+      "kcal_per_100g": 196,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705841/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "flan": {
+      "fdc_id": 2705683,
+      "description": "Flan",
+      "kcal_per_100g": 178,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705683/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "flank": {
+      "fdc_id": 2705827,
+      "description": "Beef, steak, flank",
+      "kcal_per_100g": 243,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705827/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "focaccia": {
+      "fdc_id": 2707612,
+      "description": "Focaccia, Italian, plain",
+      "kcal_per_100g": 249,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707612/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "frenchtoast": {
+      "fdc_id": 2708333,
+      "description": "French toast, fast food / restaurant",
+      "kcal_per_100g": 310,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708333/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "friedchicken": {
+      "fdc_id": 2705975,
+      "description": "Chicken breast, fried, coated, prepared skinless, coating eaten, from raw",
+      "kcal_per_100g": 219,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705975/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "friedegg": {
+      "fdc_id": 2707159,
+      "description": "Egg, whole, fried with butter",
+      "kcal_per_100g": 182,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707159/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "friedfish": {
+      "fdc_id": 2706327,
+      "description": "Fish, white, mixed species, fried",
+      "kcal_per_100g": 227,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706327/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "friedrice": {
+      "fdc_id": 2708951,
+      "description": "Rice, fried, meatless",
+      "kcal_per_100g": 174,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708951/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "friedshrimp": {
+      "fdc_id": 2706364,
+      "description": "Shrimp, fried",
+      "kcal_per_100g": 218,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706364/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "fries": {
+      "fdc_id": 2709462,
+      "description": "Potato, french fries, restaurant",
+      "kcal_per_100g": 289,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709462/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "fritter": {
+      "fdc_id": 2708024,
+      "description": "Fritter, plain",
+      "kcal_per_100g": 378,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708024/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "fruit": {
+      "fdc_id": 2709288,
+      "description": "Fruit salad, fresh or raw, including citrus fruits, no dressing",
+      "kcal_per_100g": 56.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709288/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "gnocchi": {
+      "fdc_id": 2708722,
+      "description": "Gnocchi, potato",
+      "kcal_per_100g": 135,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708722/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "goatcheese": {
+      "fdc_id": 2705716,
+      "description": "Cheese, goat",
+      "kcal_per_100g": 364,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705716/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "gouda": {
+      "fdc_id": 2705717,
+      "description": "Cheese, Gouda or Edam",
+      "kcal_per_100g": 356,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705717/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "granola": {
+      "fdc_id": 2708461,
+      "description": "Cereal, granola",
+      "kcal_per_100g": 420,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708461/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "gravy": {
+      "fdc_id": 2707145,
+      "description": "Gravy, beef",
+      "kcal_per_100g": 53.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707145/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "greek": {
+      "fdc_id": 2705430,
+      "description": "Yogurt, Greek, whole milk, fruit",
+      "kcal_per_100g": 114,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705430/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "grits": {
+      "fdc_id": 2708374,
+      "description": "Cornmeal mush, no added fat",
+      "kcal_per_100g": 58.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708374/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "gruyere": {
+      "fdc_id": 2705718,
+      "description": "Cheese, Gruyere",
+      "kcal_per_100g": 413,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705718/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "ham": {
+      "fdc_id": 2706206,
+      "description": "Ham, prepackaged or deli, luncheon meat",
+      "kcal_per_100g": 101,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706206/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "hashbrown": {
+      "fdc_id": 2709480,
+      "description": "Potato, hash brown, from restaurant",
+      "kcal_per_100g": 272,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709480/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "hen": {
+      "fdc_id": 2706145,
+      "description": "Cornish game hen, roasted, skin eaten",
+      "kcal_per_100g": 257,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706145/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "hollandaise": {
+      "fdc_id": 2710171,
+      "description": "Hollandaise sauce",
+      "kcal_per_100g": 546,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710171/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "hotdog": {
+      "fdc_id": 2706167,
+      "description": "Hot dog, beef",
+      "kcal_per_100g": 310,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706167/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "hummus": {
+      "fdc_id": 2707402,
+      "description": "Hummus, plain",
+      "kcal_per_100g": 243,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707402/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "icecream": {
+      "fdc_id": 2705630,
+      "description": "Ice cream, vanilla",
+      "kcal_per_100g": 207,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705630/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "lamb": {
+      "fdc_id": 2705906,
+      "description": "Lamb, chop",
+      "kcal_per_100g": 264,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705906/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "lasagna": {
+      "fdc_id": 2708752,
+      "description": "Lasagna with meat, from restaurant",
+      "kcal_per_100g": 185,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708752/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "lemontart": {
+      "fdc_id": 2708000,
+      "description": "Pie, lemon",
+      "kcal_per_100g": 280,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708000/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "lentils": {
+      "fdc_id": 2707425,
+      "description": "Lentils, from dried, no added fat",
+      "kcal_per_100g": 115,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707425/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "lentilsoup": {
+      "fdc_id": 2707462,
+      "description": "Soup, lentil",
+      "kcal_per_100g": 60.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707462/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "lime": {
+      "fdc_id": 2709184,
+      "description": "Lime juice, 100%, freshly squeezed",
+      "kcal_per_100g": 25.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709184/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "liqueur": {
+      "fdc_id": 2710623,
+      "description": "Liqueur",
+      "kcal_per_100g": 279,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710623/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "lobster": {
+      "fdc_id": 2706349,
+      "description": "Lobster",
+      "kcal_per_100g": 97.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706349/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "mac": {
+      "fdc_id": 2708811,
+      "description": "Macaroni or noodles with cheese",
+      "kcal_per_100g": 223,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708811/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "mango": {
+      "fdc_id": 2709242,
+      "description": "Mango, raw",
+      "kcal_per_100g": 60.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709242/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "marshmallow": {
+      "fdc_id": 2710353,
+      "description": "Candy, marshmallow",
+      "kcal_per_100g": 318,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710353/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "mashed": {
+      "fdc_id": 2709500,
+      "description": "Potato, mashed, from restaurant",
+      "kcal_per_100g": 138,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709500/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "mayo": {
+      "fdc_id": 2710204,
+      "description": "Mayonnaise, regular",
+      "kcal_per_100g": 680,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710204/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "meatpizza": {
+      "fdc_id": 2708650,
+      "description": "Pizza with meat other than pepperoni, from restaurant or fast food, thin crust",
+      "kcal_per_100g": 280,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708650/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "meringue": {
+      "fdc_id": 2707297,
+      "description": "Meringues",
+      "kcal_per_100g": 324,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707297/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "milk": {
+      "fdc_id": 2705385,
+      "description": "Milk, whole",
+      "kcal_per_100g": 61.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705385/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "misosoup": {
+      "fdc_id": 2707455,
+      "description": "Soup, miso or tofu",
+      "kcal_per_100g": 24.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707455/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "mozzarella": {
+      "fdc_id": 2705722,
+      "description": "Cheese, Mozzarella, NFS",
+      "kcal_per_100g": 296,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705722/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "muffin": {
+      "fdc_id": 2707698,
+      "description": "Muffin, English",
+      "kcal_per_100g": 227,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707698/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "mushroom": {
+      "fdc_id": 2709937,
+      "description": "Mushrooms, fresh, cooked, no added fat",
+      "kcal_per_100g": 39.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709937/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "mussels": {
+      "fdc_id": 2706350,
+      "description": "Mussels",
+      "kcal_per_100g": 109,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706350/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "naan": {
+      "fdc_id": 2707613,
+      "description": "Bread, naan",
+      "kcal_per_100g": 311,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707613/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "nuggets": {
+      "fdc_id": 2706094,
+      "description": "Chicken nuggets, from restaurant",
+      "kcal_per_100g": 307,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706094/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "nutpie": {
+      "fdc_id": 2708015,
+      "description": "Pie, pecan",
+      "kcal_per_100g": 449,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708015/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "oatmeal": {
+      "fdc_id": 2708381,
+      "description": "Oatmeal, regular or quick, made with water, no added fat",
+      "kcal_per_100g": 64.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708381/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "oats": {
+      "fdc_id": 2708489,
+      "description": "Oats, raw",
+      "kcal_per_100g": 379,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708489/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "octopus": {
+      "fdc_id": 2706331,
+      "description": "Octopus",
+      "kcal_per_100g": 226,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706331/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "oil": {
+      "fdc_id": 2710186,
+      "description": "Olive oil",
+      "kcal_per_100g": 900,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710186/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "olives": {
+      "fdc_id": 2710088,
+      "description": "Olives, NFS",
+      "kcal_per_100g": 116,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710088/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "omelet": {
+      "fdc_id": 2707201,
+      "description": "Egg omelet or scrambled egg, made with butter",
+      "kcal_per_100g": 182,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707201/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "onion": {
+      "fdc_id": 2709950,
+      "description": "Onions, cooked, no added fat",
+      "kcal_per_100g": 47.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709950/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "onionrings": {
+      "fdc_id": 2710055,
+      "description": "Fried onion rings",
+      "kcal_per_100g": 352,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710055/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "orangejuice": {
+      "fdc_id": 2709186,
+      "description": "Orange juice, 100%, NFS",
+      "kcal_per_100g": 47.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709186/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "pancake": {
+      "fdc_id": 2708294,
+      "description": "Pancakes, NFS",
+      "kcal_per_100g": 282,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708294/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "paneer": {
+      "fdc_id": 2705740,
+      "description": "Cheese, paneer",
+      "kcal_per_100g": 299,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705740/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "parmesan": {
+      "fdc_id": 2705728,
+      "description": "Cheese, Parmesan, dry grated",
+      "kcal_per_100g": 412,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705728/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "pasta": {
+      "fdc_id": 2708357,
+      "description": "Pasta, cooked",
+      "kcal_per_100g": 157,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708357/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "pate": {
+      "fdc_id": 2706155,
+      "description": "Liver, paste or pate",
+      "kcal_per_100g": 201,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706155/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "patty": {
+      "fdc_id": 2705855,
+      "description": "Beef, ground, patty",
+      "kcal_per_100g": 272,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705855/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "peanutbutter": {
+      "fdc_id": 2707537,
+      "description": "Peanut butter",
+      "kcal_per_100g": 598,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707537/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "peanuts": {
+      "fdc_id": 2707512,
+      "description": "Peanuts, NFS",
+      "kcal_per_100g": 587,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707512/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "peas": {
+      "fdc_id": 2709959,
+      "description": "Green peas, fresh, cooked, no added fat",
+      "kcal_per_100g": 84.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709959/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "pecans": {
+      "fdc_id": 2707521,
+      "description": "Pecans, NFS",
+      "kcal_per_100g": 750,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707521/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "pepperonipizza": {
+      "fdc_id": 2708639,
+      "description": "Pizza with pepperoni, from restaurant or fast food, thin crust",
+      "kcal_per_100g": 282,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708639/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "pesto": {
+      "fdc_id": 2710175,
+      "description": "Pesto sauce",
+      "kcal_per_100g": 580,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710175/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "pineapple": {
+      "fdc_id": 2709260,
+      "description": "Pineapple, raw",
+      "kcal_per_100g": 60.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709260/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "pineapplejuice": {
+      "fdc_id": 2709329,
+      "description": "Pineapple juice, 100%",
+      "kcal_per_100g": 53.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709329/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "pistachio": {
+      "fdc_id": 2707527,
+      "description": "Pistachio nuts, NFS",
+      "kcal_per_100g": 572,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707527/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "pita": {
+      "fdc_id": 2707616,
+      "description": "Bread, pita",
+      "kcal_per_100g": 275,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707616/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "pizza": {
+      "fdc_id": 2708615,
+      "description": "Pizza, cheese, from restaurant or fast food, thin crust",
+      "kcal_per_100g": 266,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708615/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "plantain": {
+      "fdc_id": 2709559,
+      "description": "Plantain, cooked with oil",
+      "kcal_per_100g": 144,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709559/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "plantainchips": {
+      "fdc_id": 2709563,
+      "description": "Plantain chips",
+      "kcal_per_100g": 531,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709563/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "pork": {
+      "fdc_id": 2705882,
+      "description": "Pork, roast",
+      "kcal_per_100g": 181,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705882/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "porkchop": {
+      "fdc_id": 2705867,
+      "description": "Pork, chop, lean and fat eaten",
+      "kcal_per_100g": 195,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705867/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "potato": {
+      "fdc_id": 2709388,
+      "description": "Potato, boiled, from fresh, peel not eaten, no added fat",
+      "kcal_per_100g": 93.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709388/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "potsticker": {
+      "fdc_id": 2708705,
+      "description": "Wonton, dumpling or pot sticker, fried",
+      "kcal_per_100g": 192,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708705/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "prosciutto": {
+      "fdc_id": 2705879,
+      "description": "Ham, prosciutto",
+      "kcal_per_100g": 195,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705879/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "provolone": {
+      "fdc_id": 2705733,
+      "description": "Cheese, Provolone",
+      "kcal_per_100g": 357,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705733/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "puff": {
+      "fdc_id": 2708053,
+      "description": "Pastry, puff",
+      "kcal_per_100g": 558,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708053/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "pumpkin": {
+      "fdc_id": 2709692,
+      "description": "Pumpkin, cooked",
+      "kcal_per_100g": 52.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709692/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "quinoa": {
+      "fdc_id": 2708400,
+      "description": "Quinoa, no added fat",
+      "kcal_per_100g": 120,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708400/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "raisins": {
+      "fdc_id": 2709212,
+      "description": "Raisins",
+      "kcal_per_100g": 299,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709212/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "rawsalmon": {
+      "fdc_id": 2706284,
+      "description": "Fish, salmon, raw",
+      "kcal_per_100g": 188,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706284/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "rawtuna": {
+      "fdc_id": 2706308,
+      "description": "Fish, tuna, raw",
+      "kcal_per_100g": 109,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706308/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "ribeye": {
+      "fdc_id": 2705829,
+      "description": "Beef, steak, ribeye, lean and fat eaten",
+      "kcal_per_100g": 289,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705829/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "ribs": {
+      "fdc_id": 2705894,
+      "description": "Pork, ribs",
+      "kcal_per_100g": 254,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705894/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "rice": {
+      "fdc_id": 2710788,
+      "description": "Rice, white, cooked, as ingredient",
+      "kcal_per_100g": 130,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710788/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "ricotta": {
+      "fdc_id": 2705750,
+      "description": "Cheese, Ricotta",
+      "kcal_per_100g": 148,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705750/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "sake": {
+      "fdc_id": 2710691,
+      "description": "Wine, rice",
+      "kcal_per_100g": 134,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710691/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "salad": {
+      "fdc_id": 2709822,
+      "description": "Lettuce, salad with assorted vegetables including tomatoes and/or carrots, no dressing",
+      "kcal_per_100g": 24.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709822/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "salmon": {
+      "fdc_id": 2706286,
+      "description": "Fish, salmon, baked or broiled",
+      "kcal_per_100g": 274,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706286/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "sausage": {
+      "fdc_id": 2706191,
+      "description": "Pork sausage",
+      "kcal_per_100g": 325,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706191/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "scalloped": {
+      "fdc_id": 2709449,
+      "description": "Potato, scalloped, from fast food or restaurant",
+      "kcal_per_100g": 206,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709449/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "scallops": {
+      "fdc_id": 2706356,
+      "description": "Scallops, baked or broiled",
+      "kcal_per_100g": 126,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706356/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "seafoodsoup": {
+      "fdc_id": 2707143,
+      "description": "Soup, fish or shrimp",
+      "kcal_per_100g": 30.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707143/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "seaweed": {
+      "fdc_id": 2710100,
+      "description": "Seaweed, pickled",
+      "kcal_per_100g": 54.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710100/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "sesameoil": {
+      "fdc_id": 2710190,
+      "description": "Sesame oil",
+      "kcal_per_100g": 884,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710190/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "shortcake": {
+      "fdc_id": 2707896,
+      "description": "Cake, strawberry shortcake",
+      "kcal_per_100g": 214,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707896/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "shortrib": {
+      "fdc_id": 2705845,
+      "description": "Beef, shortribs",
+      "kcal_per_100g": 253,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705845/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "shrimp": {
+      "fdc_id": 2706363,
+      "description": "Shrimp, steamed or boiled",
+      "kcal_per_100g": 90.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706363/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "shumai": {
+      "fdc_id": 2708708,
+      "description": "Wonton, dumpling or pot sticker, steamed",
+      "kcal_per_100g": 113,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708708/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "slaw": {
+      "fdc_id": 2709815,
+      "description": "Coleslaw",
+      "kcal_per_100g": 117,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709815/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "smokedsalmon": {
+      "fdc_id": 2706292,
+      "description": "Fish, salmon, smoked",
+      "kcal_per_100g": 117,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706292/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "snapper": {
+      "fdc_id": 2706283,
+      "description": "Fish, snapper",
+      "kcal_per_100g": 185,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706283/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "soda": {
+      "fdc_id": 2710555,
+      "description": "Soft drink, ginger ale",
+      "kcal_per_100g": 34.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710555/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "sourcream": {
+      "fdc_id": 2705614,
+      "description": "Sour cream, regular",
+      "kcal_per_100g": 196,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705614/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "soy": {
+      "fdc_id": 2707442,
+      "description": "Soy sauce",
+      "kcal_per_100g": 53.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707442/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "sparkling": {
+      "fdc_id": 2710687,
+      "description": "Wine, sparkling",
+      "kcal_per_100g": 75.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710687/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "spinach": {
+      "fdc_id": 2709615,
+      "description": "Spinach, fresh, cooked, no added fat",
+      "kcal_per_100g": 33.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709615/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "spirit": {
+      "fdc_id": 2710703,
+      "description": "Rum",
+      "kcal_per_100g": 231,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710703/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "steak": {
+      "fdc_id": 2705836,
+      "description": "Beef, steak, strip, lean and fat eaten",
+      "kcal_per_100g": 262,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705836/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "sugar": {
+      "fdc_id": 2710258,
+      "description": "Sugar, white, granulated or lump",
+      "kcal_per_100g": 401,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710258/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "sweetfries": {
+      "fdc_id": 2709713,
+      "description": "Sweet potato fries, fast food / restaurant",
+      "kcal_per_100g": 305,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709713/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "sweetmash": {
+      "fdc_id": 2709708,
+      "description": "Sweet potato, casserole or mashed",
+      "kcal_per_100g": 99.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709708/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "sweetmuffin": {
+      "fdc_id": 2707830,
+      "description": "Muffin, fruit",
+      "kcal_per_100g": 375,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707830/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "sweetpotato": {
+      "fdc_id": 2709699,
+      "description": "Sweet potato, baked, no added fat",
+      "kcal_per_100g": 82.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709699/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "sweetsour": {
+      "fdc_id": 2710296,
+      "description": "Sweet and sour sauce",
+      "kcal_per_100g": 154,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710296/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "swiss": {
+      "fdc_id": 2705735,
+      "description": "Cheese, Swiss",
+      "kcal_per_100g": 393,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705735/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "swordfish": {
+      "fdc_id": 2706301,
+      "description": "Fish, swordfish",
+      "kcal_per_100g": 231,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706301/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "syrup": {
+      "fdc_id": 2710273,
+      "description": "Pancake syrup",
+      "kcal_per_100g": 265,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710273/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "tahini": {
+      "fdc_id": 2707587,
+      "description": "Tahini",
+      "kcal_per_100g": 697,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707587/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "tbone": {
+      "fdc_id": 2705839,
+      "description": "Beef, steak, T-bone,  lean and fat eaten",
+      "kcal_per_100g": 274,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705839/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "teriyaki": {
+      "fdc_id": 2707445,
+      "description": "Teriyaki sauce",
+      "kcal_per_100g": 89.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707445/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "tofu": {
+      "fdc_id": 2707435,
+      "description": "Soybean curd",
+      "kcal_per_100g": 61.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707435/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "tomato": {
+      "fdc_id": 2709719,
+      "description": "Tomatoes, raw",
+      "kcal_per_100g": 20.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709719/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "tonic": {
+      "fdc_id": 2710538,
+      "description": "Water, tonic",
+      "kcal_per_100g": 34.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2710538/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "tortilla": {
+      "fdc_id": 2707824,
+      "description": "Tortilla, flour",
+      "kcal_per_100g": 306,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707824/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "tuna": {
+      "fdc_id": 2706310,
+      "description": "Fish, tuna, cooked",
+      "kcal_per_100g": 176,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706310/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "veal": {
+      "fdc_id": 2705909,
+      "description": "Veal, chop",
+      "kcal_per_100g": 158,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705909/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "veganchicken": {
+      "fdc_id": 2707468,
+      "description": "Chicken, meatless, NFS",
+      "kcal_per_100g": 224,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707468/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "veganlink": {
+      "fdc_id": 2707467,
+      "description": "Breakfast link, pattie, or slice, meatless",
+      "kcal_per_100g": 255,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707467/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "veggiepatty": {
+      "fdc_id": 2707473,
+      "description": "Veggie burger patty, no bun",
+      "kcal_per_100g": 177,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707473/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "vegpizza": {
+      "fdc_id": 2708629,
+      "description": "Pizza with cheese and extra vegetables, thin crust",
+      "kcal_per_100g": 208,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708629/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "waffle": {
+      "fdc_id": 2708320,
+      "description": "Waffle, plain, fast food / restaurant",
+      "kcal_per_100g": 428,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2708320/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "walnuts": {
+      "fdc_id": 2707531,
+      "description": "Walnuts, excluding honey roasted",
+      "kcal_per_100g": 730,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707531/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "watermelon": {
+      "fdc_id": 2709270,
+      "description": "Watermelon, raw",
+      "kcal_per_100g": 30.0,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2709270/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "wheatbread": {
+      "fdc_id": 2707709,
+      "description": "Bread, whole wheat",
+      "kcal_per_100g": 254,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2707709/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "whipped": {
+      "fdc_id": 2705598,
+      "description": "Cream, whipped",
+      "kcal_per_100g": 346,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705598/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "whitefish": {
+      "fdc_id": 2706325,
+      "description": "Fish, white, mixed species, baked or broiled",
+      "kcal_per_100g": 143,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706325/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "wings": {
+      "fdc_id": 2706068,
+      "description": "Chicken wing, fried, coated, from restaurant",
+      "kcal_per_100g": 323,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2706068/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "yogurt": {
+      "fdc_id": 2705426,
+      "description": "Yogurt, whole milk, fruit",
+      "kcal_per_100g": 106,
+      "source_url": "https://fdc.nal.usda.gov/food-details/2705426/nutrients",
+      "basis": "USDA FNDDS 2021-2023 generic food, per 100 g edible portion; not a Beaches recipe."
+    },
+    "conch": {
+      "fdc_id": 173720,
+      "description": "Mollusks, conch, baked or broiled",
+      "kcal_per_100g": 130,
+      "source_url": "https://www.ars.usda.gov/ARSUserFiles/80400535/Data/SR/SR28/reports/sr28fg15.pdf#page=678",
+      "basis": "USDA SR28 (2015), NDB 15250, page 678: energy 130 kcal per 100 g. Cooked proxy even for citrus-marinated dishes."
+    }
+  }
+}

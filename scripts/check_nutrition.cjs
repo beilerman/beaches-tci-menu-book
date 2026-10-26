@@ -1,0 +1,74 @@
+// Full static-page flow: menu JSON -> rendered serving/range -> search/tabs/drinks.
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const {chromium} = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+const root = path.join(__dirname,'..');
+const base = process.env.PREVIEW_URL || 'http://127.0.0.1:8765';
+const qa = path.join(root,'deliverables/nutrition/qa');
+fs.mkdirSync(qa,{recursive:true});
+(async()=>{
+  const browser=await chromium.launch({headless:true});
+  const evidence=[];
+  try {
+    for (const width of [320,390,1440]) {
+      const context=await browser.newContext({viewport:{width,height:1000},colorScheme:width===390?'dark':'light'});
+      const page=await context.newPage();
+      const errors=[];
+      const brokenLocal=[];
+      page.on('pageerror',e=>errors.push(e.message));
+      page.on('response',r=>{if(r.url().startsWith(base)&&r.status()>=400)brokenLocal.push([r.url(),r.status()]);});
+      const res=await page.goto(base+'/#butchs');
+      assert.equal(res.status(),200);
+      await page.locator('#butchs[open]').waitFor();
+      const inventory=JSON.parse(fs.readFileSync(path.join(root,'data/nutrition/estimates.json'))).items;
+      const restaurantRows=inventory.filter(r=>r.venue_id!=='drinks');
+      assert.equal(await page.locator('.calorie').count(),restaurantRows.length);
+      assert.equal(await page.locator('.calorie:not(.calorie-unavailable)').count(),restaurantRows.filter(r=>r.status==='modeled').length);
+      assert.equal(await page.locator('.calorie-unavailable').count(),restaurantRows.filter(r=>r.status==='unavailable').length);
+      await page.locator('#butchs .tab').filter({hasText:'Dinner'}).click();
+      const steak=page.locator('#butchs .panel:not([hidden]) .dish').filter({hasText:'Dry-Aged Kansas Strip'});
+      await steak.waitFor({state:'visible'});
+      assert.match(await steak.innerText(),/Half of one shared 14 oz/);
+      assert.match(await steak.innerText(),/Est\. ~360 kcal/);
+      await steak.locator('.calorie-detail summary').click();
+      assert.match(await steak.innerText(),/assumed 120 g/);
+      assert.match(await steak.innerText(),/not official Beaches/);
+      assert.match(await steak.locator('.calorie-detail a').first().getAttribute('href'),/fdc\.nal\.usda\.gov/);
+      await steak.scrollIntoViewIfNeeded();
+      await page.screenshot({path:path.join(qa,`${width}-steak.png`)});
+      await page.locator('#q').fill('Say Cheese');
+      await page.locator('.r-count').waitFor();
+      const pizza=page.locator('.r-venue .dish').first();
+      assert.match(await pizza.innerText(),/whole individual pizza/);
+      await pizza.scrollIntoViewIfNeeded();
+      await page.screenshot({path:path.join(qa,`${width}-pizza-search.png`)});
+      await page.locator('#qclear').click();
+      await page.locator('#meal-chips [data-meal="drinks"]').click();
+      await page.locator('#dr-h').waitFor();
+      assert.equal(await page.locator('.d-grid .calorie').count(),28);
+      const conflict=page.locator('.d-card .dish').filter({hasText:'Purple Rain'});
+      assert.equal(await conflict.locator('.calorie-unavailable').count(),1);
+      await conflict.locator('.calorie-detail summary').click();
+      assert.match(await conflict.innerText(),/rum.*gin/);
+      await conflict.scrollIntoViewIfNeeded();
+      await page.screenshot({path:path.join(qa,`${width}-cocktail-unavailable.png`)});
+      await page.locator('#q').fill('Babyccino');
+      await page.locator('.r-count').waitFor();
+      assert.equal(await page.locator('.r-venue .calorie:not(.calorie-unavailable)').count(),1);
+      const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
+      assert.equal(overflow,false,'Horizontal overflow at '+width);
+      await page.goto(base+'/deliverables/nutrition/beaches-calorie-estimates.html');
+      assert.equal(await page.locator('tbody tr').count(),533);
+      await page.locator('#q').fill('Kansas Strip');
+      assert.equal(await page.locator('tbody tr:visible').count(),1);
+      await page.screenshot({path:path.join(qa,`${width}-report.png`)});
+      assert.deepEqual(errors,[]);
+      assert.deepEqual(brokenLocal,[]);
+      evidence.push({width,colorScheme:width===390?'dark':'light',modeled:480,unavailable:53,errors,brokenLocal,overflow});
+      await context.close();
+    }
+    fs.writeFileSync(path.join(qa,'browser-results.json'),JSON.stringify(evidence,null,2)+'\n');
+    console.log(JSON.stringify({passed:true,viewports:evidence},null,2));
+  } finally {await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});
